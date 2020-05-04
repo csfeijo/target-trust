@@ -1,0 +1,44 @@
+APACHE : mais utilizado no mundo
+Apache Tomcat: utilizado para aplicações em Java
+Nginx  : util para respostas rapidas - transmissao ao vivo
+Node / Express : linguagem NODEJS
+IIS -> Microsoft : hospedar aplicações .NET / C# / ASP
+
+
+Entregar conteúdo HTML!
+
+Domínio                IP                 PASTA/Diretório
+www.cicerofeijo.com => 200.163.191.164 => public_html OU www OU htdocs
+
+Acessem:
+http://localhost/ ou http://127.0.0.1/
+
+http://localhost/ola.htm
+http://localhost/integracao-fe-bd
+
+Formas de integração FE com BE (back-end)
+Integrado (nós estmoas usando PHP com HTML)
+M.V.C (Model , View & Controller => MODELO , VISUALIZAÇÃO & CONTROLADOR)
+Frameworks PHP que suportam (interpretam MVC):
+Zend Framework
+Smart Template
+Template Power (mostrar em um intervalo)
+
+Arquivos de configuração do Back End:
+httpd.conf => Server response limit -> padrão 1:30s / 30s
+php.ini => Response Time Limit
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
