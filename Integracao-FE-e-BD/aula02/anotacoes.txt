@@ -1,0 +1,6 @@
+JS:
+Ta sendo usado como validação apenas!
+
+JS > chamar um B.E. (PHP / Java / Python, etc... )
+Ajax : Assynchronous JavaScript
+Rich Internet Applications

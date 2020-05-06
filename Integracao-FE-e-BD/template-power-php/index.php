@@ -10,7 +10,8 @@ $tpl->prepare();
 $tpl->assign('titulo', 'Título da página');
 
 
-# vc pode continuar usando o assign para substituir os termos até mesmo das partes incluidas com o assignInclude
+# vc pode continuar usando o assign para substituir os termos até mesmo das 
+# partes incluidas com o assignInclude
 $tpl->assign('rodape_texto', 'Rodapé da página');
 
 
