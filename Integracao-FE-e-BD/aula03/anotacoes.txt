@@ -1,0 +1,19 @@
+> Exclusão
+> Edição
+> Menu (https://pastebin.com/icCdkCpT)
+
+
+acao-departamentos.php : ele é um controller da aplicação. Funciona como um 'by pass' - nós só passamos por ele, nunca ficamos nele.
+
+Result é um vetor de vetores: 
+$result = $sql->fetchAll();
+$result[0]['id_departamento']
+
+
+Frameworks:
+Ex. FrontEnd : Bootstrap, Materialize
+CSS: SASS / LESS
+Back End em PHP: Zend, Laravel, CakePHP
+Ruby : Rails
+Python: Django
+

@@ -7,6 +7,10 @@
 </head>
 <body>
 
+<?php
+include('menu.php');
+?>
+
 <div class="container">
   <h3>Bem Vindo</h3>
   <hr/>
