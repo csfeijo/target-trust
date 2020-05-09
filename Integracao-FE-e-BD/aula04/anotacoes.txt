@@ -1,0 +1,15 @@
+
+Caso queira fazer uma restrição de não possibilitar a duplicidade de algum registro (voces podem usar a configuração UNIQUE)
+OU
+Antes de fazer uma inserção do departamento (por exemplo) voces podem fazer uma outra query, com um SELECT procurando por um depto. com o mesmo nome / sigla
+que estamos tentando cadastrar, caso encontre algum informamos um erro no PHP.
+
+> Login HTML
+> Variaveis de sessão no PHP
+> Criptografia no PHP
+> Como gerenciar um usuario com Banco de Dados
+
+
+Concorrente da Bootstrap:
+https://materializecss.com/
+

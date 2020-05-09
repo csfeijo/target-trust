@@ -1,4 +1,5 @@
 <?php
+include('valida-sessao.php');
 include('includes/conexao.php');
 
 $sql = $conn->prepare('SELECT * FROM DEPARTAMENTOS ORDER BY NOME');

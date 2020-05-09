@@ -1,4 +1,5 @@
 <?php
+include('valida-sessao.php');
 include('includes/conexao.php');
 
 if ( isset($_GET['id_departamento']) ) {

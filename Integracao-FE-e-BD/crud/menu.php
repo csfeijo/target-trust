@@ -40,7 +40,7 @@
       <!--  TODOS ITENS dentro deste UL irão ficar à direita da barra -->
       <ul class="nav navbar-nav navbar-right">
         <li>
-          <a href="#">LINK</a>
+          <a href="logout.php">Logout</a>
         </li>
       </ul>
     </div>
