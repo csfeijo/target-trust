@@ -13,6 +13,8 @@ $result = $sql->fetchAll();
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CRUD</title>
   <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/datatables.css">
+  <link rel="stylesheet" href="css/all.min.css">
 </head>
 <body>
 
@@ -71,5 +73,25 @@ include('menu.php');
 
 <script src="js/jquery-3.5.1.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
+<script src="js/datatables.js"></script>
+<script src="js/all.min.js"></script>
+<script>
+// quando o documento estiver "pronto" - carregado
+$(document).ready( function () {
+
+  $('.table').DataTable({
+    pageLength: 10,
+    lengthChange: false,
+    language: {
+      paginate: {
+        sNext: '<i class="fas fa-chevron-circle-right" style="font-size: 21px;"></i>',
+        sPrevious: '<i class="fas fa-chevron-circle-left" style="font-size: 21px;"></i>'
+      },
+      search: 'Busca:'
+    }
+  });
+
+});
+</script>
 </body>
 </html>

@@ -37,9 +37,16 @@ if ( isset($_REQUEST['acao']) ) {
       if ( isset($_GET['id_departamento']) ) {
         $id = $_GET['id_departamento'];
 
-        // agora podemos EXCLUIR o registro
-        $sql = $conn->prepare("DELETE FROM DEPARTAMENTOS WHERE ID_DEPARTAMENTO = $id");
-        $sql->execute();
+        try {
+          // agora podemos EXCLUIR o registro
+          $sql = $conn->prepare("DELETE FROM DEPARTAMENTOS WHERE ID_DEPARTAMENTO = $id");
+          $sql->execute();
+        } catch (PDOException $e) {
+          // Armazenou o ERRO/Excessao na variavel $e
+          header('location:listar-departamentos.php?erro=true');
+          exit;
+        }
+      
       }
     break;
   }

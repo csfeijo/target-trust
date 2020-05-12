@@ -1,0 +1,32 @@
+> Try Catch - Exclusão de Departamentos [ OK ]
+> jQuery DataTables
+  > https://datatables.net/
+  > https://drive.google.com/open?id=1QftZZrUIf6KpoujqZsyoMjKcYYIg7OLt
+> Font Awesome
+  > https://fontawesome.com/
+  > https://drive.google.com/open?id=1U0zwnJKdS6nv0DwjCtfpLsKTC3MR0xdu
+> jQuery Mask
+  > https://igorescobar.github.io/jQuery-Mask-Plugin/
+> JS Graph´s
+  > https://www.chartjs.org/samples/latest/
+  > https://observablehq.com/@d3/gallery
+
+> Livros:
+  > Create Dynamic Web Pages Using PHP and MySQL //David Tansley
+  > O´really
+
+> Dúvidas
+
+
+Código da turma: 1605682
+http://eadtt.com.br
+
+
+===================== HISTÓRICO DAS AULAS NO GITHUB =======================
+Acessa:
+https://github.com/csfeijo/target-trust/
+
+Clica em COMMITS e vai cair nessa URL aqui:
+https://github.com/csfeijo/target-trust/commits/master
+
+
