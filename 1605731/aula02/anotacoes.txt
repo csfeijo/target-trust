@@ -1,0 +1,7 @@
+Proxima aula:
+- estrutura de projeto ex. corporativo
+- explorar melhor nas rotas e middlewares
+- pug template
+
+- Mongo DB
+
