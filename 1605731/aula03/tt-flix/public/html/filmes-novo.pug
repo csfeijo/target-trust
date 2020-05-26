@@ -1,0 +1,13 @@
+extends layout.pug
+
+block content
+  h1 Adicionar filme
+
+  form(method="POST",action="")
+    .form-group
+      input(type="text",name="nome",placeholder="Nome do filme...",required).form-control
+    .form-group
+      input(type="number",name="ano",placeholder="Ano...",required).form-control
+    .form-group
+      button(type="submit").btn.btn-success ENVIAR
+  

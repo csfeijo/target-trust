@@ -1,0 +1,19 @@
+extends layout.pug
+
+block content
+  h1 Filmes
+  a(href="/filmes-novo").btn.btn-primary NOVO
+  hr
+  table.table.table-hover
+    thead
+      th NOME
+      th ANO
+      th 
+    each f in filmes
+      tr
+        td=f.nome
+        td=f.ano
+        td
+          a(href="/filmes-editar").btn-sm.btn-warning EDITAR
+          span=' '
+          a(href="/filmes-excluir").btn-sm.btn-danger EXCLUIR
