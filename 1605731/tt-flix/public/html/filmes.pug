@@ -1,0 +1,26 @@
+extends layout.pug
+
+block content
+  h1 Filmes
+  a(href="/filmes-novo").btn.btn-primary NOVO
+  hr
+  table.table.table-hover
+    thead
+      th NOME
+      th ANO
+      th 
+    each f in filmes
+      tr
+        td=f.nome
+        td=f.ano
+        td
+          form(method="POST",action="/filmes-excluir")
+            a(href="/filmes-editar?_id=" + f._id).btn.btn-sm.btn-warning EDITAR
+            span=' '
+            input(type="hidden",name="_id",value=f._id)
+            button(type="submit",onclick="return confirm('Excluir?')").btn.btn-sm.btn-danger EXCLUIR
+
+
+
+
+            

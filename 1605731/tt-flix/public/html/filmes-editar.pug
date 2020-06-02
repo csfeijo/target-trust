@@ -1,0 +1,14 @@
+extends layout.pug
+
+block content
+  h1 Editar filme
+
+  form(method="POST",action="/filmes-atualizar")
+    .form-group
+      input(type="text",name="nome",placeholder="Nome do filme...",required,value=filme.nome).form-control
+    .form-group
+      input(type="number",name="ano",placeholder="Ano...",required,value=filme.ano).form-control
+      input(type="hidden",name="_id",value=filme._id)
+    .form-group
+      button(type="submit").btn.btn-success ENVIAR
+  
