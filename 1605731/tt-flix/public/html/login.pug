@@ -1,0 +1,19 @@
+//- index.pug
+extends layout.pug
+
+block content
+  br
+  .row
+    .col-md-4
+    .col-md-4
+      .panel.panel-default
+        .panel-heading.text-center LOGIN
+        .panel-body
+          form(action="/autentica",method="POST")
+            .form-group
+              input(type="text",name="usuario",placeholder="usuario",value="admin").form-control
+            .form-group
+              input(type="password",name="senha",placeholder="senha",value="abc").form-control
+            .form-group.text-center
+              button(type="submit").btn.btn-success ENTRAR
+    .col-md-4

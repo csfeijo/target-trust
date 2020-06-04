@@ -2,7 +2,18 @@ extends layout.pug
 
 block content
   h1 Filmes
-  a(href="/filmes-novo").btn.btn-primary NOVO
+
+  form(action="/filmes",method="GET").form-inline
+    .row
+      .col-md-6
+        .form-group
+          a(href="/filmes-novo").btn.btn-primary NOVO
+      .col-md-6.text-right
+        .form-group
+          input(type="text",name="nome",placeholder="Busca por nome...").form-control
+          button(type="submit").btn.btn-default BUSCAR
+
+
   hr
   table.table.table-hover
     thead

@@ -1,0 +1,6 @@
+Módulos para gerenciamento de variáveis de ambiente:
+https://github.com/thenativeweb/nodeenv
+https://www.npmjs.com/package/dotenv
+
+Sobre username e senha de autenticacao no mongodb:
+https://www.luiztools.com.br/post/administrando-mongodb-user-password/

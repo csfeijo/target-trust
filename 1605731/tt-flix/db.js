@@ -10,9 +10,16 @@ MongoClient.connect(url, (err, client) => {
   global.db = client.db();
 });
 
-const listarFilmes = async () => {
+const listarFilmes = async (busca) => {
+
+  let query = {};
+  if (busca.nome) {
+    //query = { nome : { $regex: `.*${busca.nome}.*` } };
+    query = { nome : { $regex: new RegExp(".*" + busca.nome, 'i') } };
+  }
+
   const collection = global.db.collection('filmes');
-  const filmes = await collection.find({}).toArray();
+  const filmes = await collection.find( query ).toArray();
 
   return filmes;
 };
@@ -21,7 +28,7 @@ const inserirFilme = async ({ nome, ano }) => {
   const collection = global.db.collection('filmes');
   const { result }  = await collection.insertOne({
     nome: nome,
-    ano: ano
+    ano: parseInt(ano)
   });
 
   console.log('Inserção', result);
@@ -45,9 +52,34 @@ const filmePeloId = async ( { _id } ) => {
   return filme;
 };
 
+const atualizarFilme = async ( { _id, nome, ano } ) => {
+  const collection = global.db.collection('filmes');
+  const busca = { _id: ObjectID(_id) };
+  // é o mesmo SET usado em SQL / UPDATE
+  const query = { $set: { nome: nome, ano: parseInt(ano) } };
+  // update é o alias antigo no mongoDB - que está depreciado - use o updateOne ou many
+  const filmes = await collection.updateOne( busca, query ); 
+};
+
+// consulta avancada
+const consultaAvancada = async () => {
+  const collection = global.db.collection('filmes');
+  const filmes = await collection.find({
+    ano: {
+      $not: {
+        $eq: 1994
+      }
+    }
+  }).toArray();
+  return filmes;
+};
+
+
 module.exports = {
   listarFilmes,
   inserirFilme,
   excluirFilme,
   filmePeloId,
+  atualizarFilme,
+  consultaAvancada,
 }
