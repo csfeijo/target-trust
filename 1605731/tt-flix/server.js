@@ -12,6 +12,15 @@ app.use( express.static('public') );
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded( { extended: true } ));
 
+// Criando o MEU middleware
+app.use( (req, res, next) => {
+  console.log('>>>>>>>>>>>>> Esta sendo chamado no inicio da rota! <<<<<<<<<<<<<');
+
+  next();
+});
+
+
+
 // VALIDACAO DE SESSAO DO LOGIN
 app.get('/login', (req, res) => {
   const template = pug.compileFile('./public/html/login.pug');
@@ -65,7 +74,12 @@ app.get('/', (req, res, next) =>{
 // inicio do mapeamento de rotas dos filmes
 app.route('/filmes')
   // caso seja um GET
-  .get( (req, res) => {
+  .get( (req, res, next) => {
+    if(validaSessao(req, res)) {
+      next();
+    }
+  }
+  ,(req, res) => {
     // verifica se veio algo na busca
     const busca = req.query;
 
@@ -79,7 +93,12 @@ app.route('/filmes')
     });
   })
   // caso seja um POST
-  .post( (req, res) => {
+  .post((req, res, next) => {
+    if(validaSessao(req, res)) {
+      next();
+    }
+  }
+  , (req, res) => {
     const filme = {
       nome : req.body.nome,
       ano: req.body.ano
@@ -92,14 +111,24 @@ app.route('/filmes')
   });
 
 // Renderiza a tela de inserção  
-app.get('/filmes-novo', (req, res) => {
+app.get('/filmes-novo', (req, res, next) => {
+  if(validaSessao(req, res)) {
+    next();
+  }
+}
+,(req, res) => {
   const template = pug.compileFile('./public/html/filmes-novo.pug');
   const parsedTemplate = template();
   res.send(parsedTemplate);
 });
 
 // Exclusão do filme
-app.post('/filmes-excluir', (req, res) => {
+app.post('/filmes-excluir', (req, res, next) => {
+  if(validaSessao(req, res)) {
+    next();
+  }
+}
+,(req, res) => {
   const _id = req.body._id;
 
   db.excluirFilme( { _id } ).then( () => {
@@ -108,7 +137,12 @@ app.post('/filmes-excluir', (req, res) => {
 });
 
 // Edição de filmes
-app.get('/filmes-editar', (req, res) => {
+app.get('/filmes-editar', (req, res, next) => {
+  if(validaSessao(req, res)) {
+    next();
+  }
+}
+,(req, res) => {
   // pega o _id da querySTRING (URL do browser)
   const { _id } = req.query;
 
@@ -122,7 +156,12 @@ app.get('/filmes-editar', (req, res) => {
 });
 
 // Receber a atualização do filme
-app.post('/filmes-atualizar', (req, res) => {
+app.post('/filmes-atualizar', (req, res, next) => {
+  if(validaSessao(req, res)) {
+    next();
+  }
+}
+,(req, res) => {
   const filme = {
     _id: req.body._id,
     nome: req.body.nome,

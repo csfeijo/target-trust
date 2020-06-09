@@ -1,0 +1,32 @@
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title CHATzinho
+    link(rel="stylesheet", href="css/bootstrap.css")
+    link(rel="stylesheet", href="css/chatzinho.css")
+  body
+    .container
+      .col-md-5
+        form.form
+        h1 Envia mensagem
+        .form-group
+          input(type="text",name="nome",id="nome",placeholder="Nick name").form-control
+        br
+        textarea(name="mensagem", cols="30", rows="10", id="mensagem",placeholder="Mensagem").form-control
+        br
+        button(type="button",id="btn-enviar").btn.btn-success ENVIAR
+      .col-md-2
+      .col-md-5
+        h1 Mensagens da sala
+        .panel.panel-primary
+          .panel-heading
+            span CHATzinho
+          .panel-body#mensagens
+            =OI
+
+
+//- socket.io.js já vem embutido no node_modules
+script(src="socket.io/socket.io.js")
+script(src="js/jquery.3.5.1.js")
+script(src="js/main.js")

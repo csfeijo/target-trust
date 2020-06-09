@@ -1,5 +1,5 @@
 {
-  "name": "exercicio-login",
+  "name": "aula03",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -9,15 +9,13 @@
   },
   "author": "",
   "license": "ISC",
-  "devDependencies": {
-    "mocha": "^7.2.0",
-    "nodemon": "^2.0.4"
-  },
   "dependencies": {
     "body-parser": "^1.19.0",
     "express": "^4.17.1",
-    "express-session": "^1.17.1",
-    "mongodb": "^3.5.7",
-    "pug": "^3.0.0"
+    "pug": "^3.0.0",
+    "socket.io": "^2.3.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
   }
 }
