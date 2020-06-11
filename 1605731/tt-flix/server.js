@@ -3,8 +3,30 @@ const session = require('express-session');
 const bodyParser = require('body-parser');
 const pug = require('pug');
 const db = require('./db');
+const swaggerJSDoc = require('swagger-jsdoc');
 
 const app = express();
+
+const options = {
+  definition: {
+    info: {
+      title: 'Target Trust Flix',
+      version: '1.0.0'
+    }
+  },
+  apis: ['server.js']
+};
+const swaggerSpec = swaggerJSDoc(options);
+
+app.get('/api-docs.json', (req, res) => {
+  res.setHeader('Content-Type', 'application/json');
+  res.send(swaggerSpec);
+});
+
+const swaggerUI = require('swagger-ui-express');
+app.use('/swagger-ui', swaggerUI.serve, swaggerUI.setup(swaggerSpec));
+
+
 
 app.use(session({ secret: 'segredo', saveUninitialized: true, resave: true }));
 
@@ -14,7 +36,7 @@ app.use(bodyParser.urlencoded( { extended: true } ));
 
 // Criando o MEU middleware
 app.use( (req, res, next) => {
-  console.log('>>>>>>>>>>>>> Esta sendo chamado no inicio da rota! <<<<<<<<<<<<<');
+  //console.log('>>>>>>>>>>>>> Esta sendo chamado no inicio da rota! <<<<<<<<<<<<<');
 
   next();
 });
@@ -29,21 +51,45 @@ app.get('/login', (req, res) => {
   res.send(parsedTemplate);
 });
 
+/**
+ * @swagger
+ *
+ * /autentica:
+ *   post:
+ *     description: Login da aplicação
+ *     produces:
+ *       - text/html
+ *     parameters:
+ *       - name: usuario
+ *         description: usuário para login
+ *         in: formData
+ *         required: true
+ *         type: string
+ *       - name: senha
+ *         description: Senha do usuário.
+ *         in: formData
+ *         required: true
+ *         type: string
+ *     responses:
+ *       200:
+ *         description: redireciona para filmes
+ */
 app.post('/autentica', (req, res) => {
   if (req.body.usuario === 'admin' && req.body.senha === 'abc') {
+    console.log('Usuario se logou!');
     // gerar a chave de sessao
     sess = req.session;
     sess.usuario = req.body.usuario;
 
     res.redirect('/');
   } else {
+    console.error('Usuario ou senha invalidos');
     res.redirect('/login');
   }
 });
 
 const validaSessao = (req, res) => {
   sess = req.session;
-  console.log('>> LOGADO COMO', sess.usuario);
 
   // se logado entao prossegue
   if (sess.usuario) {
@@ -72,6 +118,18 @@ app.get('/', (req, res, next) =>{
 
 
 // inicio do mapeamento de rotas dos filmes
+/**
+ * @swagger
+ *
+ * /filmes:
+ *   get:
+ *     description: Listagem de filmes
+ *     produces:
+ *       - text/html
+ *     responses:
+ *       200:
+ *         description: filmes
+ */
 app.route('/filmes')
   // caso seja um GET
   .get( (req, res, next) => {
@@ -176,11 +234,16 @@ app.post('/filmes-atualizar', (req, res, next) => {
 
 // rota de teste
 app.get('/teste', (req, res) => {
-  db.consultaAvancada().then((filmes) => {
-    res.send(filmes);
-  })
+  const { nome } = req.query;
+
+  res.status(200);
+  res.send(`Bem vindo a rota de teste ${nome}`);
+
 });
 
 app.listen(3033, () => {
   console.log('Servidor funcionando...');
 });
+
+// preciso disponibilizar a app para o chai
+module.exports = app;
