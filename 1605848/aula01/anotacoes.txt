@@ -1,0 +1,50 @@
+Back-End
+  Server-Side (são executadas na cloud / nuvem - em um servidor remoto)
+
+Front-End
+  Client-Side (rodam no cliente / maquina do usuario)
+  
+Das linguagens que vamos usar:
+HTML(5)
+ Hyper Text Markup Language
+ 
+CSS(3)
+  Cascading Style Sheet  
+
+JS
+  JavaScript
+  
+W3C (www c)  
+  Gerencia as regras / especificações da linguagem HTML
+  Toda alteração / evolução da linguagem começa com um rascunho (draft)
+  https://www.w3schools.com/html/default.asp
+
+O Charset padrão de uma página é o ISO-8859-1     
+  Usa-se sempre UTF-8
+
+
+VSCode é da MS - Gratuíto (desenvolvido em HTML, CSS e JS)
+  e portado como executavel com a tecnologia do Eléctron (electron.io)
+     
+VSCode suporte inumeros plugins (extensions)
+      Ele ja vem com uma ext. de abreviatura chamada EMMET
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     

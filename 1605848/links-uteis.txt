@@ -1,0 +1,21 @@
+Ipsum:
+https://www.lipsum.com/feed/html
+https://obamaipsum.com/
+https://brasil.uxdesign.cc/geradores-de-lorem-ipsum-para-todos-os-gostos-7593d6a5b2c1
+http://silviosantosipsum.com/
+
+https://www.w3.org/wiki/Doctypes_and_markup_styles
+
+
+Biblioteca de ícones / imagens:
+https://www.iconfinder.com/
+https://www.flaticon.com/
+
+Atalhos do VSCode:
+https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf
+
+Maquina do Tempo:
+https://archive.org/web/
+
+Can I use:
+https://caniuse.com/

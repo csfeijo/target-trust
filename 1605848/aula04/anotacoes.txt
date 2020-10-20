@@ -1,0 +1,33 @@
+CSS
+Cascading Style Sheet (Folha de Estilo em Cascata)
+TODAS regras (de layout) são lidas de cima para baixo
+E da esquerda para direita
+OU SEJA
+se tiver uma cor em uma elemento como vermelho e algumas linhas abaixo for re-definido
+para verde, o que valerá será o ultimo (efeito cascata)
+
+Ex.:
+propriedade: valor;
+background: red;
+
+Para acessar elementos no CSS usamos o conceito de SELETORES.
+
+
+
+
+
+Os tipos de elementos:
+Apenas DOIS:
+Elementos em BLOCO (ocupam a linha inteira da janela)
+h1, h2, etc.
+p
+hr
+br
+div (divisor)
+
+Elementos em LINHA (ocupam apenas o tamanho do seu conteudo)
+img
+texto puro
+span (expansível)
+
+

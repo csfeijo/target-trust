@@ -1,0 +1,93 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <h1>Busca</h1>
+  <!-- method: GET / POST -->
+  <!-- action: para onde irão os dados do formulário -->
+  <form method="GET" action="https://www.google.com/search">
+    <!-- <input type="text" name="nome">
+    <input type="text" name="email"> -->
+    <input type="text" name="q">
+    <button type="submit" name="enviar">BUSCAR</button>
+  </form>
+  <hr>
+  <form method="GET">
+    <input type="text" name="nome" maxlength="10" placeholder="Digite o seu nome..." required>
+    <br>
+    <input type="email" name="email" placeholder="Digite o seu e-mail...">
+    <br>
+    <!-- CUIDADO: NUNCA coloque um input password em um formulário com method="GET" -->
+    <input type="password" name="senha" placeholder="Digite sua senha...">
+    <br>
+    <!-- DICA: cuide para fechar a tag do textarea na MESMA linha que foi aberta -->
+    <textarea name="mensagem" placeholder="Digite sua mensagem..." maxlength="146"></textarea>
+    <br>
+    <input type="file" name="curriculo">
+    <br>
+    <select name="cidade">
+      <option value="00">SELECIONE A CIDADE</option>
+      <option value="TR">Torres</option>
+      <option value="POA">Porto Alegre</option>
+      <option value="SP">São Paulo</option>
+      <option values="CN">Canoas</option>
+    </select>
+    <br>
+    <p>Genêro:</p>
+    <!-- os inputs radios devem possuir o MESMO name (para que ocorre o comportamento de selecionar apenas UM) -->
+    <!-- a tag LABEL é vinculada ao ID do elemento do formulario -->
+    <!-- só pode haver um ID por página (nunca se repetem como um CPF!) -->
+    <input type="radio" name="genero" value="Feminino" id="fem">
+    <label for="fem">Feminino</label>
+
+    <label>
+      <input type="radio" name="genero" value="Masculino">Masculino
+    </label>
+    <br>
+    <p>Selecione os seus interesses:</p>
+    <!-- nos caso do checkbox quando queremos mandar varios valores na mesma variavel -->
+    <!-- simbolizamos o name com um [] - como fazemos com vetores (nao precisa colocar o indice) -->
+    <label>
+      <input type="checkbox" name="interesses" value="Tecnologia">Tecnologia
+    </label>
+    <label>
+      <input type="checkbox" name="interesses" value="Moda">Moda
+    </label>
+    <label>
+      <input type="checkbox" name="interesses" value="Games">Games
+    </label>
+    <br>
+    <!-- componentes que funcionam apenas em browser mais modernos - superiores a IE 11 -->
+    <input type="number" name="idade" placeholder="Idade" min="1" max="99">
+    <br>
+    <input type="date" name="data">
+    <br>
+    <input type="datetime-local" name="data">
+    <br>
+    <input type="color" name="cor">
+
+
+
+    <hr>
+    <button type="submit">ENVIAR</button>
+    <button type="button">CLICAR</button>
+    <button type="reset">LIMPAR</button>
+    <!-- FOI DEPRECIADO -->
+    <!-- <button type="menu">NAO SE USA MAIS</button> -->
+
+
+
+  </form>
+
+
+
+
+
+</body>
+
+</html>

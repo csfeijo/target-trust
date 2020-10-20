@@ -1,0 +1,56 @@
+/* comentario em CSS - pode ser multiplas linhas */
+
+/* 1° forma - seletores por TAGS */
+body {
+  background: blueviolet;
+  color: white;
+}
+
+div {
+  border: 2px dashed orange;
+}
+
+span {
+  color: plum;
+  font-family: Arial;
+}
+/* 2° forma - seletores por ID´s (usa-se o #) */
+#nome {
+  color: orange;
+}
+
+/* 3° forma - seletores por CLASSES (usa-se o .) */
+.destaque {
+  font-family: Courier;
+  font-size: 24px;
+  color: greenyellow;
+}
+
+.maiusculo {
+  text-transform: uppercase;
+}
+
+/* 4° forma - hierarquia de elementos */
+/* o espaço é um identificador de hierarquia no CSS */
+/* se voce deseja pegar algo junto (do mesmo elemento) não deve colocar o espaço */
+p.destaque {
+  font-weight: bold;
+}
+.destaque.maiusculo {
+  background: red;
+}
+#texto.destaque {
+/* .destaque#texto {  - este formato tb tem o mesmo sentido! */
+  text-decoration: underline;
+}
+/* o problema de usar este tipo de abordagem é que vc fica submisso ao HTML */
+div p {
+  background: darkred;
+}
+
+
+
+
+
+
+

@@ -1,0 +1,23 @@
+As imagens que são geralmente usadas em páginas HTML,
+Possuem as seguintes extensões:
+- JPG / JPEG - imagem de coloração progressiva
+- GIF (suporta animações - porém com limite de cores!)
+- PNG (suporta grande qtd. de cores como o JPG e ainda aceita transparência)
+- WEBP (webpicture) é um formato criado pelo Google
+- SVG (formato vetorial)
+- BMP
+- TIFF 
+
+Normalmente uma imagem de tamanho 640 x 480 deve ter em média até 200Kb.
+
+
+Exercício:
+Crie um documento HTML chamado inicio.htm 
+Dentro dele voce terá dois links
+Um apontando para um novo arquivo chamado contato.htm (crie o arquivo)
+E outro apontando para um novo arquivo chamado veiculos.htm (crie o arquivo)
+
+Dentro dos LINKS vocês não terão PALAVRAS - e sim ícones como se fosse um menu!
+
+
+

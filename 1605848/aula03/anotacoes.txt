@@ -1,0 +1,11 @@
+Formularios funcionam com componentes.
+E enviam os dados através de DOIS métodos possíveis: GET e o POST
+O padrão quando não informamos o método é o GET.
+
+GET : os dados são enviados pela URL do navegador (barra de endereços)
+      a quantidade de dados a serem enviados se limita a ~200kb
+POST: os dados são protegidos com segurança pelo navegador e NUNCA são armazenados!
+      é possível enviar uma GRANDE quantidade de dados no formulário (ex. enviar arquivos em anexo)
+
+
+Exemplos desta aula ficaram no arquivo contato.htm da "aula02"!
