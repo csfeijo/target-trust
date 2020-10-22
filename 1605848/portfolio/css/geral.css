@@ -1,0 +1,8 @@
+:root {
+  /* variaveis em CSS */
+  --azul-medio: #24263B;
+}
+
+body {
+  background: var(--azul-medio);
+}

@@ -1,0 +1,57 @@
+body {
+  /* background: url(../img/bola.jpg) no-repeat;
+  background-position: center center;
+  background-size: 100% 100%; */
+  background: url(../img/tijolos.jpg);
+}
+div {
+  border: 1px solid red;
+  width: 100px;
+  /* width: 10%; */
+  height: 100px;
+  /* top, right, bottom e left */
+  /* margin: 0 auto 0 auto; */
+  /* centraliza qualquer elemento que seja do tipo bloco e que possua uma largura */
+  margin: 10px auto;
+}
+
+#um {
+  /* tres pares de valores: cada par corresponde a uma cor (R G B)  */
+  /* 0 => desligado (preto)  vai subindo até o 9 e depois da letra A até a F (mais claro) */
+  background: #61BA65;
+}
+#dois {
+  /* tres valores que vão de 0 até 255 (escuro => mais claro) */
+  background: rgb(255, 0, 0);
+}
+#tres {
+  background: rgba(255, 255, 0, 0.6);
+}
+
+/* pseudo propriedades em CSS */
+div:hover {
+  border: 3px dotted blue;
+}
+/* primeiro filho da div #um */
+#um span:first-child {
+  color: red;
+}
+/* ultimo filho */
+#um span:last-child {
+  color: orange;
+}
+/* para acessar elementos em outras posições ("enésima" posição) */
+#um span:nth-child(3) {
+  color: #0066CC;
+}
+/* odd (impar) / even (par) */
+#dois span:nth-child(odd) {
+  font-weight: bold;
+  text-decoration: underline;
+  color: #ffffff;
+}
+
+
+
+
+

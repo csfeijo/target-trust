@@ -1,0 +1,5 @@
+Pixels:
+Sao retangulos formados por tres cores
+Red Green Blue
+
+Antigamente faziamos aplicações / sites para resoluções de aprox. 640 X 480 / 1024 X 768
