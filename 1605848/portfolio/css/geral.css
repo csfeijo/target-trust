@@ -1,8 +1,70 @@
+/* Definicao de fonte customizada */
+@font-face {
+  font-family: Poppins;
+  src: url(../fonts/Poppins-Regular.ttf) format("truetype");
+}
+
 :root {
   /* variaveis em CSS */
   --azul-medio: #24263B;
+  --azul-escuro: #1F2235;
+  --cor-menu-hover: #FF4A57;
+  --cor-menu: #FFFFFF;
+}
+
+* {
+
 }
 
 body {
   background: var(--azul-medio);
+  margin: 0;
+  padding: 0;
+  font-family: Poppins;
 }
+
+header {
+  background: var(--azul-escuro);
+  /* não precisamos mais pois o elemento vai crescer com o conteudo da DIV */
+  /* min-height: 70px; */
+  /* adicionamos uma "gordurinha em cima e embaixo" para manter a distancia proporcional */
+  padding: 30px 0;
+}
+
+header div {
+  /* border: 1px solid red; */
+  width: 1170px;
+  margin: 0 auto; /* centraliza a div na tela */
+}
+
+/* ================== ESTRUTURA DO MENU ================== */
+#menu {
+  /* border: 1px solid white; */
+  float: right;
+}
+#menu a {
+  color: var(--cor-menu);
+  text-decoration: none;
+  padding: 11px 20px;
+  font-size: 18px;
+  display: inline-block;
+}
+
+#menu a:hover {
+  color: var(--cor-menu-hover);
+}
+
+#menu a.ativo {
+  background: var(--cor-menu-hover);
+  color: var(--cor-menu);
+}
+
+
+
+
+
+
+
+
+
+

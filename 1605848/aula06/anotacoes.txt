@@ -1,0 +1,31 @@
+No HTML5 foram criadas novas TAGS semanticas para evitar o uso excessivo de DIV´s
+Todas estas TAGS são do tipo BLOCO (ocupam 100% da tela por padrão)
+
+HEADER: cabeçalho
+SECTION: seção da página
+ASIDE: normalmente é usado para colunas
+NAV: navegação - menu de um contexto
+FOOTER: rodapé da aplicação / seção
+MAIN: um elemento unico que envolve TODO o site (mas está ficando depreciada)
+
+A semântica pode mudar, e isso se deve a necessidade do cliente / desenvolvedor - e normalmente é voltada para os conceitos
+de SEO (Search Engine Optimization - area responsavel pela indexacao de conteudo do site)
+
+
+Os elementos definidos como BLOCO (que ocupam a linha toda da janela) possuem a propriedade display: block;
+Já os que ocupam apenas o tamanho do seu conteúdo (ex. tag a, img, span, etc...) são do tipo display: inline;
+
+Os principais:
+block
+inline
+none (desaparece o elemento)
+inline-block: é a junção das duas propriedades possibilitando deixar um elemento lado a lado com outro e configurar
+altura / largura / e padding superior e inferior.
+
+FONTES:
+As fontes podem ser incorporadas no CSS - WebFonts
+Os formatos mais comuns de fontes são:
+TTF 
+WOFF
+WOFF2
+OTF
