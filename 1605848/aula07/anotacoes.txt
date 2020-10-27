@@ -1,0 +1,5 @@
+Animacoes se dividem em tres pilares:
+
+- Transformações
+- Transitions
+- Animações

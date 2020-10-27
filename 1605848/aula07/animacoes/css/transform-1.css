@@ -1,0 +1,19 @@
+div {
+  width: 100px;
+  height: 100px;
+  border: 3px solid orange;
+}
+
+#div-1 {
+  transform: translate(120px, 10px);
+}
+
+#div-2:hover {
+  /* deg : graus */
+  /* transform: rotate(30deg); */
+  transform: rotate(-0.7turn);
+}
+
+#div-3 {
+  transform: skew(10deg, 10deg);
+}

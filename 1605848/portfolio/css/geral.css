@@ -59,7 +59,42 @@ header div {
   color: var(--cor-menu);
 }
 
+/* ================== configuração do CONTEÚDO DO SITE ================== */
+.container {
+  /* border: 1px solid green; */
+  width: 1170px;
+  /* height: 100%; */
+  height: calc(100% - 105px);
 
+  margin: 0 auto;
+
+  /* FLEX: Flexivel - suporta novas resolucoes e formatos e trabalha sempre com posicionamento dos filhos em relação
+     aos pais */
+  display: flex;
+  /* aling-itens: onde itens são os filhos */
+  align-items: center;
+}
+
+section {
+  /* border: 1px solid red; */
+  width: 100%;
+  color: var(--cor-menu);
+}
+
+aside {
+  display: inline-block;
+  /* alinha os elementos pelo TOPO */
+  vertical-align: top;
+}
+
+aside:first-child {
+  width: 660px;
+  margin-right: 100px;
+}
+
+aside:last-child {
+  width: 400px;
+}
 
 
 

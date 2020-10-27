@@ -1,0 +1,23 @@
+.quadrado {
+  /* border: 1px solid red; */
+  width: 308px;
+  height: 308px;
+  margin: 0 auto;
+
+  /* overflow: gerencia o scroll do pai (se os filhos são muito grandes, podemos gerar uma rolagem) */
+  /* overflow: scroll;
+  overflow-x: hidden; */
+}
+
+.quadrado div {
+  border: 1px solid blue;
+  width: 98px;
+  height: 98px;
+  display: inline-block;
+}
+
+.quadrado div:hover {
+  background: url(../img/usuario.png);
+  background-size: 100%;
+
+}
