@@ -1,0 +1,61 @@
+body {
+  background: #640492;
+  font-family: Arial;
+}
+
+
+div {
+  border: 1px solid white;
+  width: 200px;
+  height: 200px;
+  border-radius: 20px;
+  margin: 100px auto;
+
+  background: url(../img/pumpkin.png) no-repeat;
+  background-size: 0%;
+  background-position: center;
+          /* nome duracao contador estilo delay */
+  animation: gira 1s 1 linear 1s,
+             escala 1s 1 linear 2s forwards, 
+             sombra 1s 1 linear 2s forwards,
+             logo 2s 1 linear 4s forwards;
+  /* forwards: significa que a animação NÃO deve recomeçar */
+  /* animation-fill-mode: forwards; */
+
+  /* Então para entender um pouquinho do que eu quis demonstrar aqui: */
+  /* 1) Chamamos a "gira" e ela tem 1 segundo de duração, ocorre só uma vez, 
+        e tem um delay de 1 segundo para começar
+     2) Chamamos a "escala" e ela tem 1 segundo de duração, ocorre só uma vez, 
+        e tem um delay de 2 segundos para começar (para espera a anterior concluir)
+     3) Chamamos a "sombra" e ela tem 1 segundo de duração, ocorre só uma vez, 
+        e tem um delay de 2 segundos para começar TAMBEM (pois ela deve ocorrer JUNTO com a escala
+     4) Chamamos o "logo" e ela tem 2 segundos de duração, ocorre só uma vez, e deve esperar 4 segundos
+        de delay (para dar tempo das outras ocorrerem)
+    
+      * forwards : no final da configuração evita que a animação volte ao estado inicial quando conluída. */
+
+}
+
+@keyframes gira {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes escala {
+  to {
+    transform: scale(1.2);
+  }
+}
+
+@keyframes sombra {
+  to {
+    box-shadow: 0 0 14px 14px #50156b;
+  }
+}
+
+@keyframes logo {
+  to {
+    background-size: 100%;
+  }
+}

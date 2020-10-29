@@ -1,0 +1,81 @@
+body {
+  background: black;
+  font-family: Arial;
+}
+
+.container {
+  margin: 100px auto;
+  width: 560px;
+  height: 400px;
+}
+
+.container .speaker-box {
+  background:  #640492;
+  border: 1px solid;
+  display: inline-block;
+  width: 140px;
+  height: 320px;
+  padding: 40px 0;
+}
+.container .speaker-box.inicio {
+  margin-right: 40px;
+}
+.container .speaker-box.fim {
+  margin-left: 40px;
+}
+.speaker {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto 10px auto;
+  border: 1px solid;
+  border-radius: 50%;
+  background: black;
+}
+
+.speaker .middle {
+  width: 20px;
+  height: 20px;
+  margin: 40px auto;
+  border: 1px solid #cccccc;
+  border-radius: 50%;
+
+  box-shadow: 0 0 10px 10px #000000,
+              0 0 20px 10px #222222,
+              0 0 40px 20px #444444;
+}
+
+.container .mixer {
+  display: inline-block;
+}
+
+.container .mixer div {
+ width: 40px;
+  height: 100px;
+  border-radius: 6px 6px 0 0;
+  display: inline-block;
+}
+
+.mixer div:first-child {
+  background: greenyellow;
+  animation: cresce 0.8s steps(6) infinite alternate-reverse;
+}
+.mixer div:nth-child(2) {
+  background: purple;
+  animation: cresce 2s steps(10) infinite alternate;
+}
+.mixer div:nth-child(3) {
+  background: cyan;
+  animation: cresce 1.5s steps(8) infinite alternate;
+}
+.mixer div:last-child {
+  background: orange;
+  animation: cresce 3s steps(10) infinite alternate;
+}
+
+
+
+@keyframes cresce {
+  to {
+    height: 400px;
+  }
+}
