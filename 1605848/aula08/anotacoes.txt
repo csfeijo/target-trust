@@ -1,0 +1,9 @@
+Transform
+Transition
+
+Animation
+Animações se baseam em quadros
+Quadros => Frames
+Quanto mais frame mais qualidade (frames por segundo - fps)
+
+Sintaxe de @keyframes

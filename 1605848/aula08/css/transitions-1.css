@@ -1,0 +1,29 @@
+div {
+  border: 2px solid red;
+  width: 100px;
+  height: 100px;
+}
+
+#div-1:hover {
+  background: red;
+  border-radius: 50%;
+  margin-left: 100px;
+  /* transitions: servem para "monitorar / escutar" a alteração de alguma outra prop. CSS */
+  /* no transition precisamos da , para separar os eventos a serem monitorados */
+  /* transition: border-radius 2s, background 10s, margin-left 4s; */
+
+  border: 4px dashed violet;
+  transition: all 4s;
+}
+
+#div-2 {
+  transition: transform 0.5s;
+  /* background: yellow;
+  transition: background 2s; */
+}
+
+#div-2:hover {
+  /* background: blue; */
+  transform: rotate(170deg);
+  /* transition: transform 0.5s; */
+}

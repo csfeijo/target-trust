@@ -19,5 +19,6 @@
 .quadrado div:hover {
   background: url(../img/usuario.png);
   background-size: 100%;
-
+  transform: scale(1.1) rotate(70deg);
+  border-radius: 8px;
 }

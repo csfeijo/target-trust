@@ -17,3 +17,14 @@ div {
 #div-3 {
   transform: skew(10deg, 10deg);
 }
+
+#div-4:hover {
+  transform: scale(1.1);
+}
+
+#div-5:hover {
+  /* transform é uma propriedade como todas as outras, que aceita multiplos valores */
+  transform: scale(1.1) rotate(30deg);
+  background: orange;
+  border-radius: 10px;
+}

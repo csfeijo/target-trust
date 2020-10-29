@@ -1,0 +1,66 @@
+div {
+  width: 100px;
+  height: 100px;
+  border: 3px dotted olivedrab;
+}
+
+#div-1 {
+  animation-name: anima2;
+  animation-duration: 5s;
+  /* pode ser um inteiro ou infinite */
+  animation-iteration-count: infinite;
+  /* animation-delay: 2s; */
+  /* normal, reverse, alternate, alternate-reverse */
+  animation-direction: alternate;
+}
+
+
+#div-2 {
+  animation: anima2 2s infinite , anima 5s infinite 2s;
+  /* basicamente para encadear na sequencia duas animacoes, voce precisa calcular */
+  /* a duração da primeira adicionando como delay da segunda e assim por diante */
+  /* precisa ter cuidado pois o processamento do browser / gpu pode ocasionar atraso */
+  /* nos calculos*/
+}
+
+
+/* implementação de UMA animação */
+/* uma animacao precisa de inicio e fim */
+/* from: é o estado inicial - (opcional) */
+/* to: é o estado final  */
+@keyframes anima {
+  from {
+    background: coral;
+  }
+  to {
+    background: greenyellow;
+    border-radius: 40px;
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes anima2 {
+
+  25% {
+    background: coral;
+  }
+
+  75% {
+    background: cyan;
+    transform: translate(200px, 200px) rotate(360deg);
+  }
+
+  100% {
+    background: white;
+  }
+}
+
+
+
+
+
+
+
+
+
+
