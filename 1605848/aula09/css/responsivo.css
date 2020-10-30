@@ -1,0 +1,23 @@
+/* para dispositivos com tela com uma janela no máximo em 900px de largura executa: */
+@media screen and (max-width: 900px) {
+  /* aqui dentro é sintaxe CSS */
+  body {
+    background: cyan;
+  }
+}
+
+/* se eu quiser cobrir um dispositivo menor, é outra media query */
+@media screen and (max-width: 500px) {
+  body {
+    background: purple;
+  }
+
+  h1 {
+    color: white;
+  }
+}
+
+/* conseguimos tb interpretar no celular a orientação do dispositivo (landscape / portrait) */
+@media screen and (max-width: 400px) and (orientation: landscape) {
+  /* aplica estas regras abaixo... */
+}

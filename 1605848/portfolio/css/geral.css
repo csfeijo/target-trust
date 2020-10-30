@@ -59,6 +59,28 @@ header div {
   color: var(--cor-menu);
 }
 
+#burger {
+  border: 1px solid white;
+  /* por padrao o burger NAO aparece na tela */
+  display: none;
+  width: 40px;
+  height: 32px;
+  padding: 8px 4px 0 4px;
+  float: right;
+  margin-right: 4px;
+}
+
+#burger div {
+  width: 80%;
+  border-bottom: 1px solid white;
+  margin-bottom: 10px;
+}
+/* active assim como o hover é uma pseudo propriedade (quando o usuario CLICA / ATIVA o link) */
+#burger:active div:nth-child(2) {
+  width: 60%;
+}
+
+
 /* ================== configuração do CONTEÚDO DO SITE ================== */
 .container {
   /* border: 1px solid green; */

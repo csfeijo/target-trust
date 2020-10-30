@@ -17,10 +17,45 @@
 #redes-sociais a:hover {
   background: var(--cor-menu-hover);
 }
+/* você deve ajustar este elemento conforme o tamanho do seu nome */
+.maquina-de-escrever {
+  width: 586px;
+}
 
 h1 {
   font-size: 58px;
+  /* overflow: é o scrollbar - hidden: estamos ocultando o scroll */
+  overflow: hidden;
+  /* nowrap : não quebra o texto nos espaços entre as palavras */
+  white-space: nowrap;
+  /*  */
+  animation: escrever 3.5s steps(30), cursor_piscando .5s infinite step-end;
 }
+
+@keyframes escrever {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes cursor_piscando {
+  from,
+  to {
+    border-right: 6px solid white;
+  }
+  50% {
+    border-right: none;
+  }
+}
+
+
+
+
+
+
 
 .polaroid {
   width: 80%;

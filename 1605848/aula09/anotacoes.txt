@@ -1,0 +1,11 @@
+Estamos fazendo um projeto que é Desktop First (prioridade Desktop)
+
+O Design Responsivo (Responsive Design) trabalha sobre tamanhos de janela do browser.
+Esse tamanho é chamado de viewport (camnpo de visão do usuário)
+
+Quantos mais telas / resoluções a serem cobertas mais viewports.
+
+No CSS para desenvolvermos uma UI responsiva utilizamos um artificio chamado
+MEDIA QUERIES
+
+Cada Media Query é referente a um breakpoint (tamanho) de viewport (de tela)
