@@ -8,6 +8,7 @@
   /* variaveis em CSS */
   --azul-medio: #24263B;
   --azul-escuro: #1F2235;
+  /* --azul-escuro: #FF9900; */
   --cor-menu-hover: #FF4A57;
   --cor-menu: #FFFFFF;
 }
@@ -29,6 +30,12 @@ header {
   /* min-height: 70px; */
   /* adicionamos uma "gordurinha em cima e embaixo" para manter a distancia proporcional */
   padding: 30px 0;
+
+  /* workaround ("gambiarra") - vai corrigir o problema do scroll (nao pintar o fundo do header) */
+  display: inline-table;
+  /* porém, na tela cheia não vai esticar em 100% */
+  /* precisamos FORÇAR o header a ter uma largura de 100% da tela */
+  width: 100%;
 }
 
 header div {
@@ -86,7 +93,7 @@ header div {
   /* border: 1px solid green; */
   width: 1170px;
   /* height: 100%; */
-  height: calc(100% - 105px);
+  height: calc(100% - 115px);
 
   margin: 0 auto;
 

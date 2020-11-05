@@ -1,4 +1,10 @@
+@media screen and (max-width: 1170px) {
+  /* voce pode ter quantas media queries desejar para ir adaptando conforme 
+     a cobertura de dispositivos / telas */
+}
+
 @media screen and (max-width: 900px) {
+  /* ajusta os elementos principais para nao terem mais largura FIXA (1170px) */
   header div {
     width: 100%;
   }
@@ -6,6 +12,7 @@
   .container {
     width: 100%;
   }
+
 
   h1 {
     font-size: 28px;
@@ -18,15 +25,28 @@
 
   section {
     width: 100%;
+    padding: 14px;
+  }
+
+  .maquina-de-escrever {
+    width: auto;
   }
 
   .polaroid {
     width: 40%;
+
+    /* continuacao da aula */
+    border-radius: 50%;
+    padding: 2px;
+    transform: none;
+
   }
 
   aside {
     width: 100% !important;
     margin: 0 !important;
+    /* centraliza na tela elementos do tipo TEXTO e INLINE */
+    text-align: center;
   }
 
   #menu {
@@ -35,6 +55,11 @@
 
   #burger {
     display: block;
+  }
+
+  /* secao de contato */
+  iframe {
+    display: none;
   }
 }
 

@@ -1,0 +1,79 @@
+.retangulo {
+  border: 2px solid red;
+  width: 600px;
+  height: 300px;
+
+
+  position: relative;
+}
+
+.circulo {
+  border: 1px solid purple;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+
+/* position absolute: libera o elemento para se posicionar
+   em qualquer area da tela com limite no body */
+  position: absolute;
+  bottom: 50px;
+
+/* um elemento com position absolute só respeitará os pais
+que forem da mesma position OU relative */
+
+}
+
+#primeiro {
+  background: orange;
+  z-index: 2;
+  right: 10px;
+}
+
+#segundo {
+  background: orchid;
+  right: 20px;
+}
+
+/* 3 posicoes principais */
+/* static: default padrao */
+/* absolute */
+/* relative : limita os filhos */
+/* fixed: posiciona mas nao gera scroll */
+
+.chat {
+  background: #0066cc;
+  height: 400px;
+  border: 1px solid blue;
+  border-radius: 4px;
+  width: 200px;
+  position: fixed;
+  bottom: -360px;
+  right: 20px;
+}
+
+.chat:hover {
+  bottom: 0;
+  z-index: 3;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
