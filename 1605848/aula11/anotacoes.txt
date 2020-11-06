@@ -1,0 +1,12 @@
+JavaScript => JS
+
+ECMAScript 1, 7 (2016)
+
+JS sempre necessita de um documento HTML / HTM para ser executado.
+
+
+JS é linguagem prototipada e funcional (voltada para funções)
+
+
+jQuery é um framework de manipulação do DOM (só existe no F.E.)
+Write less do more (escreva menos faça mais)
