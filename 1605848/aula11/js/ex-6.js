@@ -9,9 +9,12 @@ function teste() {
 
 function magica() {
   // DOM : Document Object Model : modelo de objeto do documento
-  window.document.body.style.background = 'blue';
-  window.document.body.style.fontFamily = 'Arial';
-  window.document.body.style.color = 'white';
+  var corpo = window.document.body;
+
+  corpo.style.background = 'greenyellow';
+  corpo.style.fontFamily = 'Arial';
+  corpo.style.color = 'white';
+
 }
 
 

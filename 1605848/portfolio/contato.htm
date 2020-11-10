@@ -33,11 +33,14 @@
     <section>
       <!-- Coluna com os campos do formulário -->
       <aside>
-        <form action="">
+        <!-- No evento de onsubmit usamos o return antes da NOSSA funcao para "perguntar para ela"  -->
+        <!-- se o envio DEVE ou NAO prosseguir -->
+        <form action="" onsubmit="return validaForm()">
           <input type="text" name="nome" id="nome" placeholder="digite o seu nome">
           <input type="text" name="email" id="email" placeholder="digite o seu e-mail">
           <textarea name="mensagem" id="mensagem" placeholder="digite sua mensagem"></textarea>
 
+          <span id="erro"></span>
           <button type="submit">ENVIAR</button>
 
 
@@ -56,7 +59,7 @@
 
 
 
-
+  <script src="js/contato.js"></script>
 </body>
 
 </html>

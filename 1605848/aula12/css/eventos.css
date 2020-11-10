@@ -1,0 +1,26 @@
+#retangulo {
+  border: 3px dashed purple;
+  width: 300px;
+  height: 100px;
+  text-align: center;
+  background: #999999;
+}
+
+section {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  border: 2px solid red;
+}
+
+.caixa {
+  border: 1px solid brown;
+  width: 50px;
+  height: 50px;
+  display: none;
+}
+
+.destaque {
+  font-family: Arial;
+  color: #0096D6;
+}

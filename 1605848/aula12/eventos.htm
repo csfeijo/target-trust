@@ -1,0 +1,47 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/eventos.css">
+  <script src="js/eventos.js"></script>
+</head>
+
+<!-- O body é um dos unicos elementos que pode ser acessado diretamente depois do document -->
+
+<body>
+  <h1>Bem vindo</h1>
+
+  <p ondblclick="teste()">Isso é um parágrafo!</p>
+
+  <h2 onmouseover="teste()">Segunda-feira</h2>
+
+  <!-- o ID é a forma mais facil do JS acessar os elementos -->
+  <div id="retangulo"></div>
+  <button onclick="mudaDiv()">MUDA!</button>
+  <hr>
+  <section>Seção 0</section>
+  <section>Seção 1</section>
+  <section>Seção 2</section>
+  <section>Seção 3</section>
+  <section>Seção 4</section>
+  <section>Seção 5</section>
+  <!-- crie abaixo um botao e chame uma funcao com 
+    o nome de alteraSecao no seu onclick -->
+  <button onclick="alteraSecao()">ALTERA SEÇÃO</button>
+  <hr>
+  <div class="caixa"></div>
+  <div class="caixa"></div>
+  <div class="caixa"></div>
+  <button onclick="mostraCaixa()">MOSTRA CAIXA</button>
+  <hr>
+  <button onclick="alteraTudo()">ALTERA TUDO!</button>
+
+
+
+
+
+</body>
+
+</html>

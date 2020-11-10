@@ -1,0 +1,10 @@
+DOM:
+
+getElementById => entrega o elemento diretamente
+getElementsByTagName => entrega SEMPRE um vetor de elemento(s) da tag 
+getElementsByClassName => entrega SEMPRE um vetor de elemento(s) da classe
+
+PORÉM no JS moderno
+
+querySelectorAll => busca todo e qualquer elemento utilizando sintaxe CSS (SEMPRE retorna um vetor)
+
