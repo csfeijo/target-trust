@@ -34,8 +34,6 @@
 
   .polaroid {
     width: 40%;
-
-    /* continuacao da aula */
     border-radius: 50%;
     padding: 2px;
     transform: none;
@@ -51,7 +49,34 @@
 
   #menu {
     display: none;
+    
+    /* ajuste responsivo do menu */
+    float: none;
+    margin-top: 10px;
+
+    /* vai ficar com scroll - coloca isso */
+    position: absolute;
+    width: 100%;
+    background: var(--azul-escuro);
   }
+
+  /* ajuste responsivo do menu */
+  #menu a {
+    padding-left: 0;
+    padding-right: 0;
+    text-align: center;
+    display: block;
+    width: 100%;
+  }
+
+  #menu.mostraMenu {
+    display: block;
+    /* se perguntarem do transition - nao funciona para display nem para position */
+    transition: width 1s;
+  }
+
+
+
 
   #burger {
     display: block;
