@@ -1,0 +1,9 @@
+#relogio {
+  background: black;
+  padding: 34px 4px 4px 4px;
+  color: red;
+  text-align: center;
+  width: 80px;
+  height: 46px;
+  border-radius: 50%;
+}

@@ -1,0 +1,10 @@
+Existe uma "linguagem" de simbolos para análises de Strings.
+São as Expressões Regulares (regex).
+
+Contra: 
+Complexidade
+Manutenção
+
+Pró:
+Facilidade de incorporar validações em uma unica expressão
+A sintaxe é praticamente a mesma para TODAS as linguagens
