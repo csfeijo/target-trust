@@ -1,0 +1,12 @@
+#quadrado {
+  border: 2px solid lawngreen;
+  width: 200px;
+  height: 200px;
+}
+
+.bolinha {
+  border-radius: 50%;
+  background: peru;
+  border: 2px dotted darkolivegreen !important; /* important aqui é devido ao seletor ID ter mais prioridade ! */
+  transition: all 1s;
+}
