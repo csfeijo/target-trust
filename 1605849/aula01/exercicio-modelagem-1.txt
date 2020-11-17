@@ -1,0 +1,24 @@
+PRODUTOS
+nome
+preco
+
+
+Batata  9,90
+Cenoura 1,50
+Uva     9,00
+
+Tendo como exemplo o padrão acima, imagine que você tem uma empresa e nessa empresa terá de armazenar os funcionarios com dados como nome, genero, salario, data de nascimento.
+Modelem uma estrutura para armazenar estes dados.
+
+FUNCIONARIOS => entidade
+id
+nome
+genero
+salario
+data_de_nascimento
+
+
+1 Cicero   M    3000.25   22/09/1981
+2 José     M    6525.36   13/10/1958
+3 José     M    3525.36   14/10/1958
+

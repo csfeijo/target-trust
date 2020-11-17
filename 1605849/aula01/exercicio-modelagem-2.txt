@@ -1,0 +1,16 @@
+VEICULOS
+id_veiculo
+id_modelo
+id_cor
+ano
+placa
+
+CORES
+id_cor
+nome
+
+Refatore a estrutura separando o modelo de VEÍCULOS em outra entidade.
+
+MODELOS
+id_modelo
+nome
