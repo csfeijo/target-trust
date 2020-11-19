@@ -1,0 +1,9 @@
+O processo de otimização da Base de Dados é conhecimento como Normalização e Tuning - Tunagem
+
+Nós vamos usar o MySQL (Maria DB) e vamos utilizar o MySQL Workbench que é exclusivo para MySQL.
+
+ENTIDADES => TABELAS
+ATRIBUTOS => COLUNAS
+
+PK => Primary Key => Chave Primaria
+FK => Foreign Key => Chave Estrangeira
