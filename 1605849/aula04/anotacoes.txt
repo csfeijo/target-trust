@@ -1,0 +1,20 @@
+DDL : Data Definition Language
+Criação da Base de Dados:
+USE
+CREATE
+SHOW 
+DROP
+ALTER : Comandos de alteração de estrutura de tabela
+
+Normalmente são usados para alterar bases que já possuem dados.
+O processo de alteração de uma estrutura de base populada é chamado
+de "migration".
+
+DML : Data Manipulation Language
+INSERT : 
+SELECT
+UPDATE
+DELETE
+
+
+

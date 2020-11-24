@@ -1,0 +1,21 @@
+Banco de Dados é um software.
+Ele precisa ser instalado.
+
+O banco que vamos usar é o MySQL v.8.*
+
+O Workbench passa agora a ser uma ferramenta para manipular o Banco de Dados.
+Como se fosse uma IDE - Interface de Desenvolvimento.
+
+XAMPP => Suite completa para desenvolvimento de aplicações web.
+ X(Cross - cruzamento) 
+ Apache
+ MySQL => iremos usar apenas o banco de dados
+ PHP
+ Perl
+ 
+ 
+Banco de Dados
+  BASES de DADOS
+    Tabelas
+      Atributos
+        Registros

@@ -7,3 +7,21 @@ ATRIBUTOS => COLUNAS
 
 PK => Primary Key => Chave Primaria
 FK => Foreign Key => Chave Estrangeira
+
+Tipos:
+
+CHAR(5) => ele SEMPRE ocupa 5 "espaços" no banco
+Ex.
+OI      => OI_ _ _
+
+CHAR(1) => sempre UM caractere
+Ex.:
+M ou F
+
+VARCHAR(5) => ele VARIA até 5 caracteres
+Ex.:
+OI => vai ocupar só 2
+FELIZ => vai ocupar os 5
+TRISTE => vai cortar no caractere 5 (truncar)
+
+

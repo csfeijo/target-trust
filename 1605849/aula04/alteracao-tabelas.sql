@@ -1,0 +1,16 @@
+USE EMPRESA;
+
+# adicionar um novo ou novos campo
+ALTER TABLE DEPARTAMENTOS ADD DESCRICAO VARCHAR(100) NOT NULL;
+ALTER TABLE DEPARTAMENTOS ADD imagem VARCHAR(100) AFTER id_departamento;
+
+# sempre exige que passe o nome VELHO do campo e o NOVO nome
+ALTER TABLE DEPARTAMENTOS CHANGE DESCRICAO sobre VARCHAR(100) NOT NULL;
+
+# remover uma coluna
+ALTER TABLE DEPARTAMENTOS 
+	DROP imagem, 
+    DROP sobre;
+
+
+DESC DEPARTAMENTOS;
