@@ -1,0 +1,14 @@
+USE EMPRESA;
+
+SELECT * FROM FUNCIONARIOS;
+
+SELECT salario, nome  FROM FUNCIONARIOS;
+
+SELECT nome AS DEPTO FROM DEPARTAMENTOS;
+
+SELECT nome, dt_nascimento AS "Data de Nascimento" FROM FUNCIONARIOS;
+
+SELECT CONCAT('Nome: ', nome) AS 'Título' FROM FUNCIONARIOS;
+
+
+
