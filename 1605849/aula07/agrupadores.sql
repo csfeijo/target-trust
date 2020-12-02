@@ -20,8 +20,6 @@ SELECT
     SEXO
     FROM FUNCIONARIOS
 	GROUP BY SEXO;
-    
-    
 
 
 
