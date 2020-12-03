@@ -1,0 +1,26 @@
+Para rodarmos/executarmos uma app web precisamos de uma hospedagem (host)
+Nesta hospedagem necessitamos de um servidor para interpretar os arquivos do projeto.
+
+O mais comum utilizado é o Apache.
+Dependendo da tecnologia usada na aplicação podemos ter outros servidores web:
+* Tomcat (Java)
+* GlassFish (Java)
+* IIS (Microsoft - .NET / C# / ASP)
+* NGINX - Aplicações web que necessitam de MUITA performance de entrega
+
+Para termos um nivel de inteligencia, e regras de negócio mais seguras e elaboradas precisamos
+de uma linguagem de "back-end". No caso iremos usar o PHP.
+* NodeJS
+* .NET, C#, C++
+* Java
+* Python
+* Erlang
+* C
+
+Usaremos o PHP por ser a linguagem mais próxima das plataformas WEB.
+
+Livro sobre PHP (de 2001 mas ensina muita coisa sobre integração):
+https://www.amazon.com.br/Create-Dynamic-Webpages-Using-MySQL/dp/0201734028
+
+
+
