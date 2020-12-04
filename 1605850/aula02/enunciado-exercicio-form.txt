@@ -1,0 +1,13 @@
+Crie um formulario que contenha os seguintes campos:
+- Nome do Aluno
+- Nota 1
+- Nota 2
+
+Submeta este formulario usando metodo POST para um arquivo chamado
+calcula_media.php
+Dentro do arquivo efetue o calculo da média das duas notas e 
+caso o aluno tenha média acima ou igual a 7 informe que ele passou.
+Caso contrario que foi reprovado.
+
+EXTRA:
+Se por acaso a média das notas for igual a 10, mostre a imagem de um troféu!
