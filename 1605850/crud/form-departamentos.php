@@ -9,7 +9,7 @@
   <div class="container">
     <h1>Cadastrar Departamento</h1>
     <hr>
-    <form action="acao-departamentos.php" method="POST" class="form">
+    <form action="acao-departamentos.php" method="POST" class="form" onsubmit="return validaDepartamento()">
       <!-- a boostrap trabalha com colunas dividindo a tela em 12 partes iguais -->
       <!-- podemos utilizar a definição de col-TAMANHO_TELA-QTD_COLUNAS (ex. col-md-6) para dividir as colunas -->
       <!-- onde: xs: extreme small, sm: small, md: medium, lg: large & xg: extreme-large -->
@@ -39,16 +39,15 @@
       <!-- criando uma nova linha na grade -->
       <div class="row">
         <div class="col-md-6">
-          <div class="alert alert-danger hidden">
-          PREENCHA O NOME!
-          </div>
+          <div class="alert alert-danger hidden" id="erro"></div>
         </div>
       </div>
+      <!-- aqui esta o segredo de como o acao-departamentos difere o que deve fazer em cada "case" -->
       <input type="hidden" name="acao" value="inserir">
     </form>    
 
     <a href="listar-departamentos.php" class="btn btn-success"><i class="glyphicon glyphicon-chevron-left"></i> VOLTAR</a>
   </div>
-  
+  <script src="js/form-departamentos.js"></script>
 </body>
 </html>

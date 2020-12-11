@@ -43,7 +43,7 @@ $result = $sql->fetchAll(); # converte em um vetor associativo legivel ao php os
           <td class="text-right">
             <a href="#" class="btn btn-warning"><i class="glyphicon glyphicon-pencil"></i></a>
             <!-- coloquem a seguir o icone da lixeira dentro de um link -->
-            <a href="#" class="btn btn-danger"><i class="glyphicon glyphicon-trash"></i></a>
+            <a onclick="return confirm('Deseja excluir: <?php echo($r['nome']); ?> ?')" href="acao-departamentos.php?acao=excluir&id_departamento=<?php echo($r['id_departamento']); ?>" class="btn btn-danger"><i class="glyphicon glyphicon-trash"></i></a>
           </td>
         </tr>
         <?php
@@ -57,7 +57,6 @@ $result = $sql->fetchAll(); # converte em um vetor associativo legivel ao php os
 
     <a href="index.php" class="btn btn-success"><i class="glyphicon glyphicon-chevron-left"></i> VOLTAR</a>
 
-  </div>
-  
-</body>
+  </div>  
+</body> 
 </html>
