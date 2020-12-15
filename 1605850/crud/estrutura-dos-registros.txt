@@ -1,0 +1,19 @@
+NA LISTAGEM
+SELECT * FROM DEPARTAMENTOS;
+
+$result = [
+  ['id_departamento'=> 0, 'nome' => 'Centro Proc. Dados', 'sigla' => 'CPD'],
+  ['id_departamento'=> 1, 'nome' => 'Depto. Finance', 'sigla' => 'Financ'],
+  [],
+  [],
+  []
+];
+
+NA EDIÇÃO QUANDO PASSAMOS O ID_DEPARTAMENTO TRAZ APENAS UM REGISTRO NO VETOR
+SELECT * FROM DEPARTAMENTOS WHERE ID_DEPARTAMENTO = 0;
+$result = [
+  ['id_departamento'=> 0, 'nome' => 'Centro Proc. Dados', 'sigla' => 'CPD']
+];
+
+echo ($result[0]['nome'])
+['id_departamento'=> 0, 'nome' => 'Centro Proc. Dados', 'sigla' => 'CPD']

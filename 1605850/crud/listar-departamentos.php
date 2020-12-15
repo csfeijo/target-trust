@@ -18,6 +18,17 @@ $result = $sql->fetchAll(); # converte em um vetor associativo legivel ao php os
 <body>
   <div class="container">
     <h1>Departamentos</h1>
+    <?php
+    if ( isset($_GET['msg']) ){
+    ?>
+    <!-- aqui vou ter um HTML que mostra uma mensagem estilizada -->
+    <div class="alert alert-danger">
+      <i class="glyphicon glyphicon-ban-circle"></i> Departamento possui funcionários vinculados, não é possível excluir!
+    </div>
+    <?php
+    }
+    ?>
+
     <hr>
       <a href="form-departamentos.php" class="btn btn-primary"><i class="glyphicon glyphicon-plus"></i> NOVO</a>
     <hr>
@@ -41,7 +52,7 @@ $result = $sql->fetchAll(); # converte em um vetor associativo legivel ao php os
           <td><?php echo($r['nome']); ?></td>
           <td><?php echo($r['sigla']); ?></td>
           <td class="text-right">
-            <a href="#" class="btn btn-warning"><i class="glyphicon glyphicon-pencil"></i></a>
+            <a href="form-departamentos.php?id_departamento=<?php echo($r['id_departamento']); ?>" class="btn btn-warning"><i class="glyphicon glyphicon-pencil"></i></a>
             <!-- coloquem a seguir o icone da lixeira dentro de um link -->
             <a onclick="return confirm('Deseja excluir: <?php echo($r['nome']); ?> ?')" href="acao-departamentos.php?acao=excluir&id_departamento=<?php echo($r['id_departamento']); ?>" class="btn btn-danger"><i class="glyphicon glyphicon-trash"></i></a>
           </td>
@@ -49,9 +60,7 @@ $result = $sql->fetchAll(); # converte em um vetor associativo legivel ao php os
         <?php
         }
         ?>
-
-        
-        
+       
       </tbody>
     </table>
 

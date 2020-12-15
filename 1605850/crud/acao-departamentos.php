@@ -20,32 +20,44 @@ if ( isset($_REQUEST['acao']) ) {
         # agora sim fazemos a inserção no banco de dados
         $sql = $conn->prepare("INSERT INTO DEPARTAMENTOS (nome, sigla) VALUES ('$nome', '$sigla')");
         $sql->execute();      
-
       }
-      # header é ums instrução de cabeçalho http do php
-      # o location é o valor que informa para o servidor qual a pagina que o usuario está
-      # neste caso estamos trocando o valor do location para que o servidor execute um redirecionamento do usuario
-      header('location:listar-departamentos.php');
     break;
     case 'editar':
-      echo('DEVE EDITAR NO BANCO!');
+      # teste se as 3 variaveis necessárias para a edição foram enviadas
+      # id_departamento, nome e sigla
+      if ( isset($_POST['id_departamento']) && isset($_POST['nome']) && isset($_POST['sigla']) ) {
+        $id_departamento = $_POST['id_departamento'];
+        $nome = $_POST['nome'];
+        $sigla = $_POST['sigla'];
+
+        # se vieram todas então monte a estrutura para atualizar o registro no banco de dados
+        # "aquelas duas linhas da query"
+        # UPDATE DEPARTAMENTOS SET NOME = '$nome', SIGLA = '$sigla' WHERE id_departamento = $id_departamento
+        $sql = $conn->prepare("UPDATE DEPARTAMENTOS SET NOME = '$nome', SIGLA = '$sigla'
+                                  WHERE ID_DEPARTAMENTO = $id_departamento");
+        $sql->execute();
+      }
     break;
     case 'excluir':
       # preciso testar se veio o ID do departamento via GET
       if (isset($_GET['id_departamento'])) {
         $id_departamento = $_GET['id_departamento'];
-        # se veio, vou montar a query para o banco
-        $sql = $conn->prepare("DELETE FROM DEPARTAMENTOS WHERE ID_DEPARTAMENTO = $id_departamento");
-        
-        # vou executa-la
-        $sql->execute();
+
+        try {
+          # se veio, vou montar a query para o banco
+          $sql = $conn->prepare("DELETE FROM DEPARTAMENTOS WHERE ID_DEPARTAMENTO = $id_departamento");
+          # vou executa-la
+          $sql->execute();
+        } catch (Exception $excessao) {
+          header('location:listar-departamentos.php?msg=erro');
+          exit;
+        }
       }
-      # vou redirecionar o usuario para a tela de listagem de deptos.
-      header('location:listar-departamentos.php');
     break;
   }
-
+  # header é ums instrução de cabeçalho http do php
+  # o location é o valor que informa para o servidor qual a pagina que o usuario está
+  # neste caso estamos trocando o valor do location para que o servidor execute um redirecionamento do usuario
+  header('location:listar-departamentos.php');
 }
-
-
 ?>
