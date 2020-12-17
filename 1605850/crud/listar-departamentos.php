@@ -1,4 +1,5 @@
 <?php
+include('verifica-sessao.php');
 # como vamos manipular dados do bd precisamos incluir o arquivo de conexao
 include('conexao.php');
 
@@ -16,8 +17,11 @@ $result = $sql->fetchAll(); # converte em um vetor associativo legivel ao php os
   <link rel="stylesheet" href="css/bootstrap.min.css">
 </head>
 <body>
+
+  <?php include('menu.php'); ?>
+
   <div class="container">
-    <h1>Departamentos</h1>
+    <h1>Listar Departamentos</h1>
     <?php
     if ( isset($_GET['msg']) ){
     ?>
@@ -52,9 +56,9 @@ $result = $sql->fetchAll(); # converte em um vetor associativo legivel ao php os
           <td><?php echo($r['nome']); ?></td>
           <td><?php echo($r['sigla']); ?></td>
           <td class="text-right">
-            <a href="form-departamentos.php?id_departamento=<?php echo($r['id_departamento']); ?>" class="btn btn-warning"><i class="glyphicon glyphicon-pencil"></i></a>
+            <a href="form-departamentos.php?id_departamento=<?php echo($r['id_departamento']); ?>" class="btn btn-warning"><i class="fas fa-pencil-alt"></i></a>
             <!-- coloquem a seguir o icone da lixeira dentro de um link -->
-            <a onclick="return confirm('Deseja excluir: <?php echo($r['nome']); ?> ?')" href="acao-departamentos.php?acao=excluir&id_departamento=<?php echo($r['id_departamento']); ?>" class="btn btn-danger"><i class="glyphicon glyphicon-trash"></i></a>
+            <a onclick="return confirm('Deseja excluir: <?php echo($r['nome']); ?> ?')" href="acao-departamentos.php?acao=excluir&id_departamento=<?php echo($r['id_departamento']); ?>" class="btn btn-danger"><i class="fas fa-trash"></i></a>
           </td>
         </tr>
         <?php

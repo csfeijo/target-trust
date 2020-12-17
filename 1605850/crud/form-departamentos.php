@@ -1,4 +1,5 @@
 <?php
+include('verifica-sessao.php');
 include('conexao.php');
 # agora vamos verificar se veio a variavel id_departamento via GET
 # se ela veio é sinal que o usuario clicou no icone do lápis - e deseja editar algum registro
@@ -36,6 +37,9 @@ if ( isset($_GET['id_departamento']) ) {
   <link rel="stylesheet" href="css/bootstrap.min.css">
 </head>
 <body>
+
+  <?php include('menu.php'); ?>
+
   <div class="container">
     <h1><?php echo($titulo); ?> Departamento</h1>
     <hr>

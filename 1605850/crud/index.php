@@ -1,3 +1,6 @@
+<?php
+include('verifica-sessao.php');
+?>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -6,10 +9,12 @@
   <link rel="stylesheet" href="css/bootstrap.min.css">
 </head>
 <body>
+
+  <?php include('menu.php'); ?>
+
   <div class="container">
     <h1>Bem vindo!</h1>
 
-    <a href="listar-departamentos.php" class="btn btn-danger">LISTAR DEPARTAMENTOS</a>
 
   </div>
   
