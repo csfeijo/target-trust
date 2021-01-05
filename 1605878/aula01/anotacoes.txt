@@ -1,0 +1,12 @@
+baby steps => passos de bb
+
+happy path => caminho feliz
+
+*indentação de código
+
+
+VisualG é uma IDE -> interface de desenvolvimento
+
+
+No VisualG TANTO FAZ escrever código em maisc. ou minusc.
+nome ou NOME ou NOmE (tanto faz)

@@ -1,0 +1,14 @@
+Escreva um algoritmo que busque o sobrinho do seu chefe na escola.
+Você vai de carro.
+As aulas do sobrinho são sempre na parte da tarde e de segunda até sexta apenas.
+
+
+SE HOJE NÃO É SABADO E HOJE NÃO É DOMINGO E HOJE NÃO É FERIADO ENTÃO
+  SE PERIODO É TARDE ENTAO
+    ENTRE NO CARRO
+    COLOQUE O CINTO
+    LIGUE O CARRO
+    DIRIJA ATÉ A ESCOLA
+    EMBARQUE O SOBRINHO
+    COLOQUE O CINTO NO SOBRINHO
+    VOLTE PARA CASA
