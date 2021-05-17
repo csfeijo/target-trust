@@ -1,0 +1,13 @@
+body {
+  background: #002244;
+  padding: 80px;
+  color: white;
+  font-family: Arial;
+}
+
+
+.caixa {
+  border: 1px solid white;
+  width: 100px;
+  height: 100px;
+}

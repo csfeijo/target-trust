@@ -1,0 +1,32 @@
+div {
+  border: 1px solid red;
+  height: 20px;
+  margin-bottom: 4px;
+}
+
+div:first-child {
+  background: blue;
+}
+
+div:last-child {
+  background: pink;
+}
+/* acessa o enésimo elemento (passe o valor numero nos parenteses) */
+div:nth-child(5) {
+  background: greenyellow;
+}
+
+
+/* para os p´s */
+p {
+  border: 1px dashed blue;
+  height: 20px;
+}
+/* odd - impar / even - par */
+p:nth-child(odd) {
+  background: brown;
+  border-left: 3px solid blue;
+}
+p:nth-child(even) {
+  background: #cccccc;
+}

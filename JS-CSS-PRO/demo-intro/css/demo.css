@@ -1,0 +1,122 @@
+:root {
+  --largura: 120px;
+  --altura: 120px;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  margin: 0;  
+  background: linear-gradient(#002244, #000);
+  font-family: 'Roboto', sans-serif;
+}
+
+.container {
+  width: 600px;
+  height: 600px;
+  /* border: 1px solid red; */
+  margin: 0 auto;
+  padding: 60px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#cubo {
+  width: var(--largura);
+  height: var(--altura);
+  transform-style: preserve-3d;
+  transition: transform 1s;
+}
+
+.face {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+  width: calc(var(--largura) * 2);
+  height: calc(var(--altura) * 2);
+  position: absolute;
+  top: 0;
+  font-size: 60px;
+  color: #fff;
+  border-radius: 14px;
+}
+
+.frente {
+  background: rgba(90,90,90,0.7);
+  /* background: rgba(0,0,0, 0.9); */
+  transform: translateZ(var(--largura));
+  font-weight: bold;
+  color: #222;
+}
+
+.costas {
+  background: rgba(0,210,0,0.7);
+  transform: rotateY(180deg) translateZ(var(--largura))
+}
+
+.direita {
+  background: rgba(210,0,0,0.7);
+  transform: rotateY(90deg) translateZ(var(--largura))
+}
+
+.esquerda {
+  background: rgba(0,0,210,0.7);
+  transform: rotateY(-90deg) translateZ(var(--largura))
+}
+
+.topo {
+  background: rgba(210,210,0,0.7);
+  transform: rotateX(90deg) translateZ(var(--largura))
+}
+
+.embaixo {
+  background: rgba(210,0,210,0.7);
+  transform: rotateX(-90deg) translateZ(var(--largura))
+}
+
+
+#palco {
+  perspective: 800px;
+}
+
+#cubo {
+  animation-name: rotaciona;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-duration: 10s;
+}
+
+
+
+@keyframes rotaciona {
+  to {
+    transform: rotate3d(1, 1, 1, 360deg);
+  }
+}
+
+
+/* efeitos */
+.noir {
+  color: #222;
+  text-shadow: 0px 2px 3px #666;
+}  
+
+.fire {
+  text-shadow: 0 0 20px #fefcc9,
+               10px -10px 30px #feec85, 
+               -20px -20px 40px #ffae34,
+               20px -40px 50px #ec760c, 
+               -20px -60px 60px #cd4606, 
+               0 -80px 70px #973716, 
+               10px -90px 80px #451b0e;
+
+}
+
+
+

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario 2</title>
+</head>
+
+<body>
+  <!-- POST: os dados são enviados de forma a nao ficarem visiveis -->
+  <!-- na URL do browser, nem no historico, e nem via compartilhamento -->
+  <form action="" method="POST">
+    <!-- maxlength: tamanho maximo -->
+    <!-- size: tamanho da interface -->
+    <!-- value: valor que ja vem o campo preenchido (usado para edicoes) -->
+    <input type="text" name="usuario" placeholder="Usuário" maxlength="10" size="10" value="">
+    <br>
+    <input type="password" name="senha" placeholder="Senha" maxlength="8" size="10">
+    <br>
+    <select name="estado">
+      <option value="00">SELECIONE</option>
+      <option value="RJ">Rio de Janeiro</option>
+      <option value="RS">Rio Grande do Sul</option>
+      <option value="SC">Santa Catarina</option>
+      <option value="SP">São Paulo</option>
+    </select>
+    <br>
+    <!-- só serve para method POST -->
+    <input type="file" name="curriculo">
+    <br>
+
+    <button type="button">UM BOTÃO</button>
+    <button type="reset">LIMPAR</button>
+    <button type="submit">LOGIN</button>
+
+  </form>
+
+
+
+</body>
+
+</html>

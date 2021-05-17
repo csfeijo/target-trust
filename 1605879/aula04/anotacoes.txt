@@ -1,0 +1,23 @@
+URL:
+http://127.0.0.1:5500/aula04/ex-formulario-1.htm
+
+dados via queryString:
+?nome=FEIJO&idade=40
+
+
+Dados enviados via método GET são os valores que ficam visiveis na URL do navegador
+e podem ser compartilhados e mantidos no histórico do browser.
+
+
+Ajax: (quando clicamos em um select e automaticamente carrega-se novas informações)
+Ex. seleciona estado e carregam-se as cidades do respectivo
+Ajax : Asynchronous JavaScript - envolve JS + Back End
+Usa-se Ajax em app RIA : Rich Internet Applications 
+
+
+
+
+Link para abrir o Whatsapp WEB:
+Numero: 55 51 (o seu numero de celular)
+https://api.whatsapp.com/send?phone=5551995220981
+                                    

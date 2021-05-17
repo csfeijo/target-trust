@@ -1,0 +1,32 @@
+Sou dono de um estacionamento de veículos, preciso gerenciar os veículos que
+estacionam na minha garagem.
+Preciso controlar o modelo do veiculo, a potencia do motor, o ano de fabricacao e a placa.
+
+Separe as entidade(s) e os atributo(s) abaixo:
+
+[VEICULOS]
+modelo
+potencia
+ano_fabricacao
+placa
+
+Lembrei que tambem preciso saber qual a fabricante do veiculo cadastrado.
+
+1) Cenário
+[VEICULOS]
+modelo
+potencia
+ano_fabricacao
+placa
+id_fabricante
+
+[FABRICANTES]
+id_fabricante
+nome
+
+
+
+
+
+
+

@@ -1,0 +1,77 @@
+body {
+  background: #002244;
+}
+
+.container {
+  margin-left: 100px;
+  margin-top: 100px;
+  position: relative;
+}
+
+.capa-disco {
+  width: 350px;
+  height: 350px;
+  border: 1px solid red;
+  background: url(../img/capa-disco.png);
+  z-index: 1;
+  position: absolute;
+}
+
+.capa-disco:hover {
+  background: url(../img/miolo.gif);
+  background-size: 100%;
+}
+
+.disco {
+  z-index: 0;
+  position: absolute;
+  left: 80px;
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+  background: radial-gradient(black, #111,
+                              black, #111,
+                              black, #111,
+                              black, #111,
+                              black, #111,
+                              black, #111,
+                              black, #111,
+                              black, #111,
+                              black, #111,
+                              black, #111,
+                              black, #111,
+                              black, #111,
+                              black, #111,
+                              black, #111
+                              );
+}
+
+.miolo {
+  width: 100px;
+  height: 100px;
+  border: 1px solid white;
+  border-radius: 50%;
+  margin: 125px auto;
+  background: url(../img/miolo.gif);
+  background-size: 100%;
+}
+
+.disco:hover {
+  cursor: pointer;
+  left: 250px;
+}
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+

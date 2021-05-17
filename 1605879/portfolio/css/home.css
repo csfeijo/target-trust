@@ -1,0 +1,70 @@
+#redes-sociais a {
+  border: 2px solid var(--cor-menu-hover);
+  display: inline-block;
+  /* normalizamos os tamanhos para deixar os elementos quadrados e uniformes */
+  width: 50px;
+  height: 50px;
+  /* tecnica para transformar um quadrado PERFEITO em um circulo PERFEITO */
+  border-radius: 50%;
+  margin-right: 30px;
+  transition: background 1s;
+}
+
+#redes-sociais a:hover {
+  background: var(--cor-menu-hover);
+  /* nao precisamos colocar o transition no HOVER pois ele ja foi definido no seletor "a" acima */
+  /* transition: background 1s; */
+}
+
+h1 {
+  font-size: 58px;
+
+  animation: cursor_piscando .5s infinite,
+             escrever 3.5s steps(30);
+
+  /* para evitar que as palavras se quebrem entre os espaços */
+  white-space: nowrap;
+  /* evita que o texto apareça mesmo com o elemento pequeno */
+  overflow: hidden;
+  /* força o elemento a aceitar dimensoes e também a posicionar a borda direta exatamente no final do conteudo */
+  display: inline-block;
+}
+
+@keyframes cursor_piscando {
+  from,
+  to {
+    border-right: 6px solid white;
+  }
+  50% {
+    border-right: none;
+  }
+}
+
+@keyframes escrever {
+  from {
+    width: 0;
+  }
+  to {
+    width: 580px;
+  }
+}
+
+
+
+
+.polaroid {
+  width: 80%;
+  background: white;
+  padding: 10px 10px 80px 10px;
+  /* valores: X Y BLUR SPREAD COR */
+  box-shadow: 4px 4px 20px 4px var(--fundo-escuro);
+  transform: rotate(15deg);
+}
+
+
+
+
+
+
+
+

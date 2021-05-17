@@ -1,0 +1,65 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfólio do Feijó</title>
+  <link rel="stylesheet" href="css/geral.css">
+  <link rel="stylesheet" href="css/contato.css">
+  <link rel="stylesheet" href="css/responsivo.css">
+</head>
+
+<body>
+  <header>
+    <div>
+      <img src="img/logotipo.png" alt="Logotipo" class="logotipo">
+
+      <a href="#" id="burger">
+        <div></div>
+        <div></div>
+        <div></div>
+      </a>
+
+
+      <nav id="menu">
+        <a href="index.htm">Home</a>
+        <a class="ativo" href="contato.htm">Contato</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- este elemento vai ABRAÇAR a section e centraliza-la na tela verticalmente -->
+  <div class="container">
+    <section>
+      <!-- Coluna com os campos do formulário -->
+      <aside>
+        <!-- No evento de onsubmit usamos o return antes da NOSSA funcao para "perguntar para ela"  -->
+        <!-- se o envio DEVE ou NAO prosseguir -->
+        <form action="" onsubmit="return validaForm()">
+          <input type="text" name="nome" id="nome" placeholder="digite o seu nome">
+          <input type="text" name="email" id="email" placeholder="digite o seu e-mail">
+          <textarea name="mensagem" id="mensagem" placeholder="digite sua mensagem"></textarea>
+
+          <span id="erro"></span>
+          <button type="submit">ENVIAR</button>
+
+
+        </form>
+      </aside>
+      <!-- Coluna com o mapa -->
+      <aside>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3454.6775992044813!2d-51.19392314890686!3d-30.017412481803373!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x951979c56d0e03b1%3A0xcc4ea47f1ca6dd2e!2sTargetTrust!5e0!3m2!1spt-BR!2sbr!4v1601914380508!5m2!1spt-BR!2sbr"
+          allowfullscreen=""></iframe>
+      </aside>
+
+    </section>
+  </div>
+
+
+
+  <script src="js/menu.js"></script>
+  <script src="js/contato.js"></script>
+</body>
+
+</html>

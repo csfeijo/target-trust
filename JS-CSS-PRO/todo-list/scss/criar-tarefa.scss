@@ -1,0 +1,22 @@
+.criar-tarefa {
+  border: 1px solid $cinza-claro;
+  border-radius: 8px;
+  margin: 10px auto;
+  padding: 10px;
+
+  box-shadow: 4px 4px 10px 0 $cinza-claro;
+
+  width: 400px;
+
+  display: flex;
+  align-items: center;
+  justify-items: center;
+
+  input {
+    font-size: 16px;
+    border: 0;
+    padding: 4px;
+    outline: none;
+    width: 100%;
+  }
+}

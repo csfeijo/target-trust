@@ -1,0 +1,38 @@
+// Variaveis
+@import 'vars';
+
+@mixin bolinha-ou-quadrado($bolinha: false) {
+  background: red;
+  
+  @if $bolinha {
+    border-radius: 50%;
+  } else {
+    border-radius: 0;
+  }
+}
+
+body {
+  div {
+    width: 200px;
+    height: 200px;
+
+    @include bolinha-ou-quadrado($bolinha: true);
+  }
+}
+
+body {
+  font-family: $fonte;
+  background: $fundo;
+  color: $cor;
+
+  h3 {
+    font-size: $fonte-tamanho;
+    
+  }
+
+  p {
+    &.destaque {
+      font-style: italic;
+    }
+  }
+}

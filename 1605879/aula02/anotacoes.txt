@@ -1,0 +1,16 @@
+
+Bread Crumb : caminho de pães - sequencia de links que permite o usuário retornar a navegação
+Ex.:
+HOME / Eletro / Ar Condicionado
+
+
+Imagens:
+JPG / JPEG  (fidelidade de cores mas sem animação, nao suporta fundo transparente)
+GIF - animar (porem tem limite de cores, suporta fundo transparente)
+PNG - suporta fidelidade de cores, e suporte fundo transparente
+BMP - pode usar, mas é muito pesado
+TIFF - gigantesco em tamanho
+WEBP - web picture / formato que está sendo desenvolvido em parceiria com o Google para ser mais leve,
+       e tão fiel quanto JPG
+       Ex.: Mercado Livre / E-Bay
+

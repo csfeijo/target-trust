@@ -1,0 +1,14 @@
+JavaScript:
+- Surgiu em meados dos anos 90 - dentro da Netscape Navigator
+- Criado por Brendan Eich
+- O nome veio a cargo da linguagem Java (JavaScript não tem nada haver com Java) que era uma linguagem que estava
+  se popularizando na epoca e logicamente para chamar atenção deram o nome de JavaScript.
+- A MS disponibilizou uma linguagem "identica" ao JS porém com acesso a controles Active X.
+
+
+Existe o JavaScript client-side (que é o que veremos) e existe também o JavaScript Server-side chamado NodeJS.
+A principal diferença é que o NodeJS se baseia na linguagem ECMAScript e tem atualizações constantes, já o JS
+do navegador precisa / depende que o browser esteja atualizado para receber a atualização, e alem disso dependemos que
+os outros navegadores utilizados pelos usuario também suportem essas atualizações.
+
+A linguagem JS é uma linguagem FUNCIONAL e PROTOTIPADA (prototype) - tudo dentro do JS é um objeto.

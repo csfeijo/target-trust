@@ -1,0 +1,19 @@
+algoritmo "ex-funcao-1"
+
+var
+
+FUNCAO SOMAR(NUM1, NUM2: INTEIRO):INTEIRO
+INICIO
+  // TUDO QUE ESTIVER AQUI DENTRO FAZ PARTE APENAS DA FUNCAO
+  RETORNE NUM1 + NUM2
+FIMFUNCAO
+
+
+
+
+inicio
+
+
+
+
+fimalgoritmo

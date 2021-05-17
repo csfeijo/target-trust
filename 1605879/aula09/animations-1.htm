@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    div {
+      border: 2px solid purple;
+      width: 120px;
+      height: 120px;
+      margin: 0 auto;
+    }
+
+    #exemplo-1 {
+      /* o minimo necessario para aplicar a animação é: */
+      animation-name: animacao;
+      animation-duration: 2s;
+
+      /* mas podemos configurar outras opções */
+      animation-iteration-count: infinite;
+      animation-direction: alternate;
+    }
+
+    @keyframes animacao {
+
+      /* para: objetivo final da animacao */
+      to {
+        background: green;
+        border-radius: 50%;
+      }
+    }
+
+    #exemplo-2 {
+      animation-name: animacao-2;
+      animation-duration: 4s;
+      animation-iteration-count: infinite;
+      animation-direction: alternate;
+    }
+
+    @keyframes animacao-2 {
+      25% {
+        width: 400px;
+        background: yellow;
+      }
+
+      50% {
+        height: 400px;
+        background: violet;
+      }
+
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div id="exemplo-1"></div>
+  <div id="exemplo-2"></div>
+
+</body>
+
+</html>

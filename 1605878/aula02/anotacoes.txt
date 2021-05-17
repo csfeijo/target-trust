@@ -1,0 +1,27 @@
+Nomes das variaveis DEVEM começar com caract. alfabéticos
+PODE
+nome
+idade
+endereco
+nome1
+salario
+nome_completo
+_logradouro
+
+NAO PODE
+endereço
+1nome
+$salario
+123
+
+Links de hoje:
+
+Defeito em software causou incêndio no Onix, diz vice da GM
+https://www1.folha.uol.com.br/mercado/2019/11/defeito-em-software-causou-incendio-no-onix-diz-vice-da-gm.shtml
+
+O hífen que destruiu um foguete da NASA
+https://gizmodo.uol.com.br/hifen-nasa/
+
+O código fonte da Apollo 11 está disponível online e é cheio de piadas
+https://gizmodo.uol.com.br/codigo-fonte-apollo-11-piadas/
+

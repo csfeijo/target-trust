@@ -1,0 +1,27 @@
+CSS: Cascading Style Sheet
+
+O CSS trabalha com regras (rules):
+
+Syntaxe:
+propriedade : valor;
+color:red;
+
+SELETORES EM CSS:
+Seletor via TAG
+Ex.:
+body {
+  background: red;
+}
+
+Para Seletores de ID´s e Classes evite usar nomes vinculados a formatação.
+Ex.: preto10, vermelho24, azul12;
+
+TODA estrutura HTML em CSS é um modelo de caixa (box-model)
+
+Para evitar o uso excessivo de tabelas, e dar uma melhor autonomia para o CSS foram criadas duas tags:
+- DIV : divisor (não aceita nativamente nenhum elemento ao seu lado - ocupa toda a linha)
+- SPAN : expansível (se expande conforme o conteúdo dentro de si)
+
+
+
+

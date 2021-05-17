@@ -1,0 +1,2 @@
+IFRAMES: normalmente servem para incluir conteúdo externo com algum tipo de atrativo mais complexo.
+Quando inserimos uma funcionalidade que não foi implementada dentro da nossa aplicação atribuimos o nome de WIDGET.

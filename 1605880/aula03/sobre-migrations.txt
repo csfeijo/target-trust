@@ -1,0 +1,19 @@
+CLIENTES
+nome    telefone1    telefone2 
+Cicero  3333.2222    2222.3333
+Jose    1111.2222    1111.5555
+Paulo   2222.5555
+
+PROCESSO DE MIGRATION (atualização do banco de dados)
+
+- Criar uma tabela nova chamada TELEFONES
+  - id_telefone
+  - numero
+  - id_cliente
+  
+- Selecionar os telefones dos clientes e os id_cliente
+ e insere os dados na tabela de telefones NOVA
+
+- Por fim remove os campos telefone1 e telefone2 da tabela de CLIENTES
+
+

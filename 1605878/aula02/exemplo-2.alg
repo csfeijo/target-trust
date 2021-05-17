@@ -1,0 +1,16 @@
+algoritmo "EXEMPLO-2"
+
+var
+NOME: CARACTERE
+IDADE :INTEIRO
+
+inicio
+
+ESCREVAL("DIGITE O SEU NOME:")
+LEIA(NOME)
+
+ESCREVAL("DIGITE SUA IDADE")
+LEIA(IDADE)
+
+
+fimalgoritmo

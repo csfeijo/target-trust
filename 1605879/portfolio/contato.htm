@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfólio</title>
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="css/geral.css">
+  <link rel="stylesheet" href="css/contato.css">
+  <link rel="stylesheet" href="css/responsivo.css">
+</head>
+
+<body>
+  <header>
+    <div>
+      <img src="img/logotipo.png" alt="Logotipo">
+
+      <!-- construcao do menu hamburger (mobile) -->
+      <a href="#" id="burger">
+        <div></div>
+        <div></div>
+        <div></div>
+      </a>
+
+      <!-- construcao do menu -->
+      <nav id="menu">
+        <a href="index.htm">Home</a>
+        <a href="contato.htm" class="ativo">Contato</a>
+      </nav>
+    </div>
+  </header>
+  <!-- conteúdo da seção do site -->
+  <div class="container">
+    <!-- section : significa uma seção do site -->
+    <section>
+      <!-- aside: coluna / coluna lateral -->
+      <aside>
+        <!-- aqui ficará nosso formulário -->
+        <!-- onsubmit precisa do "return" para repassar para o formulario se ele deve ou nao prosseguir com o envio -->
+        <form action="" method="POST" onsubmit="return validaForm()">
+          <input type="text" placeholder="Digite seu nome" name="nome" id="nome">
+          <input type="text" placeholder="Digite o seu e-mail" name="email" id="email">
+          <textarea placeholder="Digite a mensagem" name="mensagem" id="mensagem"></textarea>
+          <span id="erro"></span>
+          <button type="submit">ENVIAR</button>
+        </form>
+      </aside>
+
+      <aside>
+        <!-- aqui virá o nosso mapa -->
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3454.6775992044736!2d-51.19392314927649!3d-30.017412481803362!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x951979c56d0e03b1%3A0xcc4ea47f1ca6dd2e!2sTargetTrust%20Treinamento%20e%20Tecnologia!5e0!3m2!1spt-BR!2sbr!4v1614036279787!5m2!1spt-BR!2sbr"
+          allowfullscreen="" loading="lazy"></iframe>
+      </aside>
+
+    </section>
+  </div>
+
+
+  <script src="js/contato.js"></script>
+</body>
+
+</html>

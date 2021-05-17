@@ -1,0 +1,23 @@
+algoritmo "EXERCICIO-EXTRA-2"
+// Implemente um algoritmo que leia um numero
+// e informe se o numero é par ou impar
+var
+// USAMOS A VARIAVEL COMO INTEIRO DEVIDO A UMA LIMITAÇÃO DO VISUALG (PASCAL)
+// MAS EM TODAS OUTRAS LINGUAGENS ISSO NÃO É NECESSÁRIO
+NUM: INTEIRO
+
+
+inicio
+
+ESCREVAL("DIGITE O NUMERO")
+LEIA(NUM)
+
+// VERIFICA O "RESTO" DA DIVISAO
+SE (NUM MOD 2 = 0) ENTAO
+   ESCREVAL("O NUMERO É PAR")
+SENAO
+   ESCREVAL("O NUMERO É IMPAR")
+FIMSE
+
+
+fimalgoritmo

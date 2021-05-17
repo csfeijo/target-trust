@@ -1,0 +1,22 @@
+algoritmo "REPETICOES-5"
+
+var
+CONT: INTEIRO
+
+inicio
+
+// CONT <- CONT + 2
+
+//PARA CONT DE 1 ATE 10 PASSO 2 FACA
+//  ESCREVAL("FEIJO ", CONT)
+//FIMPARA
+
+
+PARA CONT DE 10 ATE 1 PASSO -1 FACA
+   ESCREVAL(CONT)
+FIMPARA
+
+
+
+
+fimalgoritmo

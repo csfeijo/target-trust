@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "nome": "TV",
+    "preco": 5299.66,
+    "imagem": "img/produtos/tv.png"
+  },
+  {
+    "id": 2,
+    "nome": "Celular",
+    "preco": 1000.00,
+    "imagem": "img/produtos/celular.png"
+  },
+  {
+    "id": 3,
+    "nome": "Video Game",
+    "preco": 5556.66,
+    "imagem": "img/produtos/videogame.png"
+  },
+  {
+    "id": 4,
+    "nome": "Geladeira",
+    "preco": 14555.36,
+    "imagem": "img/produtos/geladeira.png"
+  },
+  {
+    "id": 5,
+    "nome": "Relógio",
+    "preco": 859.66,
+    "imagem": "img/produtos/relogio.png"
+  },
+  {
+    "id": 6,
+    "nome": "Fogão",
+    "preco": 655.12,
+    "imagem": "img/produtos/fogao.png"
+  }
+]

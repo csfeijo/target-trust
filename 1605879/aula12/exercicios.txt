@@ -1,0 +1,16 @@
+Exercício 1:
+Crie um arquivo html chamado exercicio.htm e um arquivo JavaScript para ser usado dentro dele.
+
+Implemente dentro do JS um vetor de funcionarios.
+Ex.
+Cícero Feijó
+Ana Paulo
+Paulo José
+João Pereira
+
+Liste os vetores no console do browser usando o console.log
+
+Exercício 2:
+Crie um arquivo .htm e um .js e:
+Implemente um vetor com 5 números quaisquer.
+Liste no console do browser usando estrutura de repetição SOMENTE os números impares.

@@ -1,0 +1,77 @@
+<script>
+
+  // Primitivos
+  var matricula = 1234;
+  var aluno = 'Cícero Feijó';
+  var formado = false;
+  var endereco;
+  undefined;
+
+  // Objetos
+  var cursos = ['HTML', 'CSS', 'JS'];
+
+  function ola() {
+    return 'Ola!';
+  }
+
+  var dataAtual = new Date();
+  var regExp = /[a-z]/g;
+  var exc = new Error;
+
+  // Booleanos / Falsy
+  // se a variavel for este valor na condicional será considerada como falsa
+  var a = false;
+  var b = 0;
+  var c = "";
+  var d;
+  var e = undefined;
+  var f = NaN;
+
+  // Booleanos / Truthy
+  // se a variavel for este valor na condicional será considerada como verdadeira
+  var g = "false";
+  var h = "0";
+  var i = function () { };
+  var j = [];
+  var i = {};
+
+  // truques com operadores
+  !!false // -> false
+  !!NaN // -> false
+  !!{} // -> true
+  !!function () { } // -> true
+
+  // tipo null
+  var cidade = null;
+
+  // tipo undefined
+  var pais;
+  console.log(pais);
+
+  // construtores
+  var data = new Date();
+
+  var dia = data.getDate();
+  var mes = data.getMonth();
+  var ano = data.getFullYear();
+
+  var dataNascimento = new Date("1981-09-22");
+
+  var diaNascimento = dataNascimento.getDate();
+  var mesNascimento = dataNascimento.getMonth();
+  var anoNascimento = dataNascimento.getFullYear();
+
+  // Objetos literais
+  var produto = {};
+  produto.nome = 'Televisão';
+  produto.preco = 5236.99;
+  produto.marca = 'Samsung';
+
+  produto.tamanhos = [42, 43, 50, 65, 80];
+
+
+
+
+
+
+</script>

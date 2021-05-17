@@ -1,0 +1,21 @@
+Entidades no plural e em maisuculo
+Atributos (caracteristicas) em minusculo e no singular
+Não se nomeia nem a entidade e nem os atributos com caracteres especiais
+(acentos, $,%,&, " "etc) - inclusive espaço.
+Exemplo para nomes compostos de atributos:
+
+- data_nascimento (é o mais usual)
+- dataNascimento
+- dtN
+
+[BD_ESCOLA]
+
+[ALUNOS]
+nome
+sobrenome
+data nascimento
+genero
+
+[PROFESSORES]
+nome
+sobrenome

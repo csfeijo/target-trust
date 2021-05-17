@@ -1,0 +1,5 @@
+Os efeitos de animação em CSS basicamente se dividiram em 3 etapas:
+
+- transform
+- transition
+- keyframes

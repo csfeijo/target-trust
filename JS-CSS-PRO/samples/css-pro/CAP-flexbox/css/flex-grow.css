@@ -1,0 +1,39 @@
+.container {
+  border: 1px solid purple;
+  width: 200px;
+  height: 400px;
+  background: purple;
+
+  display: flex
+}
+
+.container div {
+  /* substitui o width ? */
+  /* flex-basis: 80px; */
+  background: orange;
+  width: 50px;
+  border: 2px solid red;
+  height: 100px;
+  
+}
+
+.container .box-a {
+  flex-grow: 0;
+  order: 2;
+}
+
+.container .box-b {
+  flex-grow: 1;
+  order: 0;
+}
+
+.container .box-c {
+  flex-grow: 0;
+  order: 1;
+}
+
+.outro-box {
+  border: 2px solid orange;
+  height: 100px;
+  /* flex-shrink: 2; */
+}

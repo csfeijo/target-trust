@@ -1,0 +1,22 @@
+algoritmo "EX-1-CAP-7-V2"
+
+var
+NUM: INTEIRO
+
+inicio
+
+ESCREVAL("DIGITE UM NUMERO INTEIRO")
+LEIA(NUM)
+
+SE (NUM < 10) ENTAO
+   ESCREVAL("É MENOR QUE 10")
+SENAO
+   SE (NUM = 10) ENTAO
+      ESCREVAL("É IGUAL A 10")
+   SENAO
+      ESCREVAL("É MAIOR QUE 10")
+   FIMSE
+FIMSE
+
+
+fimalgoritmo

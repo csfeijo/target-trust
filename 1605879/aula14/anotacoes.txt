@@ -1,0 +1,6 @@
+Expressões Regulares: Regex (Regular Expressions)
+São expressões formais que permitem validar regras de caracteres sobre um valor. 
+
+Ex.:
+99522-0981
+

@@ -1,0 +1,20 @@
+<script>
+  function maiorQueDez(numero) {
+    if (typeof (numero) != 'number') {
+      throw {
+        name: 'Excecao numerica',
+        message: 'Argumento devem ser um numero!'
+      };
+    }
+
+    return numero > 10;
+  }
+
+
+  try {
+    console.log(maiorQueDez("XYZ"));
+  } catch (e) {
+    console.error('Gerou uma exception', e);
+  }
+  console.log('Continua...');
+</script>

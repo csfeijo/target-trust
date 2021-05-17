@@ -1,0 +1,47 @@
+:root {
+  --bg-page: #002244;
+  --btn-bg: white;
+  --btn-bg-hover: #999;
+  --btn-text: white;
+}
+html, body {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  background: var(--bg-page);
+}
+body {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+}
+.btn {
+  color: var(--btn-bg);
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  text-decoration: none;
+  margin: 1rem;
+  padding: 0.5rem;
+  border: 2px solid var(--btn-bg);
+  border-radius: 0.5rem;
+  position: relative;
+  top: 0;
+  transition: all 300ms ease-in-out;
+  box-shadow: 0 0.6em var(--btn-bg), 0 0.9em rgba(0, 0, 0, 0.4);
+}
+
+.btn:hover {
+  background: var(--btn-bg);
+  color: var(--bg-page);
+}
+
+.btn.b-3:hover {
+  top: -0.5em;
+  box-shadow: 0 0.6em var(--btn-bg-hover), 0 1.3em rgba(0, 0, 0, 0.4);
+}
+
+.btn.b-3:active {
+  top: 0.4em;
+  box-shadow: 0 0.2em var(--btn-bg-hover), 0 0.5em rgba(0, 0, 0, 0.4);
+}

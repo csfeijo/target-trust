@@ -1,0 +1,24 @@
+.container {
+  border: 1px solid purple;
+  width: 200px;
+  height: 400px;
+  background: purple;
+
+  display: flex
+}
+
+.container div {
+  background: orange;
+  border: 2px solid red;
+  height: 100px;
+  flex-grow: 1;
+
+  
+}
+
+.container .box-a {
+  flex-basis: 1;
+}
+.container .box-b {
+  flex-basis: 0;
+}

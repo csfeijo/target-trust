@@ -1,0 +1,14 @@
+[
+  {
+    "nome": "TV",
+    "preco": 5299.66
+  },
+  {
+    "nome": "Celular",
+    "preco": 1000.00
+  },
+  {
+    "nome": "Video Game",
+    "preco": 5556.66
+  }
+]

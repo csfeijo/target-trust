@@ -1,0 +1,89 @@
+@media screen and (max-width: 1170px) {
+  /* podemos ter outros breakpoints para outras resoluções com a finalidade de evitar scroll por exemplo */
+}
+
+/* SEMPRE aplique as media queries da resolução MAIOR para a MENOR */
+@media screen and (max-width: 900px) {
+  /* tudo que vai aqui embaixo é seletor CSS */
+  header div {
+    width: 100%;
+  }
+    
+  header div img {
+    margin-left: 10px;
+  }
+
+  #burger {
+    display: block;
+  }
+
+  #menu {
+    display: none;
+  }
+
+  /* SOLUÇÃO DO RESPONSIVO */
+  #menu.responsivo {
+    display: block;
+    float: none;
+  }
+  #menu.responsivo a {
+    display: block;
+    text-align: center;
+  }
+
+  /* conteudo do site */
+  .container {
+    width: 100%;
+  }
+
+  section {
+    width: 100%;
+    padding: 14px;
+  }
+
+  h1 {
+    font-size: 28px;
+    animation: none;
+  }
+
+  p {
+    font-size: 14px;
+  }
+
+  aside {
+    width: 100% !important;
+    text-align: center;
+    margin: 0 !important;
+  }
+
+  .polaroid {
+    width: 40%;
+    padding: 2px;
+    transform: none;
+    border-radius: 50%;
+  }
+
+  /* === contato === */
+  iframe {
+    display: none;
+  }
+  input,
+  textarea {
+    width: 90%;
+  }
+  button {
+    float: none;
+  }
+  #erro {
+    display: block;
+    margin-bottom: 20px;
+    height: 25px;
+  }
+  
+
+
+
+
+
+
+}

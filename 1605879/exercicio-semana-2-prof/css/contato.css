@@ -1,0 +1,40 @@
+body {
+  background: #0096D6;
+}
+
+h1 {
+  color: white;
+}
+
+.conteudo {
+  border: 1px dashed white;
+  width: 400px;
+  padding: 10px;
+  color: white;
+}
+
+input {
+  width: 378px;
+  padding: 8px;
+  margin-bottom: 10px;
+}
+
+textarea {
+  width: 380px;
+  height: 200px;
+  margin-bottom: 10px;
+  padding: 8px;
+}
+
+.aceito {
+  width: auto;
+}
+
+button {
+  color: white;
+  width: 400px;
+  padding: 10px;
+  background: #0096D6;
+  border: 2px solid white;
+  margin-top: 20px;
+}

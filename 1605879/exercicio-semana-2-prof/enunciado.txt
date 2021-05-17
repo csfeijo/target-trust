@@ -1,0 +1,7 @@
+Desenvolva a página em anexo usando HTML e CSS conforme visto na aula:
+
+- O código da cor de fundo é #0096D6;
+- A largura do quadrado é de 400px aproximadamente.
+
+Aqui tem um exemplo / sugestão de HTML que vocês podem seguir:
+https://pastebin.com/vm0GcyLq

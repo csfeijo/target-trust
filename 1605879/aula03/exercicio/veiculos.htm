@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Veículos</title>
+</head>
+
+<body>
+  <!-- uso de tabelas -->
+  <table border="2">
+    <!-- cabeçalho da tabela -->
+    <thead>
+      <tr>
+        <th>Modelo</th>
+        <th>Fabricante</th>
+        <th>Ano</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <!-- agora criamos uma LINHA na tabela -->
+      <!-- table row : tr (linha da tabela) -->
+      <tr>
+        <!-- celula : dado -->
+        <!-- table data : td (dado da tabela / coluna)-->
+        <td>
+          Prisma
+        </td>
+        <!-- row span : expansão em linha -->
+        <!-- informe o total de linhas a qual deve se expandir -->
+        <td rowspan="2">
+          Chevrolet
+        </td>
+        <td>
+          2015
+        </td>
+      </tr>
+      <!-- adicione um novo veículo : Onyx - Chevrolet - 2020 -->
+      <tr>
+        <td>Onyx</td>
+        <!-- linha comentada MAS deve ser removida -->
+        <!-- já que na linha 33 mandamos a celula se expandir para baixo (rolspan) -->
+        <!-- não precisamos mais desta celula a seguir -->
+        <!-- <td>Chevrolet</td> -->
+        <td>2020</td>
+      </tr>
+      <!-- adicione um novo veiculo : C4 - Citroen - 2019 -->
+      <tr>
+        <td>C4 Cactus</td>
+        <td>Citroen</td>
+        <td>2019</td>
+      </tr>
+    </tbody>
+    <!-- rodapé da tabela -->
+    <tfoot>
+      <tr>
+        <!-- expansão da coluna : col span (coluna expandida) -->
+        <!-- sempre coloque o valor que ele deve valor no TOTAL -->
+        <td colspan="3">
+          * modelos podem variar sem aviso prévio
+        </td>
+      </tr>
+    </tfoot>
+  </table>
+
+
+</body>
+
+</html>

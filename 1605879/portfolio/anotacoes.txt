@@ -1,0 +1,22 @@
+O nosso projeto terá um site map (estrutura de pastas) conforme a seguir:
+
+portfolio (pasta raiz - conhecida como "root folder")
+  - css
+    - geral.css 
+    - home.css
+    - contato.css
+  - fonts
+  - img
+  - js
+  index.htm
+  contato.htm
+
+
+Mas no HTML5 - surgiram novas tags com o MESMO papel da DIV, porém com significado SEMANTICO
+
+MAIN (principal / não é muito usada)
+HEADER (cabeçalhos)
+SECTION (seções)
+ASIDE (conteúdos nas laterais)
+NAV (navegação / menus)
+FOOTER (rodapés)

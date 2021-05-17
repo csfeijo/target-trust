@@ -1,0 +1,25 @@
+*Projeto de conclusão do curso Desenvolvedor PP*
+
+Implementação do CRUD de Funcionários dentro do Sistema iniciado em Integração Front-End com Banco de Dados.
+
+*Dicas de fluxo:*
+
+- Primeiro : Listagem de funcionários
+- Segundo  : Inserção de funcionários
+- Terceiro : Exclusão de funcionários
+- Final    : Edição de funcionários
+
+Baseiem-se em clonar os arquivos de Departamentos, mas seguindo a ordem proposta.
+E só clonando o proximo arquivo depois de ter concluído a operação anterior.
+
+Lembre-se que:
+* Vocês podem ter MAIS um de uma query por TELA.
+* Vocês podem usar SQL JOINS no PHP se quiserem.
+
+Nossos encontros de mentoria sobre o projeto serão nos seguintes dias:
+*20/04* - 19hr à 20hr
+*27/04* - 19hr à 20hr
+*04/05* - 19hr à 20hr
+*11/05* - 19hr à 20hr
+
+O prazo para entrega do trabalho é no dia *17/05*.

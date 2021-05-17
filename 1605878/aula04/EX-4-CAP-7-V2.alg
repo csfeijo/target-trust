@@ -1,0 +1,42 @@
+algoritmo "EX-2-CAP-7"
+
+var
+IDADE: INTEIRO
+IDADE_INFANTIL_A_INI : INTEIRO
+IDADE_INFANTIL_A_FIM : INTEIRO
+
+inicio
+
+IDADE_INFANTIL_A_INI <- 5
+IDADE_INFANTIL_A_FIM <- 7
+
+ESCREVAL("DIGITE A IDADE:")
+LEIA(IDADE)
+
+SE (IDADE >= IDADE_INFANTIL_A_INI) E (IDADE <= IDADE_INFANTIL_A_FIM) ENTAO
+   ESCREVAL("INFANTIL A")
+SENAO
+   SE (IDADE >= 8) E (IDADE <= 10) ENTAO
+      ESCREVAL("INFANTIL B")
+   SENAO
+      SE (IDADE >= 11) E (IDADE <= 13) ENTAO
+         ESCREVAL("JUVENIL A")
+      SENAO
+         SE (IDADE >= 14) E (IDADE <= 17) ENTAO
+            ESCREVAL("JUVENIL B")
+         SENAO
+            SE (IDADE >= 18) ENTAO
+               ESCREVAL("ADULTO")
+            SENAO
+               ESCREVAL("CATEGORIA NAO ENCONTRADA!")
+            FIMSE
+         FIMSE
+      FIMSE
+   FIMSE
+FIMSE
+
+
+
+
+
+fimalgoritmo

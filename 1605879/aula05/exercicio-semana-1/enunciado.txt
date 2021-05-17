@@ -1,0 +1,7 @@
+Implemente em HTML uma página de produtos seguindo a interface em anexo.
+DICA:
+- Não se preocupe com ajustes da interface (faremos isso no futuro com CSS)
+- Procure imagens parecidas com a do exemplo do site "iconfinder.com"
+- O campo selecione possui a opções: Frios, Cereais e Bebidas
+- O formulário não precisa enviar os dados para lugar algum pois não temos um back-end.
+- Os links do final da página precisam abrir em uma nova aba.

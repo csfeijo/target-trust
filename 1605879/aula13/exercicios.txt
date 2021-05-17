@@ -1,0 +1,20 @@
+Implemente um HTML / JS que contenha 3 divs dentro do HTML, e que possua uma função que deve ser atribuida 
+ao clique duplo do mouse em um botao.
+
+Ao clicar nesse botão TODAS as divs da pagina deverão se transformar em quadrados com o texto 
+"FUNCIONOU" dentro de cada uma.
+
+---------------------
+Para depois (exercício de casa se quiser)
+Implemente um HTML que contenha dois botoes no topo.
+Um chamado FRUTAS e outro chamado CARROS.
+
+Abaixo deles voce terá duas DIV´s:
+- uma com uma lista de FRUTAS 
+- outra com uma lista de CARROS
+- ambas DIV´s estão ocultas via CSS (display:none);
+
+Ao clicar no botão FRUTAS deve-se mostrar a lista de FRUTAS
+Ao clicar no botão CARROS deve-se mostrar a lista de CARROS
+
+Sempre que mostrar uma lista, deve-se esconder a outra.

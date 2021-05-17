@@ -1,0 +1,81 @@
+﻿
+Para melhorar o ranking de busca do seu site, utiliza-se a tecnica do SEO:
+Search Engine Optimization
+
+
+Site com conteúdo gratuíto para Front-End
+https://www.freecodecamp.org/learn
+
+Ícones:
+https://www.iconfinder.com/
+
+Sobre HTML5:
+https://caniuse.com/
+
+Sobre CSS:
+http://www.csszengarden.com/
+
+Layouts:
+https://www.uistore.design/types/figma/
+
+Fontes customizadas:
+https://www.cufonfonts.com/
+
+
+Place holders:
+http://lipsum.com
+https://mussumipsum.com/
+
+CSS:
+https://pattle.github.io/simpsons-in-css/
+
+
+=== JavaScript ===
+https://experiments.withgoogle.com/collection/chrome
+https://www.youtube.com/watch?v=fxm8cadCqbs
+https://js-dos.com/DOOM/
+
+
+=== Desafios e repositórios interessantes ===
+https://cssbattle.dev/
+https://github.com/kamranahmedse/developer-roadmap
+https://github.com/sindresorhus/awesome
+
+=== Eventos em JS ===
+Eventos comuns:
+https://www.w3schools.com/js/js_events.asp
+
+Eventos completos:
+https://www.w3schools.com/tags/ref_eventattributes.asp
+
+
+Regex:
+http://aprenda.vidageek.net/aprenda/regex
+https://medium.com/@igorrozani/criando-uma-express%C3%A3o-regular-para-telefone-fef7a8f98828
+https://www.devmedia.com.br/validando-formularios-usando-regular-expression/12042
+https://medium.com/@alexandreservian/regex-um-guia-pratico-para-express%C3%B5es-regulares-1ac5fa4dd39f
+
+Favicon:
+https://www.favicon-generator.org/
+
+Vagas
+https://compasso.gupy.io/
+Globo.com
+Sicredi
+TW
+TOTVS
+4All
+South System
+E-Core
+SAP
+HP 
+Estagiar (Dell)
+Instituto Eldorado
+Site de Vagas da TT 
+
+
+
+
+
+
+

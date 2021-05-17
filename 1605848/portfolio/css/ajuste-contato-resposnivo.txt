@@ -1,0 +1,19 @@
+adicionar o responsivo.css no contato.html
+trazer o html do burger menu
+
+e add essas regras abaixo:
+
+input,
+textarea {
+  width: 80%;
+  display: block;
+  margin: 0 auto 10px auto;
+}
+
+button {
+  float: none;
+}
+
+iframe {
+  display: none;
+}

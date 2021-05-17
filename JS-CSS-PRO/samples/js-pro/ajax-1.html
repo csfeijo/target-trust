@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ajax</title>
+</head>
+
+<body>
+  <button id="btn">REQUEST</button>
+
+  <script>
+    function carregaInformacao() {
+      var httpRequest = new XMLHttpRequest();
+
+      httpRequest.onload = recebeDados;
+      httpRequest.onprogress = carregando;
+      httpRequest.onerror = carregando;
+      httpRequest.onabort = carregando;
+
+      httpRequest.open('GET', 'produtos.html', true);
+      httpRequest.send(null);
+    }
+
+    function recebeDados() {
+      console.log(this.responseText);
+    }
+
+    function carregando() {
+      console.log('Carregando.....');
+    }
+
+
+
+    var btn = document.getElementById('btn');
+    btn.onclick = carregaInformacao;
+
+
+
+
+  </script>
+
+</body>
+
+</html>

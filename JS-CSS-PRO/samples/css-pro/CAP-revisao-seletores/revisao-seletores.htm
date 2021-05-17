@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body {
+      background: #002244;
+      padding: 80px;
+      color: white;
+    }
+
+    div::before {
+      content: " ";
+      display: inline-block;
+      border: 1px solid white;
+      width: 8px;
+      height: 8px;
+      margin-right: 5px;
+      animation: gira 2s linear infinite;
+    }
+
+    div::after {
+      content: " - Porto Alegre / RS";
+    }
+
+    @keyframes gira {
+      to {
+        transform: rotate(360deg);
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div>Ensino e Tecnologia</div>
+</body>
+
+</html>

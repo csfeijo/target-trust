@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <button id="btn">FAÇA ALGO</button>
+  <script>
+    function fazendoUmaCoisa() {
+      console.log('Fui clicado!');
+    }
+
+    function fazendoOutraCoisa() {
+      console.log('Fui clicado novamente!');
+    }
+
+    var btn = document.getElementById('btn');
+    btn.addEventListener('click', fazendoUmaCoisa);
+    btn.addEventListener('click', fazendoOutraCoisa);
+
+
+    // btn.onclick = fazendoUmaCoisa;
+    // btn.onclick = fazendoOutraCoisa;
+
+    // var btn = document.getElementById('btn');
+    // btn.onclick = fazendo;
+  </script>
+
+
+
+</body>
+
+</html>

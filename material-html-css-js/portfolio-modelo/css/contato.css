@@ -1,0 +1,46 @@
+input,
+textarea,
+button {
+  background: transparent;
+  color: var(--cor-menu);
+  padding: 10px;
+  border: 1px solid var(--cor-menu);
+  border-radius: 10px;
+  width: 100%;
+  margin-bottom: 20px;
+  /* nem sempre os elementos filhos herdam as prop dos pais */
+  /* no caso a fonte não é herdada nos inputs/textareas */
+  font-family: Poppins;
+
+  /* remove a sombra externa do componente quando ativo */
+  outline: none;
+}
+/* se quiser adicionar em cada um dos comportamentos
+   dos componentes devemos dar atenção as pseudo props
+   active e focus */
+input:active,
+input:focus,
+textarea:active,
+textarea:focus,
+button:active,
+button:focus {
+  background: var(--cor-menu);
+  color: var(--azul-escuro);
+}
+
+textarea {
+  height: 100px;
+  resize: none;
+}
+/* aplica somente nos elem. que o attr. type é submit */
+button[type=submit] {
+  width: auto;
+  float: right;
+}
+
+iframe {
+  border: none;
+  width: 100%;
+  height: 284px;
+  border-radius: 10px;
+}

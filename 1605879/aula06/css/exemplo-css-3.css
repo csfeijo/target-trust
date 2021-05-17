@@ -1,0 +1,55 @@
+/* dentro deste arquivo SÓ SE "FALA" em ling. CSS! */
+/* seletores por TAG */
+body {
+  background: coral;
+}
+
+h1 {
+  color: white;
+  background: red;
+}
+
+h2 {
+  color: violet;
+}
+
+p {
+  color: yellow;
+}
+/* seletores por ID são acessiveis via # */
+#destaque {
+  background: grey;
+}
+/* seletores por CLASS são acessíveis via . */
+.pintado {
+  background: white;
+  color: fuchsia;
+}
+
+/* uma outra alternativa é acessar os elementos pela hierarquia (ordem) */
+/* Buscando TODA tag A que estiver ABAIXO de uma tag P */
+p a {
+  color: red;
+  text-decoration: none;
+}
+/* o espaço " " significa hierarquia SEMPRE */
+p .parceiro {
+  background: orange;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

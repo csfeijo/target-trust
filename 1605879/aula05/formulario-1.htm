@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulários 1</title>
+</head>
+
+<body>
+  <h1>Cadastro genérico:</h1>
+  <form action="">
+    <!-- NUNCA quebra a linha do textarea (abra e feche a tag na MESMA linha SEMPRE!) -->
+    <textarea placeholder="Digite a mensagem" maxlength="100" name="mensagem" cols="30" rows="10"></textarea>
+    <h3>Informe seus interesses:</h3>
+    <!-- SEMPRE o name de um cjto de checkbox será o mesmo, porém terá os colchetes no final -->
+    <!-- para o servidor entender que é um VETOR (conjunto de dados) -->
+    <input type="checkbox" name="interesse[]" value="viagens"> viagens
+    <br>
+
+    <!-- a primeira forma de vincular uma label a um componente do formulario -->
+    <!-- é atribuir o "for" da label ao "id" do campo do formulario -->
+    <input id="interesse-carros" type="checkbox" name="interesse[]" value="carros">
+    <label for="interesse-carros">carros</label>
+
+    <br>
+    <!-- maneira fácil de adicionar uma "etiqueta" em um campo -->
+    <label>
+      <input type="checkbox" name="interesse[]" value="futebol" checked> futebol americano
+    </label>
+    <br>
+    <label>
+      NOME:
+      <input type="text" placeholder="Nome..">
+    </label>
+    <hr>
+    <label>
+      <input type="radio" name="genero" value="masculino" checked>
+      masculino
+    </label>
+
+    <label>
+      <input type="radio" name="genero" value="feminino">
+      feminino
+    </label>
+
+
+
+
+
+  </form>
+
+
+</body>
+
+</html>

@@ -1,0 +1,63 @@
+.card-tarefas {
+  width: 420px;
+  border-radius: 8px;
+  box-shadow: 4px 4px 10px 0 $cinza-claro;
+  padding: 10px 0;
+  margin: 0 auto;
+  color: $quase-preto;
+  background-color: $amarelo;
+
+  h1 {
+    margin: 10px;
+    font-size: 16px;
+  }
+
+  #listagem-tarefas {
+
+    .lista-vazia {
+      font-size: 14px;
+      margin: 10px 0;
+    }
+
+    .item-tarefa {
+      font-size: 14px;
+      height: 20px;
+      padding: 4px 4px 4px 12px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-top: 1px solid white;
+
+      .close {
+        display: none;
+        border-radius: 50%;
+        width: 18px;
+        height: 18px;
+        font-size: 10px;
+      }
+
+      &:hover {
+        background: rgba(255,255,255,0.5);
+        border-left: 9px solid green;
+        border-bottom: 1px solid black;
+        border-top: 1px solid black;
+
+        .close {
+          cursor: pointer;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-weight: bold;
+
+          &:hover {
+            background: rgba(0,0,0,0.3);
+          }
+        }
+      }
+    }
+  }
+
+
+
+
+}

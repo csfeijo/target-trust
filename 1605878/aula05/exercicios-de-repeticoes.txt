@@ -1,0 +1,30 @@
+*EXERCÍCIO 1*:
+Implemente um algoritmo que escreva na tela o nome da sua cidade 5 vezes
+
+*EXERCÍCIO 2*:
+Implemente um algoritmo que leia do teclado um numero de 1 ate 10
+e mostre seu nome na tela a quantidade de vezes do numero digitado
+
+Ex.:
+Digite um numero
+3
+
+Cicero
+Cicero
+Cicero
+
+*EXERCÍCIO 3*:
+Implemente um algoritmo que liste APENAS os numeros impares de 0 ate 20.
+
+*ATENÇÃO*
+* PARA O EX. 3 NÃO PODE INCREMENTAR DE DOIS EM DOIS...
+* USEM A REPETIÇÃO PREFERIDA
+* SALVEM SEMPRE ANTES DE EXECUTAR
+
+*TEMA*
+Exercícios do EAD - Capítulo 8 (apenas o 2,3,4)
+Dica:
+* Utilizem LOOPs / Repetições
+* Você deve ter APENAS UMA VARIÁVEL para armazenar a IDADE das pessoas
+
+

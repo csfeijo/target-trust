@@ -1,0 +1,6 @@
+window (janela)
+  document (documento - pagina HTML)
+    tags/nodes (nodos, filhos, folhas)
+
+DOM: Document Object Model - modelo de objeto em documento    
+

@@ -1,0 +1,40 @@
+E2E => End to End (Ponta a Ponta)
+Front End -> Back End -> Data Base
+HTML,      | PHP        | MySQL
+CSS,       | Java       | Oracle
+JavaScript | NodeJS     | SQL Server
+           | Python     | PostgreSQL
+           | C#, .NET, 
+           | ASP
+
+Dominio / Requisição para o Dominio
+
+Fluxo: www.daniel.com.br -> endereço ip: 200.163.191.164 -> servidor da Locaweb por ex.
+Quem faz a entrega do conteudo para o cliente é o Servidor Web (Web Server)
+Exemplos de web servers: Apache, Tomcat, Glassfish, Express, Tornado, Django, IIS (PWS), Ngnix
+
+Dominio: www.daniel.com.br 
+Sub-Dominio: admin.daniel.com.br, blog.daniel.com.br 
+
+Ex.:
+musicas.com.br
+
+loja.musicas.com.br
+admin.musicas.com.br
+
+
+Acessando o servidor:
+http://localhost
+Normalmente o servidor web "roda" na porta 80
+
+integracao-fe-bd
+
+http://localhost/integracao-fe-bd
+
+
+
+
+
+
+
+

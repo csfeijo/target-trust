@@ -1,0 +1,16 @@
+*Exercício*
+
+Crie uma pagina nova chamada index.htm
+Que contenha 3 links (menu)
+HOME -> home.htm
+VEÍCULOS -> veiculos.htm
+CONTATO -> contato.htm
+
+O menu será composto por imagens e não por texto, ou seja, o usuário deverá clicar na imagem
+para ir para o link definido.
+
+DICA:
+* No HTML trabalhamos com aninhamento e hierarquia (tag dentro de tag)
+* Busque as imagens do site "http://iconfinder.com".
+* Selecione o filtro de imagens FREE
+* Escolha um tamanho pequeno

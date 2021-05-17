@@ -1,0 +1,16 @@
+Hyper
+Text
+Marckup
+Language
+
+WWWC => W3C
+w3c.org
+w3schools.com
+
+Dreaweaver Macromedia / Adobe
+FrontPage / MicroSoft
+
+
+Linguagens Front-End (F.E)
+também são conhecidas como Linguagens Client-Side
+Como é executado do lado do cliente, EXIGE processamento no CLIENTE

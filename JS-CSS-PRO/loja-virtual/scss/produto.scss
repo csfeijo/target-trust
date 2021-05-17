@@ -1,0 +1,20 @@
+.produto {
+  border: 1px solid red;
+  border-radius: 8px;
+  padding: 8px;
+  width: 140px;
+  height: 180px;
+  text-align: center;
+  text-decoration: none;
+  margin-bottom: 10px;
+
+  &:hover {
+    background: orange;
+    color: white;
+    cursor: pointer;
+  }
+
+  img {
+    margin-bottom: 20px;
+  }
+}

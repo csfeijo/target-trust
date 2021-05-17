@@ -1,0 +1,14 @@
+<produtos>
+  <produto>
+    <nome>TV</nome>
+    <preco>5299.66</preco>
+  </produto>
+  <produto>
+    <nome>Celular</nome>
+    <preco>1000.00</preco>
+  </produto>
+  <produto>
+    <nome>Video Game</nome>
+    <preco>5556.66</preco>
+  </produto>
+</produtos>

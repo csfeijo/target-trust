@@ -1,0 +1,14 @@
+Fontes customizadas em CSS:
+- As fontes em si precisam existir fisicamente no projeto.
+- os formatos mais comuns de fontes são as extensões: ttf, otf, woff & woff2
+
+Design Responsivo (Responsive Design)
+Baseia-se no tamanho e orientação da tela e é definido pelo cliente conforme a prioridade de desenvolvimento:
+- Design Desktop First (primeiro para PC / Desktop)
+- Design Mobile First (primeiro para celular - o desktop é secundário)
+
+O responsivisimo é feito através da sobrescrita de regras do CSS de acordo com o tamanho da tela (viewport - area de visão)
+
+A implementação é feita usando as "media queries" e é possível saber a largura, altura e orientação do dispositivo (device)
+que pode ser retrato (portrait) ou paisagem (landscape)
+

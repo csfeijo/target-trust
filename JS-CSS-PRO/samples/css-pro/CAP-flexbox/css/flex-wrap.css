@@ -1,0 +1,17 @@
+.container {
+  background: orange;
+  color: white;
+  font: 100 24px/120px Arial;
+  width: 600px;
+  text-align: center;
+
+  display: flex;
+  flex-wrap: wrap-reverse;
+}
+
+.container div {
+  border: 1px solid white;
+  height: 120px;
+  width: 250px;
+  background: purple;
+}

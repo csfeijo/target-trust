@@ -1,0 +1,28 @@
+O processo de "re-organização" do software chama-se "refatoração / refactor".
+O processo de "melhoria" do código chama-se tecnicamente de "improvement".
+O detalhes de mudança de software ficam em um histórico chamado "changelog".
+
+
+Operadores Lógicos de Comparação
+<> pode ser visto também como !=
+
+
+Para download dos videos do Youtube:
+https://www.4kdownload.com/pt-br/
+
+
+Hello World em diversas linguagens:
+http://helloworldcollection.de/
+
+Fórum de Código
+http://stackoverflow.com/
+https://pt.stackoverflow.com/
+
+
+
+Carreira:
+https://www.workana.com/pt
+https://www.crowd.br.com/
+https://www.linkedin.com/in/cicerofeijo/
+
+

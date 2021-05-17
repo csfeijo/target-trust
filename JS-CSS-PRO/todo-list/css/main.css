@@ -1,0 +1,80 @@
+* {
+  font-family: Roboto, sans-serif;
+}
+
+html, body {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.criar-tarefa {
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  margin: 10px auto;
+  padding: 10px;
+  box-shadow: 4px 4px 10px 0 #e0e0e0;
+  width: 400px;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+}
+.criar-tarefa input {
+  font-size: 16px;
+  border: 0;
+  padding: 4px;
+  outline: none;
+  width: 100%;
+}
+
+.card-tarefas {
+  width: 420px;
+  border-radius: 8px;
+  box-shadow: 4px 4px 10px 0 #e0e0e0;
+  padding: 10px 0;
+  margin: 0 auto;
+  color: #202124;
+  background-color: #fff475;
+}
+.card-tarefas h1 {
+  margin: 10px;
+  font-size: 16px;
+}
+.card-tarefas #listagem-tarefas .lista-vazia {
+  font-size: 14px;
+  margin: 10px 0;
+}
+.card-tarefas #listagem-tarefas .item-tarefa {
+  font-size: 14px;
+  height: 20px;
+  padding: 4px 4px 4px 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid white;
+}
+.card-tarefas #listagem-tarefas .item-tarefa .close {
+  display: none;
+  border-radius: 50%;
+  width: 18px;
+  height: 18px;
+  font-size: 10px;
+}
+.card-tarefas #listagem-tarefas .item-tarefa:hover {
+  background: rgba(255, 255, 255, 0.5);
+  border-left: 9px solid green;
+  border-bottom: 1px solid black;
+  border-top: 1px solid black;
+}
+.card-tarefas #listagem-tarefas .item-tarefa:hover .close {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+.card-tarefas #listagem-tarefas .item-tarefa:hover .close:hover {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+/*# sourceMappingURL=main.css.map */

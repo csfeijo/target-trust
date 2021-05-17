@@ -1,0 +1,28 @@
+Exercício 1:
+Implemente um algoritmo que leia 5 modelos de veículos
+e os armazene em um vetor (usando repeticoes)
+Depois limpe a tela
+Liste os veículos cadastrados
+
+Exercício 2:
+Implemente um algoritmo que leia 3 cidades
+limpe a tela
+e liste as 3 cidades na ordem inversa em que foram cadastradas
+
+Exercício 3:
+Implemente um algoritmo que leia 10 numeros inteiros do teclado
+armazene em um vetor
+limpe a tela
+Liste apenas os números pares que foram lidos
+Caso não tenha sido lido NENHUM numero par informe com a mensagem:
+"NÃO HOUVE NUMERO PAR CADASTRADO!"
+
+Exercício 4:
+Implemente um algoritmo que leia 5 nomes e 5 salarios
+Após a leitura de todos os dados liste na tela os registros neste formato:
+Ex.:
+Nome: Cícero Feijó - Salário R$: 3000.00
+Nome: Paulo da Silva - Salário R$: 3580.25
+
+
+
