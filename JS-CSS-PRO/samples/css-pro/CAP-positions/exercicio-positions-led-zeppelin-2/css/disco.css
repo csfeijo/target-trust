@@ -1,0 +1,75 @@
+:root {
+  /*
+   --largura-capa: 450px;
+  --altura-capa: 450px; 
+  */
+  --largura-capa: 350px;
+  --altura-capa: 350px;
+
+  
+  --largura-miolo: 100px;
+  --altura-miolo: 100px;
+ 
+  /* --largura-miolo: calc(var(--largura-capa) / 3.5);
+  --altura-miolo: calc(var(--altura-capa) / 3.5); */
+
+  --top-miolo: 124px;
+  /* --top-miolo: calc( (var(--largura-capa) / 2) - (var(--largura-miolo) / 2) - 1px); */
+}
+
+body {
+  background: #002244;
+}
+
+.container-album {
+  width: var(--largura-capa);
+  height: var(--altura-capa);
+  border: 4px solid;
+}
+
+.capa {
+  width: var(--largura-capa);
+  height: var(--altura-capa);
+  background-image: url(../img/capa-disco.png);
+  background-size: contain;
+}
+
+
+.miolo {
+  border: 2px solid red;
+  width: var(--largura-miolo);
+  height: var(--altura-miolo);
+  background-image: url(../img/capa-disco.png);
+  background-size: 100%;
+  border-radius: 50%;
+  z-index: -1;
+  
+
+  margin: 0 auto;
+  position: relative;
+  top: var(--top-miolo);
+}
+
+.disco {
+  width: var(--largura-capa);
+  height: var(--altura-capa);
+  border-radius: 50%;
+  background: repeating-radial-gradient(black,black 10px,#333 6px,#334 12px);
+  position: absolute;
+  top: 12px;
+  left: 100px;
+  z-index: -2;
+
+  transition: left 1s;
+}
+
+.container-album:hover .capa,
+.container-album:hover .miolo {
+  background-image: url(../img/capa-animada.gif);
+  background-size: contain;
+}
+
+.container-album:hover .disco {
+  left: 300px;
+}
+
