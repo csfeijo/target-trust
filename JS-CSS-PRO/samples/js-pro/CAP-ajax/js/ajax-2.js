@@ -1,3 +1,5 @@
+// https://60b81fdeb54b0a0017c031db.mockapi.io/api/v1/produtos
+
 function carregaInformacao() {
   var httpRequest = new XMLHttpRequest();
 
@@ -6,7 +8,7 @@ function carregaInformacao() {
   httpRequest.onerror = carregando;
   httpRequest.onabort = carregando;
 
-  httpRequest.open('GET', 'mock/produtos.json', true);
+  httpRequest.open('GET', 'https://60b81fdeb54b0a0017c031db.mockapi.io/api/v1/produtos', true);
   httpRequest.send(null);
 }
 
@@ -21,21 +23,21 @@ function converteObjeto() {
   console.log(dadosString);
 }
 
-// function recebeDados() {
-//   var conteudo = document.getElementById('conteudo');
-//   console.log('>>>', this.getResponseHeader('content-type'));
+function recebeDados() {
+  var conteudo = document.getElementById('conteudo');
+  console.log('>>>', this.getResponseHeader('content-type'));
 
-//   var resposta = this.responseText;
-//   resposta = JSON.parse(resposta);
+  var resposta = this.responseText;
+  resposta = JSON.parse(resposta);
 
-//   // percorre o array
-//   var respostaHTML = '';
-//   for (var i = 0; i < resposta.length; i++) {
-//     respostaHTML += '<p>' + resposta[i].nome + '</p>';
-//   }
+  // percorre o array
+  var respostaHTML = '';
+  for (var i = 0; i < resposta.length; i++) {
+    respostaHTML += '<p>' + resposta[i].nome + '</p>';
+  }
 
-//   conteudo.innerHTML = respostaHTML;
-// }
+  conteudo.innerHTML = respostaHTML;
+}
 
 function carregando() {
   var conteudo = document.getElementById('conteudo');

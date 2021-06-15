@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <style>
+    #link {
+      display: none;
+    }
+
+    #give-me {
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+<body>
+  <h1 id="give-me">Give me the file!</h1>
+
+  <a href="" id="link" download="meu-arquivo.txt">Download</a>
+
+  <script>
+    const downloadFileFalae = () => {
+      $.ajax({
+        url: 'arquivo.txt',
+      }).done((resp) => {
+        var texto = encodeURIComponent(resp);
+
+        $('#link').attr('href', "data:text/plain;charset=utf-8," + texto);
+        $('#link').click();
+        document.getElementById('link').click();
+      })
+    }
+
+    $('#give-me').click(downloadFileFalae);
+
+  </script>
+</body>
+
+</html>

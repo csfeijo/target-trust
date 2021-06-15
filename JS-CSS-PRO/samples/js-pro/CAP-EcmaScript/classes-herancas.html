@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <h1>Classes / Heranças</h1>
+
+
+  <script>
+    class Pessoa {
+      nascimento = new Date();
+
+      constructor(nome) {
+        console.log(`Criando pessoa => ${nome}`);
+        this.nome = nome;
+      }
+
+      caminha(direcao) {
+        console.log(`Caminhando para ${direcao}`);
+      }
+
+      getNascimento() {
+        console.log(`Nascido em: ${this.nascimento}`);
+      }
+    }
+
+    const fulano = new Pessoa('Cicero');
+    fulano.caminha('frente');
+
+    class Professor extends Pessoa {
+      constructor(nome) {
+        super(nome);
+        console.log('Criando Professor');
+      }
+
+      ensina() {
+        console.log('Ensinando JavaScript...');
+      }
+    }
+
+    const prof = new Professor('Feijó');
+    prof.ensina();
+    prof.caminha('direita');
+
+
+  </script>
+</body>
+
+</html>

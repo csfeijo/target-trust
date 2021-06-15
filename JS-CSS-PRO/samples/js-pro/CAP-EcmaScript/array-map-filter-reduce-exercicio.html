@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <h1>Array Reduce</h1>
+
+
+  <script>
+    // Exibir os itens da lista
+    const frutas = ['pêra', 'uva', 'abacate', 'limão'];
+
+    frutas.map((item) => {
+      console.log(item);
+    });
+
+
+    // Exibir apenas numeros pares
+    const numeros = [1, 25, 32, 41, 54, 62];
+
+    const pares = numeros.filter((item) => {
+      return item % 2 == 0;
+    });
+
+    console.log(pares);
+
+    // Exibir a média das notas
+    const notas = [6, 10, 5]; // 21
+
+    const mediaFinal = notas.reduce((soma, item) => {
+      return soma + item;
+    });
+
+    const media = mediaFinal / notas.length;
+
+    console.log(media);
+  </script>
+</body>
+
+</html>
