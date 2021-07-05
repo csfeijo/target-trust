@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+  <h1>jQuery</h1>
+
+  <div class="container">
+    Hello
+  </div>
+
+  <script>
+    // Convencional
+    // var div = document.getElementsByClassName('container');
+    // div[0].innerHTML = 'HELLO';
+
+    // Moderno
+    // var div = document.querySelectorAll('.container');
+    // div[0].innerHTML = 'HELLO';
+
+    // jQuery
+    // $('.container').html('HELLO');
+
+    // Ajax
+    function carregaDados(dados) {
+      $('.container').html(dados);
+    }
+
+    $.post("produtos.html", carregaDados);
+
+    // $.ajax({
+    //   url: 'produtos.html',
+    //   data: {},
+    //   success: carregaDados
+    // });
+
+  </script>
+</body>
+
+</html>
