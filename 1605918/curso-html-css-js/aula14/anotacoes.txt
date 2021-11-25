@@ -1,0 +1,17 @@
+Existe uma area chamada Expressoes Regulares (Regex - Regular Expression).
+
+
+Uma especie de analise de dados de baixo nivel, ou seja, conversam mais diretamente com o processador do PC e
+possuem uma sintaxe "quase" universal.
+
+/[a-z]/ => que o texto deve possuir SOMENTE caracteres de a até z em minusculo
+/[0-9]/ => que o texto deve possuir SOMENTE numeros de 0 ate 9
+
+/[a-z][A-Z]{0-9}@[a-z].[a-z]/
+
+94824-010
+/[0-9]{5}-[0-9]{3}/
+
+Existe um ditado que:
+Quando usamos Expressoes Regulares para resolver UM problema, na verdade passamos a ter DOIS problemas.
+

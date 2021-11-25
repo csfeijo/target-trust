@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formularios</title>
+</head>
+
+<body>
+  <!-- os dados do formulario sao enviados atraves de métodos -->
+  <!-- o padrao é o metodo GET : os dados sao enviados pela URL do browser e ficam expostos -->
+  <!-- os dados enviados via GET ficam salvos no historico do navegador! e normalmente sao usados em form. de busca -->
+  <!-- POST: envia os dados de forma segura e nao são exibidos na URL -->
+  <!-- usa-se normalmente para dados sigilosos (senha) e tambem para envio de arquivos e grande qtd. de informacoes -->
+  <form action="" method="GET">
+    <!-- name: nome da variavel que vai chegar no "action / backend" -->
+    <!-- placeholder: texto de ajuda - size / maxlength: limitador de caracteres -->
+    <!-- required: obriga o preenchimento do campo mas nao é customizavel -->
+    <input type="text" name="nome" placeholder="Digite o seu nome..." size="10" maxlength="10" required>
+    <br>
+    <!-- value: é o atributo que permite trazer o campo preenchido, quando preenchemos um campo vazio  -->
+    <!-- estamos preenchendo o seu atributo value -->
+    <input type="text" name="endereco" placeholder="Digite o seu endereço..." value="Rua Teste">
+    <br>
+    <input type="password" name="senha" placeholder="Digite uma senha...">
+    <br>
+    <!-- nao possui value! o valor do campo fica entre o abre e fecha da tag -->
+    <textarea name="mensagem" cols="30" rows="5" placeholder="Digite a mensagem..." maxlength="120"></textarea>
+    <br>
+    <input type="file" name="curriculo">
+
+
+    <br>
+    <button type="submit">ENVIAR DADOS</button>
+    <button type="reset">LIMPAR</button>
+    <button type="button">CLIQUE AQUI</button>
+
+
+  </form>
+
+</body>
+
+</html>

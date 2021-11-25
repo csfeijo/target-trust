@@ -1,0 +1,11 @@
+Foram criadas duas TAGS para serem usadas como delimitadores de conteudo / seção:
+div  : "divisor"    : cria um elemento em bloco (ou seja - que ocupa uma linha inteira da janela) 
+span : "expansível" : cria um elemento em linha (ou seja - que ocupa somente o necessário conforme seu conteúdo)
+
+
+
+O HTML com CSS trabalha com o conceito de "container"
+ou seja, o elemento PAI é sempre o container dos filhos.
+
+ViewPort : é a area do browser que está visivel para o usuario.
+

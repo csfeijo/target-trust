@@ -1,0 +1,11 @@
+Olá pessoal, segue o enunciado do exercício para a próxima aula:
+
+Sobre o exercício da aula passada, dentro do arquivo 'contato.html' - implemente um formulário com os seguintes requisitos:
+
+- Campo nome (preenchimento obrigatório / máximo de 40 caracteres)
+- Campo e-mail (preenchimento obrigatório / máximo de 100 caracteres)
+- Campo Estado (preenchimento opcional / listar 5 ou 6 estados do Brasil)
+- Campo telefone (preenchimento opcional / máximo de 15 caracteres)
+- Campo mensagem (preenchimento obrigatório / máximo de 200 caracteres)
+- Botão para enviar
+- Botão para limpar formulário

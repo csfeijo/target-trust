@@ -1,0 +1,16 @@
+algoritmo "REPETICOES-3"
+
+var
+CONT: INTEIRO
+
+inicio
+
+// CONHECIDA COMO "FOR"
+PARA CONT DE 1 ATE 5 FACA
+   ESCREVAL(CONT, " - CICERO")
+FIMPARA
+
+
+
+
+fimalgoritmo

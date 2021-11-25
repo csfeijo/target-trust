@@ -1,0 +1,59 @@
+div {
+  /* 
+  quadrado de borda vermelha de 100 por 100 pixels
+   */
+  border: 2px solid red;
+  width: 100px;
+  height: 100px;   
+}
+
+#t-1 {
+  /* move o elemento pela tela */
+  /* podemos passar valores para o eixo X e Y */
+  /* podemos usar o translateX ou translateY */
+  transform: translate(100px, -40px);
+}
+
+#t-2 {
+  /* inclina o elemento na tela */
+  /* podemos passar valores para o eixo X e Y */
+  /* sempre trabalha em graus */
+  /* podemos usar o skewX ou skewY */
+  transform: skew(-30deg, 10deg);
+}
+
+#t-3:hover {
+  /* rotaciona o elemento na tela */
+  /* suporta valores em graus (deg) e em voltas (turn) */
+  transform: rotate(30deg);
+}
+
+#t-4:hover {
+  /* aplica uma escala - usa numeros decimais*/
+  transform: scale(1.1);
+}
+
+#t-5:hover {
+  transform: rotate(30deg) scale(1.2);
+  border-radius: 10px;
+  background: cyan;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

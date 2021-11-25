@@ -1,0 +1,19 @@
+algoritmo "CAP-7-EX3"
+
+var
+IDADE: INTEIRO
+
+inicio
+
+ESCREVAL("DIGITE A IDADE:")
+LEIA(IDADE)
+
+SE (IDADE >= 16) ENTAO
+    ESCREVAL("JÁ PODE VOTAR")
+SENAO
+    ESCREVAL("AINDA NÃO PODE VOTAR")
+FIMSE
+
+
+
+fimalgoritmo

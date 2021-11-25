@@ -1,0 +1,38 @@
+body {
+  background: #02291d;
+  color: white;
+  font-family: Roboto;
+}
+
+.container {
+  width: 640px;
+  margin: 0 auto;
+  padding: 10px;
+  display: flex;
+}
+
+
+.tab {
+  border: 1px solid white;
+  border-bottom: none;
+  border-radius: 10px 10px 0 0;
+  width: 200px;
+  padding: 10px;
+  margin-right: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: white;
+}
+
+
+
+
+.tab:hover {
+  background: white;
+  color: #02291d;
+}
+
+
+

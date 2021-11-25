@@ -1,0 +1,52 @@
+var
+
+nome: caractere
+idade: inteiro
+salario: real
+casado: logico
+
+
+inicio
+
+nome <- "Guilherme"
+idade <- 18
+
+
+SE (idade >= 18) ENTAO
+  ESCREVAL("Pode dirigir!")
+SENAO
+  ESCREVAL("Não pode dirigir!")
+FIMSE
+
+=======================
+ENQUANTO (CONT < 3) FACA
+   ESCREVAL("MICHEL")
+
+   CONT <- CONT + 1
+FIMENQUANTO
+=======================
+REPITA
+   ESCREVAL("CARLA")
+   CONT <- CONT + 1
+ATE (CONT = 3)
+=======================
+PARA (CONT DE 1 ATE 3) PASSO 1 FACA
+   ESCREVAL("Victória")
+FIMPARA
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+fimalgoritmo
+
+

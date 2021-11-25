@@ -1,0 +1,10 @@
+Os arquivos de imagem podem possuir diversas extensoes:
+* png (fundo transparente)
+* jpg
+* jpeg
+* gif (fundo transparente)
+* webp
+* webp2
+* bmp (pesado)
+* tiff (pesado)
+

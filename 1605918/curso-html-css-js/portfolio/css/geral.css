@@ -1,0 +1,109 @@
+/* neste arquivo estao TODAS definicoes GERAIS do site */
+/* aqui iremos criar a nossa definicao para uso de uma fonte customizada */
+@font-face {
+  font-family: Poppins;
+  src: url(../fonts/Poppins-Regular.ttf) format("truetype");
+}
+
+body {
+  background: #3B3D5D;
+  /* removemos para evitar que o conteudo comece afastado das "paredes" do browser */
+  margin: 0;
+  padding: 0;
+  font-family: Poppins;
+  color: #FFFFFF;
+}
+
+header {
+  background: #1F2235;
+  padding: 30px 0;
+}
+
+.container {
+  /* border: 1px solid yellow; */
+  width: 1170px;
+
+  /* ao inves de colocar TODAS as regras de cada lado.... */
+  /* margin-top: 0;
+  margin-right: auto;
+  margin-bottom: 0;
+  margin-left: auto; */
+
+  /*...podemos resumir com uma definicao unica: */
+  /* top right bottom left */
+  /* margin: 0 auto 0 auto; */
+
+  /* se as configuracoes de TOP = BOTTOM e LEFT = RIGHT */
+  margin: 0 auto;
+}
+
+.menu {
+  /* border: 1px solid orange; */
+
+  float: right;
+  margin-top: 10px;
+}
+
+.menu a {
+  color: #FFFFFF;
+  font-size: 18px;
+  text-decoration: none;
+  padding: 20px;
+  transition: background 1s;
+}
+
+/* a ',' possibilita adicionar varios seletores para um mesmo */
+/* conjunto de regras */
+.menu a:hover, 
+.menu a.active {
+  background: #FF4A57;
+}
+
+/* secao das paginas */
+section {
+  /* border: 1px solid yellow; */
+  width: 1170px;
+
+  margin: 80px auto 0 auto;
+}
+
+aside {
+  /* border: 1px solid pink; */
+  min-height: 300px;
+
+  display: inline-block;
+  vertical-align: top;
+}
+
+aside:first-child {
+  width: 600px;
+}
+
+aside:last-child {
+  width: 500px;
+  margin-left: 60px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

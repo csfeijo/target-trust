@@ -1,0 +1,33 @@
+.redes-sociais {
+  margin-top: 90px;
+}
+
+.redes-sociais img {
+  border: 1px solid #FF4A57;
+  /* suporta as mesmas regras do margin e do padding */
+  /* 4 valores: começando da esq. superior */
+  border-radius: 50%;
+  margin-right: 30px;
+}
+
+.redes-sociais img:hover {
+  background: #FF4A57;
+}
+
+h1 {
+  font-size: 58px;
+}
+
+p {
+  font-size: 18px;
+}
+
+.polaroid {
+  width: 80%;
+  padding: 10px 10px 80px 10px;
+  background: white;
+  /* deg: degrees (graus) */
+  transform: rotate(10deg);
+}
+
+

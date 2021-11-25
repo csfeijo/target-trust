@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Gradiente</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Signika+Negative:wght@300&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background: #02291d;
+      font-family: 'Signika Negative', serif;
+      color: white;
+    }
+
+
+    div {
+      width: 240px;
+      margin: 20px auto;
+    }
+
+    input {
+      padding: 10px;
+      width: 100%;
+      display: block;
+      border: 1px solid white;
+      background: transparent;
+      color: white;
+      font-size: 20px;
+      font-family: 'Signika Negative', serif;
+      margin-bottom: 40px;
+    }
+
+    ::placeholder {
+      font-family: 'Signika Negative', serif;
+      color: white;
+    }
+
+    input:nth-child(1) {
+      border-radius: 10px;
+    }
+
+    input:nth-child(2) {
+      border-radius: 20px 0;
+    }
+
+    input:nth-child(3) {
+      border-radius: 20px 20px 0 0;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+
+    <input type="text" placeholder="Digite o seu nome">
+    <input type="text" placeholder="Digite o seu nome">
+    <input type="text" placeholder="Digite o seu nome">
+  </div>
+</body>
+
+</html>

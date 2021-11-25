@@ -1,0 +1,24 @@
+algoritmo "Funcao - 2"
+
+var
+MEDIA: REAL
+NUMEROS: VETOR [0..2] DE INTEIRO
+CONT: INTEIRO
+
+
+FUNCAO CALCULA_MEDIA(NUM1, NUM2, NUM3: INTEIRO): REAL
+INICIO
+RETORNE (NUM1 + NUM2 + NUM3) / 3
+FIMFUNCAO
+
+
+inicio
+PARA CONT DE 0 ATE 2 FACA
+   ESCREVAL ("Digite um número ")
+   LEIA (NUMEROS [CONT])
+FIMPARA
+
+MEDIA <- MEDIA(numeros [0], numeros [1], numeros [2])
+ESCREVAL ( "A MÉDIA É ", MEDIA )
+
+fimalgoritmo

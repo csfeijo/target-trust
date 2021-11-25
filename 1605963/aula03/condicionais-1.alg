@@ -1,0 +1,26 @@
+algoritmo "CONDICIONAIS-1"
+
+var
+
+NUM: INTEIRO
+
+
+inicio
+
+ESCREVAL("DIGITE O NUMERO")
+LEIA(NUM)
+
+
+
+SE (NUM > 10)  ENTAO
+   ESCREVAL("É MAIOR QUE 10")
+FIMSE
+
+ESCREVAL("SEGUINDO O ALGORITMO...")
+
+
+
+
+
+
+fimalgoritmo

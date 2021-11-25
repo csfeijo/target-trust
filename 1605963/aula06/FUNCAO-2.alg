@@ -1,0 +1,21 @@
+algoritmo "FUNCAO-2"
+
+var
+MEDIA: REAL
+
+FUNCAO SOMA(NUM1, NUM2: INTEIRO):INTEIRO
+INICIO
+  RETORNE NUM1 + NUM2
+FIMFUNCAO
+
+
+inicio
+
+
+MEDIA <- SOMA(10, 25) / 2
+
+ESCREVAL( SOMA(55, 369) )
+
+
+
+fimalgoritmo

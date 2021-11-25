@@ -1,0 +1,14 @@
+Tenho um estacionamento e preciso gerenciar os veículos que aqui estacionam.
+Inicialmente quero controlar o modelo do veículo, cor, o ano e a placa.
+
+
+VEICULOS
+id_veiculo
+modelo
+cor
+ano
+placa
+
+
+Altere a estrutura do Banco para receber tambem o fabricante do veiculo (Volkswagen, Chevrolet, etc) 
+ja pensando num modelo relacional.

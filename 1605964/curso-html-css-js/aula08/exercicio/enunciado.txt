@@ -1,0 +1,17 @@
+Exercício:
+
+
+Olá pessoal, conforme comentei vou deixar um Exercício para o final de semana e que servirá para nossa estrutura do nosso projeto de aula.
+
+Sobre o HTML abaixo, implementem um CSS que crie a estrutura conforme a imagem em anexo:
+https://pastebin.com/raw/u4PPMbr4
+
+
+Como vimos na aula as tags SECTION e ASIDE também tem o mesmo comportamento que elementos em bloco como as DIVs, portanto vocês precisam
+utlizar as propriedades de box model para estrutura-las.
+
+DICAS:
+- Para alinhar os elementos internos existe uma propriedade que vimos que faz os elementos flutuarem para os lados como "balões".
+- As medidas de cada elemento são:
+  * container: 1150 x 410 / margem "interna" de 10
+  * aside: o primeiro é 600 x 406 e o segundo 450 x 406

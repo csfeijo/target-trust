@@ -1,0 +1,56 @@
+TODOS elementos do HTML possuem uma propriedade "display"
+
+Os elementos em bloco (que ocupma 100% da tela) possue esse valor como:
+display: block;
+
+Aceitam definicoes de altura e largura.
+-----------------------------------------------
+Os elementos em linha, (que ocupam apenas o conteudo que esta internamente)
+display: inline;
+
+NÃO Aceitam definicoes de altura e largura.
+
+-----------------------------------------------
+Existe diversos valores para o display, mas um muito usado é o 
+display: none - que oculta elementos na tela.
+
+-----------------------------------------------
+Caso queriamos usufruir de ambas propriedades existens nos displays
+de bloco e linha (dimensoes e posicionamento lado lado respectivamente)
+devemos então utilizar o valor "inline-block"
+
+display: inline-block;
+
+==============================================
+para possibilitar cantos arredondados no CSS de forma direta criou-se a prop.
+border-radius.
+Ex.
+border-radius: 10px;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

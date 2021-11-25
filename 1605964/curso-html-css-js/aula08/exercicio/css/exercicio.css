@@ -1,0 +1,26 @@
+.container {
+  border: 1px solid red;
+  width: 1150px;
+  height: 410px;
+  margin: 0 auto; 
+  padding: 10px;
+}
+
+aside {
+  border: 2px solid orange;
+  height: 406px;
+
+}
+
+aside.esquerda {
+  width: 600px;
+  margin-right: 90px;
+  float: left;
+}
+
+aside.direita {
+  width: 450px;
+  float: right;
+}
+
+

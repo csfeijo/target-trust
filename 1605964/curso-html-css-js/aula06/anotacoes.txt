@@ -1,0 +1,17 @@
+Existem ferramentas que geram documentação do BE - Ex. JavaDOC, Swagger, etc.
+
+As sintaxe do CSS no minimo trabalha com:
+ATRIBUTO: valor;
+
+CSS 3 tipos basicos de seletores
+POR TAG
+POR ID
+POR CLASS (mais rapido de acessar)
+
+Livros sobre CSS:
+https://www.oreilly.com/
+Novatec
+
+Autores:
+https://lea.verou.me/
+

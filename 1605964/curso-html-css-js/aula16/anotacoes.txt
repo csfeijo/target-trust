@@ -1,0 +1,53 @@
+https://en.wikipedia.org/wiki/Email_address
+https://datatracker.ietf.org/doc/html/rfc5321
+
+comecar com pelo menos 1 caract.
+nao pode ser caract especial ($,*,?)
+seguido de um @
+deve haver pelo menos outro caract
+nao pode ser caract especial ($,*,?)
+deve haver um .
+e depois 
+deve haver pelo menos outro caract
+nao pode ser caract especial ($,*,?)
+
+
+c@c.c
+c@c.jp
+
+ze2@z.com.br
+
+Para validações mais complexas usa-se normalmente uma tecnica chamada Expressões Regulares (RegEx)
+Essas expressoes existem em praticamente TODAS as linguages, e são MUITO parecidas, mudando apenas a forma
+de chamada, teste e inialização.
+
+Ex.
+var regex = /^[0-9]{2}.[0-9]{3}-[0-9]{3}/
+var cep = '94.110-100';
+
+// para testar
+regex.test(cep)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

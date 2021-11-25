@@ -1,0 +1,21 @@
+div {
+  width: 100px;
+  height: 100px;
+  border: 1px solid red;
+}
+
+#tr-1 {
+  /* skew: transformacao 2d que estica / inclina o elemento  */
+  /* valores do eixo: X e Y */
+  transform: skew(30deg, 10deg);
+}
+
+#tr-2{
+  /* rotaciona o elemento */
+  transform: rotate(30deg);
+}
+
+#tr-3:hover {
+  transform: scale(1.2);
+}
+

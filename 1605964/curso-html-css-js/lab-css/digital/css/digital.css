@@ -1,0 +1,10 @@
+/* definição para uso de fonte customizada */
+@font-face {
+  font-family: Digital;
+  src: url(../fonts/DS-DIGI.TTF) format("truetype");
+}
+
+body {
+  font-family: 'Digital';
+  
+}

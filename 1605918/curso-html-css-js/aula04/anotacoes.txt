@@ -1,0 +1,38 @@
+Os dados dos formularios precisam ser enviados para algum lugar,
+o envio destes dados pode ser feito de duas formas (métodos)
+
+O tipo do método que será enviado para o backend deve ser alinhado entre os desenvolvedores.
+O backend precisa estar preparado para receber a requisição (request).
+
+>> via GET
+Os dados são enviados de forma exposta via URL do navegador como variaveis para o back-end.
+Logo, não é usado para envio de dados sensíveis (Ex. Numero de CC, Senhas, etc).
+
+Ex.:
+formulario-1.html?nome=Cicero&endereco=Marina+Sirangelo&cidade=Porto+Alegre
+
+PRÓ:
+Os dados ficam salvos no histórico do navegador.
+É possível compartilhar a URL com os dados com outras pessoas.
+
+CONTRA:
+Os dados ficam salvos no histórico, se outra pessoa acessar o mesmo browser
+no computador conseguirá ver os dados que foram enviados.
+Existe um limite de tamanho de dados que podem ser enviados via URL.
+
+>> via POST
+Os dados são enviados de forma sigilosa (imagine que chegam por uma especie de porta dos
+fundos do back-end / BE)
+
+PRÓS:
+São enviados de forma segura.
+Não ficam armazenados no historico do browser.
+Não existe limite de tamanho dos dados a serem enviados (desde que o servidor que 
+os receba os comporte)
+Aceita o envio de anexos.
+
+CONTRAS:
+Não ficam armazenados no historico do browser.
+
+
+

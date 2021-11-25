@@ -1,0 +1,7 @@
+var frutas = ['banana', 'uva', 'abacate', 'tomate', 'avocado', 'kiwi']
+var cont = 0
+
+while (cont < frutas.length) {
+	console.log(frutas[cont])
+	cont++
+}

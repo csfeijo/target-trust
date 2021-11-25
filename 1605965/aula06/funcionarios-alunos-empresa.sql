@@ -1,0 +1,20 @@
+INSERT INTO FUNCIONARIOS (NOME, DT_NASCIMENTO, GENERO, SALARIO, ID_DEPARTAMENTO) 
+VALUES 
+('Alexis Flores','2003-01-01','F','6235.53','2'),
+('André Luís de Oliveira Josefino','2003-01-01','M','6235.53','2'),
+('Andréia Barone Dutra','2003-01-01','F','6235.53','2'),
+('Cristian Bairros Azevedo','2003-01-01','M','6235.53','2'),
+('Daniela Santos de Souza','2003-01-01','F','6235.53','2'),
+('Fagner Dolejal de Farias','2003-01-01','M','6235.53','2'),
+('Felipe Xavier Bins','2003-01-01','M','6235.53','2'),
+('Fernando dos Santos','2003-01-01','M','6235.53','2'),
+('Igor Soares Dillenburg','2003-01-01','M','6235.53','2'),
+('Luiz Felipe Luz de Stangherlin','2003-01-01','M','6235.53','2'),
+('Manoela Torelly Fraga Mincarone','2003-01-01','F','6235.53','2'),
+('Marcos Krol Pacheco','2003-01-01','M','6235.53','2'),
+('Mariana Andrade de Souza','2003-01-01','F','6235.53','2'),
+('Matheus de Azevedo Ramos','2003-01-01','M','6235.53','2'),
+('Michele Aparecida Balbino','2003-01-01','F','6235.53','2'),
+('Otávio Luís Iacks Thoncke','2003-01-01','M','6235.53','2'),
+('Patrícia Butori Quevedo','2003-01-01','F','6235.53','2'),
+('Cícero da Silva Feijó','2003-01-01','M','6235.53','2');

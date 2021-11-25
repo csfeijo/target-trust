@@ -1,0 +1,44 @@
+.nome {
+  border: 2px solid red;
+  /* width: 256px; */
+  width: 50%;
+  height: 256px;
+  margin: 30px;
+  padding: 20px;
+  margin: 60px auto;
+}
+
+.retangulo {
+  border: 1px solid blue;
+  /* width: 100px; */
+  width: 30%;
+  height: 40px;
+  /* a margin: aplica os 10px nos 4 lados */
+  /* margin: 10px; */
+  /* podemos configurar as margins em cada lado: */
+  /* top: topo , right: direita, bottom: embaixo e left: esquerda */
+  /* margin-top: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  margin-left: 10px; */
+  /* no atalho podemos passar 4 valores, sendo que eles sao aplicados em sentido 
+     horario a partir do top do elemento */
+  /* margin: 10px 10px 0 0; */
+  /* MARGIN: 0 AUTO => sempre irá centralizar o elemento em bloco */
+  /* desde que ele possua alguma largura! */
+  margin: 10px auto;
+}
+
+span {
+  border: 2px solid purple;
+  padding: 10px;
+  margin: 10px;
+  /* elementos em linha (no caso span) nao aceitam altura nem largura */
+  /* width: 80px;
+  height: 80px; */
+}
+
+
+
+
+

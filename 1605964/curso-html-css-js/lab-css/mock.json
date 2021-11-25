@@ -1,0 +1,113 @@
+// By UserID, StartDate & EndDate
+{
+  "version": "1.0.0",
+  "accountId": "84a21b91-76db-4781-90e5-c6bc0ad3d0e7",
+  "printCounters": [
+    {
+      "deviceId": "AQAAAAF8t-82qQAAAAG17DkZ",
+      "counters": [
+        {
+          "date": "2021-10-04T00:00:00Z",
+          "impressionsCompleted": 10,
+          "impressionsCompletedColor": 20,
+          "mediaSheetsCompleted": 15
+        },
+        {
+          "date": "2021-10-05T00:00:00Z",
+          "impressionsCompleted": 5,
+          "impressionsCompletedColor": 5,
+          "mediaSheetsCompleted": 5
+        },
+        {
+          "date": "2021-10-06T00:00:00Z",
+          "impressionsCompleted": 5,
+          "impressionsCompletedColor": 5,
+          "mediaSheetsCompleted": 5
+        }
+      ]
+    },
+    {
+      "deviceId": "AQAAAAF8t9FfIQAAAAFc3i17",
+      "counters": [
+        {
+          "date": "2021-10-01T00:00:00Z",
+          "impressionsCompleted": 10,
+          "impressionsCompletedColor": 20,
+          "mediaSheetsCompleted": 15
+        },
+        {
+          "date": "2021-10-02T00:00:00Z",
+          "impressionsCompleted": 5,
+          "impressionsCompletedColor": 5,
+          "mediaSheetsCompleted": 5
+        },
+        {
+          "date": "2021-10-03T00:00:00Z",
+          "impressionsCompleted": 5,
+          "impressionsCompletedColor": 5,
+          "mediaSheetsCompleted": 5
+        }
+      ]
+    }
+  ]
+}
+// DeviceID, StartDate & EndDate
+{
+  "version": "1.0.0",
+  "accountId": "84a21b91-76db-4781-90e5-c6bc0ad3d0e7",
+  "printCounters": [
+    {
+      "deviceId": "AQAAAAF8t9FfIQAAAAFc3i17",
+      "counters": [
+        {
+          "date": "2021-10-25T00:00:00Z",
+          "impressionsCompleted": 0,
+          "impressionsCompletedColor": 0,
+          "mediaSheetsCompleted": 0
+        },
+        {
+          "date": "2021-10-26T00:00:00Z",
+          "impressionsCompleted": 0,
+          "impressionsCompletedColor": 0,
+          "mediaSheetsCompleted": 0
+        },
+        {
+          "date": "2021-10-27T00:00:00Z",
+          "impressionsCompleted": 0,
+          "impressionsCompletedColor": 0,
+          "mediaSheetsCompleted": 0
+        },
+        {
+          "date": "2021-10-28T00:00:00Z",
+          "impressionsCompleted": 0,
+          "impressionsCompletedColor": 0,
+          "mediaSheetsCompleted": 0
+        },
+        {
+          "date": "2021-10-29T00:00:00Z",
+          "impressionsCompleted": 0,
+          "impressionsCompletedColor": 0,
+          "mediaSheetsCompleted": 0
+        },
+        {
+          "date": "2021-10-30T00:00:00Z",
+          "impressionsCompleted": 0,
+          "impressionsCompletedColor": 0,
+          "mediaSheetsCompleted": 0
+        },
+        {
+          "date": "2021-10-31T00:00:00Z",
+          "impressionsCompleted": 0,
+          "impressionsCompletedColor": 0,
+          "mediaSheetsCompleted": 0
+        },
+        {
+          "date": "2021-11-01T00:00:00Z",
+          "impressionsCompleted": 0,
+          "impressionsCompletedColor": 0,
+          "mediaSheetsCompleted": 0
+        }
+      ]
+    }
+  ]
+}

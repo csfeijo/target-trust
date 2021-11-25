@@ -35,7 +35,9 @@ h1 {
   /* nowrap : não quebra o texto nos espaços entre as palavras */
   white-space: nowrap;
   /*  */
-  animation: escrever 3.5s steps(30), cursor_piscando .5s infinite step-end;
+
+  
+  /* animation: escrever 3.5s steps(30), cursor_piscando .5s infinite step-end; */
 }
 
 

@@ -1,0 +1,35 @@
+/* comentario em CSS */
+body {
+  background: purple;
+}
+
+h1 {
+  color: red;
+}
+
+p {
+  font-family: Arial;
+}
+
+/* SELETOR que busca o elemento pelo ID (sempre começa com #) */
+#qualquer-coisa {
+  color: white;
+}
+/* SELETOR que busca elementos genericos pelo CLASS (sempre começa com o .) */
+.outra-coisa {
+  color: yellow;
+}
+
+.destaque {
+  color: violet;
+  border: 2px solid orange;
+  font-family: Courier;
+}
+
+p {
+  font-style: italic;
+}
+
+
+
+

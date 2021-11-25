@@ -1,0 +1,10 @@
+Olá pessoal, segue o enunciado do exercício para a próxima aula:
+
+Sobre o exercício da aula passada, dentro do arquivo 'veiculos.html' - implemente o layout abaixo utilizando as tags
+HTML vistas até o momento.
+
+* As imagens e dados dos veículos podem ser de sua escolha, utilize o site do iconfinder.com para encontrar 
+algo do tamanho ideal (64px).
+* O texto você pode buscar do site http://lipsum.com
+
+Um abraço e bom final de semana a todos! Até segunda-feira!

@@ -1,0 +1,42 @@
+Front-End => Linguagens Client Side
+html, css, js, swf, applets java
+
+
+Back-End => Linguagens Server Side
+PHP, Java, Python, NodeJS, ASP, .NET, C#, C++
+
+
+
+HTML
+  H yper
+  T ext
+  M arkup
+  L anguage
+  
+Os arquivos podem ser em .htm / .html 
+
+O HTML se baseia em TAGS
+<br>
+
+<h1>Conteudo</h1>
+
+
+Caracteres sem acento são conhecidos como caracteres ISO-8859-1
+
+A construção de um HTML com uma semântica que possibilite um rankeamento melhor em buscadores (Google, Bing, etc) é conhecida por ter base o SEO: Search Engine Optimization.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  

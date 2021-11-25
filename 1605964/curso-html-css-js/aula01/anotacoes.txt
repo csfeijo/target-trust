@@ -1,0 +1,76 @@
+Front-End implementa:
+Design: concebe a aplicação em forma de imagens / navegação.
+
+UI -> User Interface / Interface de usuário
+
+UX -> User Experience / Experienca de usuário
+
+
+DevOps: Development Operations
+Monitorar a performance e funcionamento da aplicação.
+Atualizar a aplicação em produção.
+Gerenciar as diferentes versões da aplicação que podem estar rodando.
+Tecnologias usadas:
+GIT
+Docker
+Jenkins (integração continua / CI)
+Ferramentas de logs
+
+Fullstack : envolve Front-End e Back-End (em alguns cenários envolve também DevOps)
+
+
+Nichos de trabalho / esforço dentro da equipe:
+Setor -> Time -> Squad
+
+Normalmente uma aplicação passa por etapas de publicação:
+Stack : ambientes/camadas
+DEV -> HLG -> STAGE -> PROD
+
+Motor de processamento / renderização de paginas web dos browsers:
+Edge Chromium, Opera, Chrome, Firefox, Safari, Brave, Vivaldi: webkit
+IE, Netscape: usam outras engines (motores)
+
+HTML -> linguagem de marcação (não é uma linguagem de programação)
+  Hyper
+    Text
+      Marckup
+       Language
+
+Não é uma linguagem de programação pois não possui habilidade lógica.
+Não conseguimos colocar variaveis, nem repeticoes e nem condicionais dentro do HTML.
+
+Orgão regulamentador chamado W3C (WWW Consortium)
+
+Sobre acentos:
+O padrão da linguagem HTML é Ingles (sem acentos / caract especiais)
+O nome dessa codificação são caracteres ISO-8859-1
+
+Quando quisermos usar QUALQUER tipo de caractere usamos a codificação UTF-8
+
+=============================================================================
+As linguagens que usamos para implementar o F.E. são conhecidas como linguagens Client-Side.
+Rodam / processam do lado do cliente, ou seja, o cliente pode visualizar o codigo fonte.
+
+
+
+E as linguagens usadas para implementar o Back-End são conhecidas como Server-Side.
+São processadas em um servidor externo ou na cloud e não é possível visualizar o codigo fonte, a nao
+ser que estejamos conectados diretamente ao servidor como administrador.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

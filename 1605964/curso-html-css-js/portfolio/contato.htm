@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfólio</title>
+  <link rel="stylesheet" href="css/geral.css">
+  <link rel="stylesheet" href="css/contato.css">
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <img src="img/logotipo.png" alt="Logotipo">
+
+      <nav class="menu">
+        <a href="index.htm">home</a>
+        <a href="contato.htm" class="ativo">contato</a>
+      </nav>
+
+    </div>
+  </header>
+
+  <section>
+    <aside>
+      <!-- FORMULARIO DE CONTATO -->
+      <form action="" method="POST" autocomplete="off" id="formulario">
+        <input type="text" name="nome" placeholder="Digite o seu nome" id="nome">
+
+        <input type=" text" name="email" placeholder="Digite o seu e-mail" id="email">
+
+        <textarea name="mensagem" placeholder="Digite sua mensagem" id="mensagem"></textarea>
+
+        <span id="erro"></span>
+
+        <button type="button" onclick="validaForm()">ENVIAR</button>
+      </form>
+
+
+
+    </aside>
+    <aside>
+
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3454.4089888792973!2d-51.16460848420566!3d-30.025122281889423!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9519779ea66d9993%3A0x9477cb21ba5c4f62!2sIguatemi%20Porto%20Alegre!5e0!3m2!1spt-BR!2sbr!4v1634599730359!5m2!1spt-BR!2sbr"
+        allowfullscreen="" loading="lazy"></iframe>
+    </aside>
+  </section>
+  <script src="js/contato.js"></script>
+</body>
+
+</html>

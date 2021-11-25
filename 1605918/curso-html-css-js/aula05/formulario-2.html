@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <form action="">
+    <label>
+      e-mail: <input type="text" name="email" placeholder="Digite o seu e-mail">
+    </label>
+
+    <br>
+    <!-- os botoes de radio para obterem o comportamento de seleção unica precisam possuir o mesmo atrib. "name" -->
+    <label>
+      <input type="radio" name="genero" value="masculino" checked>Masculino
+    </label>
+
+    <br>
+
+    <label>
+      <input type="radio" name="genero" value="feminino">Feminino
+    </label>
+
+    <br>
+
+    <label>
+      <input type="radio" name="genero" value="outro">Outro
+    </label>
+
+    <br>
+    <p>Informe o(s) seu(s) interesse(s):</p>
+    <!-- Quando queremos enviar os checkboxes com multiplos valores para o servidor - BE -->
+    <!-- colocamos os colchetes [] para informar que o input é um vetor e que pode possuir mais de um valor -->
+    <!-- dentro de si -->
+    <label>
+      <input type="checkbox" name="interesses[]" value="futebol">Futebol
+    </label>
+
+    <br>
+
+    <label>
+      <input type="checkbox" name="interesses[]" value="viagens">Viagens
+    </label>
+
+    <br>
+
+    <label>
+      <input type="checkbox" name="interesses[]" value="tecnologia">Tecnologia
+    </label>
+
+    <br>
+
+    <label>
+      <input type="checkbox" name="interesses[]" value="moda">Moda
+    </label>
+
+    <br>
+
+    <label>
+      <input type="checkbox" name="interesses[]" value="política">Política
+    </label>
+
+    <br>
+    <p>Anexe um arquivo:</p>
+    <input type="file" name="arquivo">
+
+
+    <br>
+
+    <button type="submit">ENVIAR</button>
+    <button type="reset">LIMPAR</button>
+    <button type="button">CLIQUE AQUI</button>
+
+
+  </form>
+</body>
+
+</html>

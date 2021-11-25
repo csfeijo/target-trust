@@ -1,0 +1,5 @@
+Dentro do Portfolio implemente:
+
+- Ao passar o mouse sobre os links do MENU superior aplique uma transicao de 1s;
+- Ao passar o mouse sobre os links do MENU REDES SOCIAIS aplique uma transicao de 1s;
+- Aplique uma inclinação na polaroid;

@@ -1,0 +1,25 @@
+UI
+User Interface -> Interface / Design
+Desenho das telas
+Ex. de apps:
+Photoshop / Fireworks
+Figma / Adobe XD
+
+
+UX
+User Experience -> Experiência de Usuário
+Navegação / Interação
+Ex.
+Mapa de calor
+T&T -> Test and Target
+
+================================================
+HTML -> Semântica / Esqueleto
+
+CSS -> Estilo / Roupas
+Cascading -> Cascata
+  Style   -> Estilo
+    Sheet -> Folha
+
+Folha de Estilo em Cascata
+

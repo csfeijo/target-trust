@@ -1,0 +1,14 @@
+Conteudo da aula:
+- Vetores
+- Repeticoes
+- Condicionais
+- Exercício de vetores
+- DOM
+
+
+
+
+DOM: Document Object Model
+  Trabalha dentro da janela do browser.
+  TODO o HTML é visto como NODOS (node) - nós / estrutura em arvore com folhas e galhos
+  DOM consegue manipular qualquer coisa em HTML e CSS

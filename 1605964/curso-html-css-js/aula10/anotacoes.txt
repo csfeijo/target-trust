@@ -1,0 +1,7 @@
+No CSS3 foi introduzido o uso de "key frames" - quadros chave.
+Que era o mesmo termo usado no Flash.
+
+Por isso existe o termo FPS -> Frames Per Second (frames por segundo)
+Quanto mais frames por segundo uma animação possui, mais realista ela
+se torna.
+Ex.: 60fps / 120fps

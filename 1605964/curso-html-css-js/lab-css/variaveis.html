@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Variáveis em CSS</title>
+  <style>
+    :root {
+      --fundo: #02291d;
+      --cor-base: white;
+      --sombra: 0 0 20px 10px var(--cor-base);
+      --borda: 1px solid var(--cor-base);
+    }
+
+    body {
+      background: var(--fundo);
+    }
+
+    div {
+      border: var(--borda);
+      width: 200px;
+      height: 200px;
+      margin: 20px auto;
+      box-shadow: var(--sombra);
+    }
+
+    .quadrado {}
+  </style>
+</head>
+
+<body>
+
+  <div></div>
+
+</body>
+
+</html>

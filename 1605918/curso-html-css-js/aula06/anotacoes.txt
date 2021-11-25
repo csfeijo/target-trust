@@ -1,0 +1,6 @@
+CSS
+
+Estilos : trabalham com o que chamamos de "atributo" : "valor".
+Ex.:
+color: red;
+background: orange;

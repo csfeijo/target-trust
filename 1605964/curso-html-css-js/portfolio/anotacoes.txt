@@ -1,0 +1,59 @@
+"portfolio" é a pasta do nosso projeto / site.
+Existe uma estrutura padrão para projetos web para organizar nossa aplicação.
+
+portfolio (diretório root - raiz)
+  css
+  img
+  js  
+  (solto os arquivos .htm)
+  index.htm
+
+O acesso ao site:
+Para um site funcionar precisamos:
+- dominio
+- hospedeiro (host)
+
+www.portfolio.com.br => 200.163.191.64 => (diretorio root)
+
+www.portfolio.com.br/index.htm OU somente www.portfolio.com.br
+  
+==== CORES ====
+red
+#FF0000 = hexadecimal trabalha com valores pares
+          de que vão de 00 até FF
+rgb()   = red, green e blue e vai de 0 ate 255
+
+rgba()  = red, green, blue e alpha (opacidade de 0 ate 1 ex: 0.7)
+
+==== ELEMENTOS SEMANTICOS NO HTML 5 ====
+Que se comportam como DIV´s, ou seja, em bloco.
+Mas que possuem nomes condizentes com o seu papel/contexto:
+
+header  : para cabeçalhos
+nav     : para menus
+aside   : para colunas
+section : para secoes
+article : para artigos
+footer  : para rodapes
+
+
+Para publicar um site em um host, normalmente usamos o FTP File Transfer Protocol:
+Existem diversos app para isso, um deles é o FileZila
+
+https://professorfeijo.com.br/tt/assets-portfolio/logotipo.png
+https://professorfeijo.com.br/tt/assets-portfolio/logo-facebook.png
+https://professorfeijo.com.br/tt/assets-portfolio/logo-instagram.png
+https://professorfeijo.com.br/tt/assets-portfolio/logo-linkedin.png
+https://professorfeijo.com.br/tt/assets-portfolio/logo-twitter.png
+https://professorfeijo.com.br/tt/assets-portfolio/usuario-1.png
+https://professorfeijo.com.br/tt/assets-portfolio/usuario-2.png
+
+
+TESTE
+
+
+
+
+
+
+

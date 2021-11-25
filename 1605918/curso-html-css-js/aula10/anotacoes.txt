@@ -1,0 +1,23 @@
+Iframe : possibilita inserir um fragmento / pagina do mesmo projeto ou externo dentro do site.
+É muito usado como conceito de Widget (micro aplicação onde nao temos o controle e apenas a inserimos como um uso externo)
+
+
+=================== JavaScript ===================
+JavaScript foi criado por um cara chamado Brendan Eich para dar uma certe interatividade nas paginas web.
+
+JavaScript não é JAVA! A unica coisa em comum mesmo é o nome!
+Brendan deu esse nome pois Java na epoca estava em ascenção, e isso ajudou a popularizar a linguagem.
+
+HOJE o JS é uma das linguagens mais populares do mundo e a mais utilizada no desenvolvimento web.
+
+Nos veremos os conceitos basicos de JS para desenvolvimento FE.
+Ex. Revisao da sintaxe, comportamento e validação de formulario.
+
+
+JS é uma linguagem FRACAMENTE tipada, ou seja, nós nao definimos os tipos das variaveis.
+Normalmente baseia-se muito em funcoes.
+
+E é uma linguagem CASE SENSITIVE - distingue maiusculas de minusculas.
+
+
+

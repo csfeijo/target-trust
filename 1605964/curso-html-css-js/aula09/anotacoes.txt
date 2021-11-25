@@ -1,0 +1,9 @@
+Existem dois tipos basicos de display:
+
+inline: elementos ficam em linha
+Ex. de elementos que nativamente são inline:
+a, span, img, input, button, textarea
+
+block: elementos ocupam a linha inteira do pai (ninguem fica ao lado)
+Ex. de elementos que nativamente são block:
+h1-6, div, p, br, hr, header, footer, section, aside, article, main, etc.

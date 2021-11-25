@@ -1,0 +1,55 @@
+Existem DOIS tipos de elementos no CSS:
+
+Bloco (block):
+  Que ocupam a linha inteira, sem permitir que outros elementos fiquem ao seu lado.
+  Ex.: h1, h2, h3, p, hr, br
+
+Em Linha (inline):
+  Que ficam um ao lado do outro desde que haja espaço na tela, e que ocupam somente o espaço do seu conteúdo.
+  Ex.: a, img, input, textarea, etc
+
+Para reduzir o uso de tabela (tableless) o W3C criou duas novas tags:
+  div -> divisor -> bloco
+
+  span -> expansível -> inline
+
+CORES:
+As cores podem ser definidas por nomes:
+Ex.: red, orange, green, etc 
+
+Podem ser definidas pelo código hexadecimal:
+Cada cor do pixel pode receber um valor de 0 ate F (0-9, A-F).
+Ex.: red -> #FF0000
+
+Podem ser definidas via funcao de RGB
+Vai de valores de 0 ate 255.
+Ex.: red -> rgb(255, 0, 0)
+
+Podem ser definidas via função RGBA onde o A = Alpha (opacidade)
+Ex.: red -> rgba(255, 0, 0, 0.5) - vermelho com 50% de transparencia
+
+=========== PROJETO PORTFOLIO ===========
+O arquivo inicial DEVE se chamar index.html para que o servidor que hospede o site
+direcione o usuario diretamente para esse arquivo de forma automatica.
+Ex.: http://sitedacarla.com.br => http://sitedacarla.com.br/index.html
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

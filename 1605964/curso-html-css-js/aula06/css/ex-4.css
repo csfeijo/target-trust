@@ -1,0 +1,14 @@
+/* HIERARQUIA no CSS se baseia na ordem dos nodos (elementos) */
+/* o espaço entre os seletores significa hierarquia */
+p a {
+  color: red;
+}
+
+p a.ead {
+  text-decoration: none;
+  border: 4px dotted purple;
+}
+
+.destaque .icone {
+  width: 40px;
+}

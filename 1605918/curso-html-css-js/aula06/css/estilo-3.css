@@ -1,0 +1,51 @@
+/* seletores por tag */
+body {
+  background: brown;
+}
+
+h1 {
+  color: white;
+  background: orange;
+  font-family: Arial;
+}
+
+p {
+  color: orange;
+}
+
+h1 {
+  color: red;
+}
+/* seletor por id (#) */
+#titulo-cidade {
+  color: white;
+}
+/* seletor por classe (.) */
+.destaque {
+  background: gray;
+}
+/* seletores por hierarquia facilita a formatação sem precisar de class / id */
+/* contra: fica fortemente vinculado ao HTML */
+p a {
+  color: yellow;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

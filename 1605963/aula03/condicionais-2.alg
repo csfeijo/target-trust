@@ -1,0 +1,39 @@
+algoritmo "CONDICIONAIS-2"
+
+var
+
+NUM: INTEIRO
+
+
+inicio
+
+ESCREVAL("DIGITE O NUMERO")
+LEIA(NUM)
+
+
+
+// CTRL + G: FORMATA A INDENTAÇAO DO CÓDIGO
+SE (NUM >= 10) ENTAO
+
+   SE (NUM = 10) ENTAO
+      ESCREVAL("É IGUAL A 10")
+   SENAO
+      ESCREVAL("É MAIOR QUE 10")
+   FIMSE
+   
+SENAO
+   ESCREVAL("NÃO É MAIOR QUE 10")
+FIMSE
+
+
+
+
+
+ESCREVAL("SEGUINDO O ALGORITMO...")
+
+
+
+
+
+
+fimalgoritmo

@@ -1,0 +1,56 @@
+/* definicoes de css da pagina de contato.html */
+/* configurem o mapa para ter 410 x 300px no CSS */
+/* adicionem uma borda arredonda no mapa - 10px */
+iframe {
+  width: 410px;
+  height: 300px;
+  border-radius: 10px;
+}
+
+/* ja adicionem os campos de formulario no html */
+/* e já comecem a formatar os campos conforme o figma no css */
+input,
+textarea,
+button {
+  border: 1px solid white;
+  border-radius: 10px;
+  width: 578px;
+  padding: 10px;
+  margin-bottom: 20px;
+  background: transparent;
+  font-family: Poppins;
+  color:white;
+  outline: none;
+}
+
+textarea {
+  height: 80px;
+  resize: none;  
+}
+
+button {
+  width: auto;
+  float: right;
+}
+
+/* para ter uma forma de customizar um atributo do HTML via CSS */
+/* criou-se um acesso parecido com os pseudo-seletores, porem usando 2x os : */
+::placeholder {
+  color: #CCCCCC;
+}
+
+/* mensagem de erro do formulario */
+#erro {
+  font-weight: bold;
+  font-style: italic;
+  margin-top: 10px;
+}
+
+.campoErro {
+  border: 1px dashed white;
+  background: rgba(255, 255, 255, 0.5);
+  transition: background 0.5s;
+}
+
+
+

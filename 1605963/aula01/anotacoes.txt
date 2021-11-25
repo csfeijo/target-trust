@@ -1,0 +1,18 @@
+Lógica é a maneira de raciocionar e organizar os pensamentos para um fim.
+
+Algortimo é a transcrição da lógica em passos (uma receita de bolo por ex.)
+
+
+
+Baby Steps (passo de criança) : fazer com que o resultado venha aos poucos.
+
+Happy Path (caminho feliz) : nao se preocupar com possiveis problemas que 
+nao aconteceram.
+
+Metodologia Agil: (scrum, kanbam, etc) pequenas entregas de funcionalidades.
+
+Normalmente para implementar um software usamos uma IDE : Interface de Desenvolvimento
+Ex.:
+Visual Studio Code : html, css, python, java, nodejs...
+
+No curso usaremos uma IDE chamada VisualG

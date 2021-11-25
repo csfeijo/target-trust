@@ -1,0 +1,7 @@
+CARREIRA:
+3 CAMINHOS
+1°) DBA: Administração da Base de Dados
+2°) Cientista de Dados: trabalha exclusivamente com o que chamamos de estatistica de dados, dados analiticos, analise destes 
+dados e criação de reports e trilhas de tendencia.
+3°) Desenvolvedor Full Stack: trabalha com tecnologias de front-end e back-end (envolve o banco de dados)
+    Conhecimento no processo de desenvolvimento E2E -> End to End -> Ponta a Ponta.

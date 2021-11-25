@@ -1,0 +1,19 @@
+Comandos SQL:
+> Estruturais
+  - CREATE (cria)
+  - ALTER (altera)
+  - SHOW (lista)
+  - DROP (apaga)
+
+> Manipulação de Dados
+  - INSERT (cria / insere)
+  - UPDATE (atualiza)
+  - SELECT (lista)
+  - DELETE (apaga)
+
+
+Dump => backup da base de dados. Pode conter só os dados, ou toda a estrutura.
+
+=========== SELECTS ===========
+O banco de dados não diferencia caracteres maiusculos de minusculos nos valores,
+nem acentos!

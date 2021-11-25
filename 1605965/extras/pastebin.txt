@@ -1,0 +1,8 @@
+Dump Empresa:
+https://pastebin.com/raw/KyTqBxfF
+https://professorfeijo.com.br/tt/sql/dump-empresa-completo-3.txt
+
+
+Dump Alunos:
+https://pastebin.com/raw/s6msspKz
+https://professorfeijo.com.br/tt/sql/funcionarios-alunos-empresa-3.txt

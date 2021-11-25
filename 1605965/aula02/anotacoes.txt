@@ -1,0 +1,24 @@
+Papel de quem trabalha com o BD : é o DBA (Data Base Admnistrator).
+
+
+Diagramação do Banco de Dados é feito pelo Diagrama E.R (Entity Relationship)
+
+
+MySQL Workbench é uma Ferramenta para administramos o banco de dados (ela não é o banco de dados).
+Possui uma série de funcionalidades que possibilitam de uma forma mais rapido e facil alterar e configurar as bases de dados.
+
+
+Tipagens:
+
+
+VARCHAR VS CHAR
+VARCHAR(3) pode ocupar até 3 "espaços / bytes" de armazenamento
+CHAR(3) VAI sempre ocupar 3 "espaços / bytes" de armazenamento
+
+Ex.:
+CHAR(1)
+VARCHAR(1)
+
+PLACA : IRS-8294 -> CHAR(8)
+        AN-5598  -> 8
+        _        -> 8

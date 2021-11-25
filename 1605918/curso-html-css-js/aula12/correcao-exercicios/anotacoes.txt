@@ -1,0 +1,19 @@
+Limite do JavaScript é a janela do Navegador (browser)
+
+
+window
+  document
+    body
+      style
+        background = green
+
+
+O JavaScript trabalha com a sintaxe "camelCase"
+camelCase -> sintaxe do camelo
+nomeCompletoDoUsuario
+
+snake_case -> sintaxe da cobra
+nome_completo_do_usuario
+
+kebab-case -> sintaxe do espetinho
+nome-completo-do-usuario

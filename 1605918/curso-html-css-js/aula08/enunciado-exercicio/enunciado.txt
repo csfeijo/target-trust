@@ -1,0 +1,7 @@
+Implemente uma tela conforme o screenshot em anexo.
+
+Dicas:
+- A div container possui 640px por 480px de dimensão.
+- A linha pequena possui 400px de largura.
+- A linha grande possui 600px de largura.
+- Ao passar o mouse sobre as linhas o fundo delas deve ficar vermelho.

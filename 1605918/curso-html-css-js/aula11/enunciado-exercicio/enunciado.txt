@@ -1,0 +1,22 @@
+Exercicio 1:
+>> Implemente em JavaScript um algoritmo seguindo as seguintes definições:
+
+Crie 3 variaveis para armazenar 3 notas.
+Calcule a media das notas
+
+Caso a media seja maior ou igual a 7 informe com um alerta que o aluno foi aprovado,
+caso contrário que ele foi reprovado.
+
+Exercicio 2:
+>> Implemente um algoritmo que:
+
+Tenha uma variavel com o seu nome
+Tenha uma variavel com o seu salario
+
+Calcule quanto ficaria o seu salario com um aumento de 10%.
+
+Informe na tela com um alerta o resultado mostrando o seu nome e seu salário.
+
+Dica:
+para concatenar informações no JavaScript você pode usar o operador '+';
+Ex. alert('Bom dia' + nome);

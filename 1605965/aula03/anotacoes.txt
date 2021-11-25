@@ -1,0 +1,50 @@
+DBA realiza o processo de tunning da base de dados após esta já estar em uso, fazendo assim melhorias na performance do SGBD.
+
+Quando é necessário a alteração estrutural da base ocorre o processo de "migration":
+  adição de novos atributos, novas tabelas, remoção de atributos existentes.
+
+AI -> Auto Increment: usado SEMPRE com chaves primárias, e habilita o SGBD a adicionar uma unidade incremental ao numero da PK
+a cada registro inserido.
+Ex.
+id_funcionario nome
+1              Ana
+2              João
+5              Paulo
+
+PK -> PK + NN + UN + AI
+
+========================
+XAMPP : X (cross / cruzamento) Apache + MySQL + PHP + Perl => XAMPP
+Montar um ambiente de desenvolvimento em nosso computador.
+
+Um banco de dados roda / executa em um servidor, para acessar este servidor precisamos dos seguintes dados:
+Endereço (host name / nome do hospedeiro)
+Porta (port)
+Usuário (username)
+Senha (password)
+
+Ex.:
+endereço: mysql.pfeijo.com.br
+porta: 3307
+usuario: feijo
+senha: 123456
+
+Localmente pelo XAMPP:
+endereço: localhost ou 127.0.0.1
+porta: 3306
+usuario: root ( raiz )
+senha:  
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,19 @@
+Bom dia pessoal, tudo bem ?
+
+Abaixo segue o exercício para corrigirmos na quinta-feira!
+
+Implemente um site com 3 páginas e um menu (conforme animação).
+
+A página principal se chamará "home.html" e conterá 3 links, sendo que ao invés de texto irão mostrar imagens.
+
+A imagens podem ser buscadas diretamente no Google (procurem por algo como "ícone contato" por exemplo) - fca a critério de vocês.
+
+O primeiro link aponta para 'home.html'
+O segundo para 'veiculos.html'
+O terceiro para 'contato.html'
+
+Façam com calma, usem as imagens que desejarem e customizem o que acharem que for necessário, o objeto desse exercício é apenas fixamos o conteúdo visto.
+
+Na quinta-feira iremos corrigir e tirar as dúvidas que surgirem.
+
+

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfólio do Feijó - Contato</title>
+
+  <!-- Se quiser utilizar a fonte do Google Fonts utilizamos essa regras abaixo -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/geral.css">
+  <link rel="stylesheet" href="css/contato.css">
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <img src="img/logotipo.png" alt="Logotipo">
+
+      <nav class="menu">
+        <a href="index.html">Home</a>
+        <a class="active" href="contato.html">Contato</a>
+      </nav>
+
+    </div>
+  </header>
+
+  <section>
+    <!-- aqui vai o formulario de contato -->
+    <aside>
+      <!-- NESSE CASO especificamente, precisamos colocar o RETURN antes da chamada da funcao -->
+      <!-- para que o formulario PERGUNTE para a function SE DEVE ou NAO prosseguir com o envio dos dados -->
+      <form action="" onsubmit="return validaForm()">
+        <input type="text" name="nome" id="nome" placeholder="Digite o seu nome">
+        <input type="text" name="email" id="email" placeholder="Digite o seu e-mail">
+        <textarea name="mensagem" id="mensagem" placeholder="Digite sua mensagem"></textarea>
+
+        <button type="submit">ENVIAR</button>
+        <p id="erro"></p>
+
+      </form>
+    </aside>
+
+    <!-- aqui vai ir o mapa -->
+    <aside>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3454.4089888792987!2d-51.16460848429357!3d-30.02512228188938!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9519779ea66d9993%3A0x9477cb21ba5c4f62!2sIguatemi%20Porto%20Alegre!5e0!3m2!1spt-BR!2sbr!4v1628036245573!5m2!1spt-BR!2sbr"
+        style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+
+    </aside>
+  </section>
+
+
+  <script src="js/contato.js"></script>
+</body>
+
+</html>

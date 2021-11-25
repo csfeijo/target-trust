@@ -1,0 +1,23 @@
+SEO: Search Engine Optimization (motor de busca / Google)
+
+O VSCode é uma IDE super completa focada em desenvolvimento Front-End.
+Sendo que alem de auxiliar na correção das tags do html por exemplo, possui
+alguns complementos adicionais - por exemplo o EMMET.
+
+Acessibilidade: é a forma de tornar uma página legivel para qualquer tipo de usuario.
+Ex. pessoas com alguma deficiencia
+
+
+Imagens:
+Extensoes mais comuns são:
+JPG
+JPEG
+PNG
+GIF
+SVG ->: são imagens vetoriais (podem ser escaladas sem perda de qualidade - contra é o limite de cores)
+WEBP (formato novo do Google)
+JTIF (formato novo)
+
+Mas os suportados tambem incluem:
+BMP
+TIFF

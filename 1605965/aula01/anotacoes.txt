@@ -1,0 +1,88 @@
+Os bancos de dados mais comuns no mercado:
+
+MySQL (mai siquol) -> banco de dados gratuito, foi comprado pela Oracle mas continua gratuito. Muito voltado para app
+web. Existe uma versao paga chamada MySQL Enterprise - que se baseia em duas funcionalidades pagas: Suporte e a instalação
+em Cluster (varias instancias ou copias da mesma base de dados).
+
+Oracle -> pago, um dos mais populares do mundo. Funciona baseado na cobrança por licença de uso de quantidade de usuarios, 
+ou quantidade de dados armazenados + suporte.
+É um dos banco de dados mais escalavel que existe.
+
+MS SQL -> MicroSoft SQL Server - concorrente direto da Oracle, porém trabalha muito melhor com aplicações da propria MicroSoft.
+Linguagens como C#, .NET, ASP.
+
+PostgreSQL -> FREE, possui uma grande robustez.
+
+NoSQL:
+MongoDB
+Dynamo DB da Amazon
+
+================ ENTIDADES VS ATRIBUTOS ================
+ENTIDADE => CONJUNTO => TABELA
+ATRIBUTO => DESCRICAO => COLUNA
+
+Padrão de nomenclaturas:
+Entidades : normalmente em maisculo e no plural.
+Atributos : normalmente em minusculo e no singular.
+
+Ex.:
+ALUNOS
+nome
+telefone
+email
+endereco
+
+O que NAO DEVE fazer:
+ex.
+Nomes genericos demais
+atributo com o nome "coluna1", "coluna2", "coluna3"
+
+Abreviaturas inconsistentes:
+Ex.:
+t_cel
+dt_n
+
+Nomes redundantes ou extensos:
+Ex.:
+ALUNOS
+nome_aluno
+telefone_aluno
+email_aluno
+
+
+Baby Steps: passos de um bebe.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

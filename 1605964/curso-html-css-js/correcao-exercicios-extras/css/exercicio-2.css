@@ -1,0 +1,31 @@
+body {
+  font-family: Arial;
+  
+}
+
+nav {
+  border: 3px solid orange;
+  width: 400px;
+  margin: 10px auto;
+  padding: 10px;
+  border-radius: 60px;
+}
+
+a {
+  display: inline-block;
+  width: 95px;
+  text-align: center;
+  color: #999999;
+  text-decoration: none;
+  text-transform: lowercase;
+  border-right: 1px dashed #999999;
+}
+
+a:hover {
+  color: orange;
+  font-weight: bold;
+}
+
+a:last-child {
+  border-right: none;
+}

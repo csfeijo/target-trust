@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Veículos</title>
+</head>
+
+<body>
+  <h1>Nossos veículos</h1>
+  <hr>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ut pretium leo. Cras mollis eleifend augue, nec
+    tristique nunc luctus nec. Etiam vel mi molestie, tincidunt ligula fringilla, eleifend augue. Pellentesque finibus
+    lorem at aliquet vestibulum. Integer sed venenatis velit, at dignissim tellus. Aenean nec urna et ante gravida
+    rhoncus. Pellentesque ut enim nec metus placerat dictum. Ut sit amet turpis odio.</p>
+
+  <table border="3">
+    <thead>
+      <tr>
+        <th>Foto</th>
+        <th>Modelo</th>
+        <th>Fabricante</th>
+        <th>Ano</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr>
+        <td>
+          <img src="img/carro-1.png" alt="Prisma">
+        </td>
+        <td>Prisma</td>
+        <td>
+          <a href="http://chevrolet.com.br" target="_blank">Chevrolet</a>
+        </td>
+        <td>2015</td>
+      </tr>
+
+      <tr>
+        <td>
+          <img src="img/carro-2.png" alt="Mustang">
+        </td>
+        <td>Mustang</td>
+        <td rowspan="2">
+          <a href="http://ford.com.br" target="_blank">Ford</a>
+        </td>
+        <td>2021</td>
+      </tr>
+
+      <tr>
+        <td>
+          <img src="img/carro-3.png" alt="Landau">
+        </td>
+        <td>Landau</td>
+        <!-- celula removida pois a linha anterior ocupou este espaço (rowspan="2") -->
+        <!-- <td>
+          <a href="http://ford.com.br" target="_blank">Ford</a>
+        </td> -->
+        <td>1977</td>
+      </tr>
+
+      <tr>
+        <td>
+          <img src="img/carro-4.png" alt="Mini Cooper">
+        </td>
+        <td>Mini Cooper</td>
+        <td>
+          <a href="http://mini.com.br" target="_blank">Mini</a>
+        </td>
+        <td>2001</td>
+      </tr>
+
+      <tr>
+        <td>
+          <img src="img/carro-5.png" alt="Fusca">
+        </td>
+        <td>Fusca</td>
+        <td>
+          <a href="http://volkswagen.com.br" target="_blank">Volkswagen</a>
+        </td>
+        <td>1976</td>
+      </tr>
+    </tbody>
+
+    <tfoot>
+      <tr>
+        <td colspan="4">* financiamos seu veículo.</td>
+      </tr>
+    </tfoot>
+
+  </table>
+
+  <hr>
+
+  <a href="home.html"><img src="img/voltar.png" alt="icone de voltar"></a>
+
+</body>
+
+</html>

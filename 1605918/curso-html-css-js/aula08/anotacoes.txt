@@ -1,0 +1,26 @@
+Assets do projeto:
+
+https://professorfeijo.com.br/tt/assets-portfolio/feijo.jpg
+
+https://professorfeijo.com.br/tt/assets-portfolio/logo-facebook.png
+https://professorfeijo.com.br/tt/assets-portfolio/logo-instagram.png
+https://professorfeijo.com.br/tt/assets-portfolio/logo-linkedin.png
+https://professorfeijo.com.br/tt/assets-portfolio/logo-twitter.png
+
+https://professorfeijo.com.br/tt/assets-portfolio/logotipo.png
+
+https://professorfeijo.com.br/tt/assets-portfolio/usuario-1.jpg
+https://professorfeijo.com.br/tt/assets-portfolio/usuario-2.jpg
+https://professorfeijo.com.br/tt/assets-portfolio/Poppins-Regular.ttf
+
+
+No HTML5 foram criadas NOVAS TAGS para evitar o uso excessivo das DIV´s.
+Apesar de ainda ser muito comum e necessários usarmos as DIVS, existem outras TAGS que fazem o mesmo papel porém tem um 
+signoficado semantico diferente:
+
+MAIN : conteudo principal (não é obrigatória e poucamente usada)
+HEADER: cabeçalho
+FOOTER: rodapé
+NAV: menus / links
+ASIDE: conteudo localizado na lateral do site
+SECTION: secao de uma pagina

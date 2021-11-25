@@ -1,0 +1,57 @@
+input,
+textarea,
+button {
+  width: 574px;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 1px solid white;
+  border-radius: 10px;
+  background: transparent;
+  /* remove a linha que aparece em torno do elemento quando ele está em foco */
+  outline: none;
+  color: white;
+  font-family: Poppins;
+}
+
+textarea {
+  height: 100px;
+  resize: none;
+}
+
+/* customizar a pseudo prop. placeholder para QUALQUER elemento do formulario */
+::placeholder {
+  color: white;
+}
+
+button {
+  width: auto;
+  float: right;
+}
+
+button:active {
+  background: white;
+  color: #3B3D5D;
+  border: 1px solid #3B3D5D;
+  box-shadow: inset 2px 2px 10px 0 #3B3D5D;
+}
+
+iframe {
+  width: 410px;
+  height: 308px;
+  border-radius: 10px;
+  border: none;
+}
+
+/* estilo para componentes com erro */
+.errado {
+  background: #CCCCCC;
+  border: 1px dashed #900000;
+  color: #000000;
+  transition: background 0.5s;
+}
+.errado::placeholder {
+  color: #900000;
+}
+
+
+

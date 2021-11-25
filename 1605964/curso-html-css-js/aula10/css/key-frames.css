@@ -1,0 +1,23 @@
+div {
+  border: 3px solid purple;
+  width: 200px;
+  height: 200px;
+
+  animation-name: troca-fundo;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+
+  animation-timing-function: linear;
+  /* animation-direction: alternate; */
+}
+
+
+
+@keyframes troca-fundo {
+  /* to: destino - transformação final */
+  to {
+    background: violet;
+    border-radius: 40px;
+    transform: rotate(360deg);
+  }
+}

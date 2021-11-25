@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contato</title>
+</head>
+
+<body>
+  <h1>Contato</h1>
+  <hr>
+  <p>Entre em contato:</p>
+
+  <form action="http://localhost:3030/integracao-fe-bd/back-end/processa.php" method="POST">
+    <!-- <form action="https://professorfeijo.com.br/tt/back-end/processa.php" method="POST"> -->
+    <input type="text" name="nome" placeholder="Informe seu nome" size="30">
+    <br>
+    <input type="text" name="email" placeholder="Informe seu e-mail" size="30">
+    <br>
+    <input type="text" name="idade" placeholder="Informe sua idade" size="30">
+    <br>
+    <textarea name="mensagem" cols="30" rows="10"></textarea>
+    <br>
+    <button type="submit">ENVIAR</button>
+  </form>
+
+  <hr>
+  <a href="home.html"><img src="img/voltar.png" alt="Voltar"></a>
+</body>
+
+</html>

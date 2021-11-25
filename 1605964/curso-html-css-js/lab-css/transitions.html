@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    html,
+    body {
+      height: 100%;
+    }
+
+    body {
+      background: #434343;
+      display: flex;
+      align-content: center;
+      justify-content: center;
+    }
+
+    div {
+      border: 1px solid red;
+      width: 200px;
+      height: 200px;
+      margin: 60px auto;
+    }
+
+    section {
+      width: 600px;
+      display: flex;
+      align-items: center;
+    }
+
+    section:hover .quadrado {
+      background: red;
+      transition: background steps(10) 2s;
+    }
+
+    section:hover .bolinha {
+      border-radius: 50%;
+      transition: border-radius linear 1s;
+    }
+  </style>
+</head>
+
+<body>
+  <section>
+    <div class="quadrado"></div>
+    <div class="bolinha"></div>
+  </section>
+</body>
+
+</html>

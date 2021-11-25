@@ -1,0 +1,25 @@
+algoritmo "CAP8-EX-2-V2"
+
+
+var
+IDADE: INTEIRO
+CONT: INTEIRO
+
+inicio
+
+
+CONT <- 1
+ENQUANTO (CONT <= 5) FACA
+   ESCREVAL("DIGITE A IDADE DA PESSOA:")
+   LEIA(IDADE)
+   
+   CONT <- CONT + 1
+FIMENQUANTO
+
+
+
+
+
+
+
+fimalgoritmo

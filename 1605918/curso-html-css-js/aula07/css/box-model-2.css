@@ -1,0 +1,21 @@
+body {
+  /* background-color: #CCCCCC; */
+  background: url(../img/tijolo.jpg);
+}
+
+.menu {
+  background: rgba(0, 155, 10, 0.5);
+  height: 120px;
+  padding: 10px;
+}
+
+.logotipo {
+  border: 2px dotted yellow;
+  width: 80px;
+  height: 80px;
+  background: rgb(255, 170, 230);
+}
+
+.menu a {
+  color: #FFFFFF;
+}

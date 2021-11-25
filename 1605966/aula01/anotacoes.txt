@@ -1,0 +1,19 @@
+Como linguagens de BE podemos ter inumeras:
+- PHP
+- Java
+- .NET
+- C#
+- NodeJS
+- Python
+- ...
+
+Processamento de requisições de páginas é interpretado por um servidor web.
+Primeiro a requisição para um site (www.exemplo.com) chega no Servidor Web, então é processada e o conteúdo é retornado.
+
+Exemplos de servidor de web:
+- Apache (html, php, c-gi, perl...)
+- Apache TomCat (java)
+- IIS / Microsoft (html, php, .net, c#, ...)
+- NodeJS (javascript / aplicações Real Time)
+- NGINX (usado principalmente para aplicações Real Time)
+- Tornado (Python..)

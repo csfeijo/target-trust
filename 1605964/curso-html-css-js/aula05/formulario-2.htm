@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulário 2</title>
+</head>
+
+<body>
+
+  <form action="">
+    <select name="estado">
+      <option value="00">SELECIONE</option>
+      <option value="RS">Rio Grande do Sul</option>
+      <option value="SC">Santa Catarina</option>
+      <option value="SE">Sergipe</option>
+      <option value="TO">Tocantins</option>
+    </select>
+    <br>
+    <p>Marque os conteúdos de interesse:</p>
+    <!-- quando temos multiplas opcoes usando o checkbox vamos precisar enviar todas que estiverem marcadas -->
+    <!-- para isso precisamos usar o simbolo [] no name fazendo com que o BE as receba como um vetor (array) -->
+    <label>
+      <input type="checkbox" name="interesse[]" value="futebol" checked>Futebol
+    </label>
+
+    <label>
+      <input type="checkbox" name="interesse[]" value="turismo">Turismo
+    </label>
+
+    <label>
+      <input type="checkbox" name="interesse[]" value="moda">Moda
+    </label>
+
+    <hr>
+    <p>Deseja receber nossos e-mails quantas vezes por semana?</p>
+
+    <label>
+      <input type="radio" name="frequencia" value="1" checked> 1 vez
+    </label>
+
+    <label>
+      <input type="radio" name="frequencia" value="3"> 3 vezes
+    </label>
+
+    <label>
+      <input type="radio" name="frequencia" value="7"> 7 vezes
+    </label>
+
+    <!-- hidden: é um campo preenchido automaticamente com algum valor fixo, mas nao visivel para o usuario -->
+    <input type="hidden" name="campo-escondido" value="quinta-feira">
+    <br>
+
+    <button type="submit">ENVIAR</button>
+  </form>
+
+</body>
+
+</html>

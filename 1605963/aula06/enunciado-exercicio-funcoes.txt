@@ -1,0 +1,13 @@
+Implemente uma funcao que receba 3 numeros
+e retorne a media entre eles.
+
+
+Ex.:
+Na hora de chamar a funcao devemos fazer algo
+assim:
+ESCREVAL(  CALCULA_MEDIA(10, 5, 3) )
+
+
+Crie uma segunda versão deste mesmo algoritmo,
+porém os dados numericos serão lidos via teclado (de fora da função!)
+Obs.: NUNCA temos LEIA dentro da função

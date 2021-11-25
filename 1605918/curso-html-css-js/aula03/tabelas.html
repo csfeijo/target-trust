@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tabelas</title>
+</head>
+
+<body>
+  <!-- border: não se usa mais, estamos adicionando apenas para visualizar nossa tabela -->
+  <!-- essa formatação irá futuramente no CSS -->
+  <table border="2">
+    <thead>
+      <tr>
+        <th>NOME</th>
+        <th>CURSO</th>
+        <th>CARGA HORÁRIA</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <!-- tr (table row )  : linha da tabela-->
+      <tr>
+        <!-- td (table data) : celula da tabela -->
+        <td>Carla Oliveira</td>
+        <td>HTML, CSS e JavaScript</td>
+        <td>40 horas</td>
+      </tr>
+      <tr>
+        <td>Elieser Carvalho</td>
+        <td>Lógica de Programação</td>
+        <td rowspan="2">20 horas</td>
+      </tr>
+      <tr>
+        <td>Guilherme Borges</td>
+        <td>Introdução a BD e SQL</td>
+        <!-- comentamos essa TD pois a TD de cima está se expandindo (rowspan) e ocupando o espaço deste elemento -->
+        <!-- <td>20 horas</td> -->
+      </tr>
+    </tbody>
+
+    <tfoot>
+      <tr>
+        <td colspan="3">* dados referentes à julho de 2021 gerados pelos sistema da TT.</td>
+      </tr>
+    </tfoot>
+
+  </table>
+
+
+
+</body>
+
+</html>

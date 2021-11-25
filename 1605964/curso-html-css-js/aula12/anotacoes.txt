@@ -1,0 +1,43 @@
+https://professorfeijo.com.br/tt/assets-portfolio/Poppins-Regular.ttf
+
+
+Workaround (gambiarra - hack)
+
+
+Fontes podem "embedades" => "embutidas" no projeto atraves de um recurso chamado web-fonts.
+Os formatos mais comuns de fontes são:
+TTF => true type font
+WOFF => web optimized font family
+WOFF2
+OTF => utlizado por IE´s mais velhos
+
+
+É muito comum buscarmos as fontes ou até arquivos CSS e JS de fontes externas confiaveis.
+O nome desse serviço é normalmente conhecido como CDN (Content Delivery Network)
+
+============================================================================================
+JavaScript:
+Criada por um cara chamado Brendan Eich (Netscape)
+O nome JavaScript foi dado porque na epoca o Java estava em grande ascenção - e a ideia foi popularizar mais facilmente essa nova linguagem.
+
+Java é uma linguagem protitapada e funcional.
+Fracamente tipada - nao possui tipagem de dados - isso é implicito na linguagem.
+Utliza a sintaxe camelCase diferenciando maisculas de minusculas (case sensitive).
+
+ECMAScript X JavaScript 
+ECMAScript > JavaScript
+
+Autor:
+Steve Souders - Yahoo
+https://www.oreilly.com/pub/au/2951
+
+Chris Heilman - Yahoo
+
+
+Existem validadores que podem ser instalados no VSCode ou rodados manualmente
+chamados LINTERS. O mais conhecido deles é o ESLint.
+
+
+
+
+

@@ -1,0 +1,20 @@
+Boa notie pessoal, desculpem o atraso no envio do exercício do final de semana, mas segue o enunciado:
+
+Acesse o HTML abaixo e copie-o para o seu VSCode:
+
+https://pastebin.com/raw/tUUz64xn
+
+E implemente no VSCode as regras em CSS conforme descrito a seguir:
+
+O id="titulo" deverá ter:
+  Fundo laranja;
+  Cor do texto em branco;
+
+O id="sub-titulo" deverá ter:
+  Cor do texto em vermelho;
+
+A class="tipo" deverá ter:
+  Cor do texto em azul;
+
+Apenas o link de dentro do último parágrafo 
+deverá ficar na cor vermelha.

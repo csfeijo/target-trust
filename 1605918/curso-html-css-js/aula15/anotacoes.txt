@@ -1,0 +1,52 @@
+Colocar o produto no AR -> processo de "deploy"
+
+Para publicar o site precisamos: 
+- Dominio (www.seusite.com.br)
+- Host (hospedeiro)
+
+
+Fluxo:
+Acesso o Dominio
+O dominio é convertido por um serviço chamado DNS (Domain Name Service) para um endereço
+IP.
+
+Ex.:
+professorfeijo.com.br -> 200.163.191.65 -> cair no servidor do host
+
+Hosts no mercado:
+- Locaweb
+- Kinghost
+- Host Gator
+- Go Daddy
+- Amazon
+- UOL
+- Terra
+
+A publicação dos arquivos é feita via FTP (File Transfer Protocol)
+Ex.:
+ftp.seusite.com.br
+usuario
+senha
+
+Designs que se adaptam conforme o tamanho de tela:
+Design Responsivo -> Responsive Design
+Técnica no CSS: media queries
+Ex.:
+@media screen and (max-width: 600px) {
+  body {
+    background: orange;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  body {
+    background: red;
+  }
+}
+
+
+
+
+
+
+

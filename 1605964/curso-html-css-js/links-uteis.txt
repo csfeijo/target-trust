@@ -1,0 +1,103 @@
+Documentação:
+https://www.maujor.com/
+https://developer.mozilla.org/pt-BR/docs/Web/HTML
+https://www.w3schools.com/tags/
+
+
+Imagens:
+https://www.iconfinder.com/
+https://www.flaticon.com/br/
+https://pngtree.com/free-png
+https://placeholder.com/
+
+
+Placeholders:
+https://www.lipsum.com/
+https://mussumipsum.com/
+https://www.techtudo.com.br/noticias/noticia/2014/06/lista-tem-20-opcoes-alternativas-de-lorem-ipsum.html
+
+
+Viagem no tempo web:
+https://archive.org/web/
+
+Atalhos do VSCode:
+https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf
+https://docs.emmet.io/cheat-sheet/
+
+
+Canais:
+https://www.youtube.com/watch?v=FCC2GbStmfc
+
+UX / UI:
+https://thenextweb.com/news/hawaiis-emergency-alert-systems-interface-looked
+
+
+Medidas em CSS:
+https://desenvolvimentoparaweb.com/css/unidades-css-rem-vh-vw-vmin-vmax-ex-ch/
+
+Parques Tecnologicos / Nichos de empresas de TI
+https://www.fijo.org.br/
+https://tecnopuc.pucrs.br/
+https://www.tecnosinos.com.br/
+Marcos Krol Pacheco19:46
+https://carreiras.pucrs.br/oportunidades
+
+
+Design:
+https://info.trendwatching.com/
+
+CSS3:
+https://pattle.github.io/simpsons-in-css/
+https://www.instagram.com/danielsnows/?hl=pt-br
+https://danielsnows.com.br/
+https://professorfeijo.com.br/tt/parallax-game
+https://ianlunn.github.io/Hover/
+
+Gradientes em CSS (extra)
+https://cssgradient.io/
+
+
+Bibliotecas de animações em CSS:
+https://zurb.com/playground/motion-ui
+https://animate.style/
+http://vivify.mkcreative.cz/
+https://www.minimamente.com/project/magic/
+
+Sombras (neon):
+https://css-tricks.com/how-to-create-neon-text-with-css/
+
+https://mybrandnewlogo.com/color-palette-generator
+
+Fontes:
+http://fonts.google.com
+
+
+JavaScript:
+Certificação Microsoft
+Exame 98-382: Introduction to Programming Using JavaScript
+https://docs.microsoft.com/pt-br/learn/certifications/exams/98-382?ns-enrollment-type=Collection&ns-enrollment-id=075msw7mk3y2gr
+https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE4tiyb
+
+Exame 98-383: Introduction to Programming Using HTML and CSS
+https://docs.microsoft.com/pt-br/learn/certifications/exams/98-383?ns-enrollment-type=Collection&ns-enrollment-id=075msw7mk3y2gr
+
+Operadores Mozilla:
+https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Guide/Expressions_and_Operators
+
+Interpretador online front-end:
+https://jsfiddle.net/
+
+Eventos em JavaScript:
+https://www.w3schools.com/tags/ref_eventattributes.asp
+
+Old Radio em CSS e JS:
+http://bernarddeluna.github.io/oldRadio/
+
+Relogios e Generators em CSS
+https://freefrontend.com/css-clocks/
+https://codepen.io/dope/pen/KJYMZz
+https://cssgradient.io/
+https://mycolor.space/gradient?ori=to+right+bottom&hex=%239EAABC&hex2=%2356760D&sub=1
+
+
+

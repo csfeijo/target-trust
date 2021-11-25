@@ -1,0 +1,14 @@
+DOM: podemos usualmente acessar os elementos com o querySelectorAll (baseado nos seletores CSS)
+
+Ex.:
+document.getElementsByClassName('classe') => document.querySelectorAll('.classe')
+document.getElementsByTagName('tag')      => document.querySelectorAll('tag')
+document.getElementById('id')             => document.querySelectorAll('#id')
+
+Biblioteca chamada jQuery : é uma Biblioteca JS criada por um dev chamado John Resig - lema da lib é:
+"write less, do more" => "escreva menos, faça mais"
+Ex.:
+$('#id')
+$('.classe')
+$('div')
+

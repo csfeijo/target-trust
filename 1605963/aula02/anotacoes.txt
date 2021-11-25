@@ -1,0 +1,16 @@
+O Visual G usa uma sintaxe nao sensitiva (nao diferencia maiusculo de minusculo)
+
+Ex.
+escreval("Ola")
+ESCREVAL("Ola")
+eScReVaL("Ola")
+
+Variaveis
+NOME
+nome
+Nome
+
+Tipos/padrão (pattern) de "case"
+nome_completo_pai => snake case (cobrinha)  Ex.: PHP
+nomeCompletoPai   => camel case (camelo)    Ex.: JS, Java, .NET
+nome-completo-pai => kebab case (espetinho) Ex.: Python, NodeJS

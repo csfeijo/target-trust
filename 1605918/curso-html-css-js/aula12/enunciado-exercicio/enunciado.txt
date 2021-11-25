@@ -1,0 +1,8 @@
+Implemente um HTML que tenha 3 campos para preenchimento de 3 notas.
+
+Logo abaixo deverá haver um botão para calcular a media das 3 notas preenchidas.
+
+Ao clicar no botão calcule a media e caso esta seja igual ou superior a 7 deverá aparecer um texto em VERDE 
+informando que o aluno foi aprovado, 
+caso contrário o texto deverá aparecer em VERMELHO informando que ele foi reprovado.
+

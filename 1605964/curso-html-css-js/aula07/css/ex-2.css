@@ -1,0 +1,12 @@
+body {
+  background: url(../img/grama.jpg);
+}
+
+div {
+  /* border: 1px solid red; */
+  height: 200px;
+  width: 200px;
+  background: url(../img/bola.png);
+  background-size: 100%;
+  margin: 100px auto;
+}

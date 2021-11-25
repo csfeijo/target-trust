@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+
+  <!-- method: GET ou POST -->
+  <form action="" method="GET">
+    <input type="text" name="nome" placeholder="Digite o seu nome" maxlength="10">
+    <br>
+    <input type="text" name="endereco" placeholder="Digite o endereço">
+    <br>
+
+    <!-- option: cada option é uma opção, sendo que podemos adicionar um atributo value o qual -->
+    <!-- serve para mascarar a opção mostrada, ou seja, o cliente visualiza uma informação mas o que é enviado -->
+    <!-- é o que está dentro deste atributo. -->
+    <select name="cidade">
+      <option>SELECIONE</option>
+      <option value="ALV">Alvorada</option>
+      <option value="CHC">Cachoeirinha</option>
+      <option value="CAN" selected>Canoas</option>
+      <option value="TOR">Torres</option>
+    </select>
+
+
+
+    <br>
+    <input type="password" name="senha" placeholder="Sua senha" maxlength="8">
+    <br>
+    <textarea name="descricao" maxlength="146" placeholder="Sobre você"></textarea>
+    <br>
+
+
+
+    <button type="submit">ENVIAR</button>
+
+
+  </form>
+
+</body>
+
+</html>

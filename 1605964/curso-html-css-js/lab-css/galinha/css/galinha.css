@@ -1,0 +1,67 @@
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.galinha {
+  border: 1px solid red;
+  border-radius: 50%;
+  width: 400px;
+  height: 400px;
+  background: #1f9cdf;
+  text-align: center;
+}
+
+.crista {
+  background: #db232f;
+  border-radius: 50%;
+  width: 60px;
+  height: 140px;
+  margin-top: ;
+  margin: -60px auto 0 auto;
+}
+
+.olho {
+  width: 140px;
+  height: 140px;
+  background: white;
+  border-radius: 50%;
+  display: inline-block;
+  position: relative;
+}
+.olho.esquerdo {
+  margin-right: -10px;
+}
+.olho.direito {
+  margin-left: -10px;
+}
+
+.bico {
+  width: 0;
+  height: 0;
+  background: none;
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+  border-top: 60px solid #f26722;
+  margin: -40px auto 0 auto;
+}
+
+.pupila {
+  width: 40px;
+  height: 40px;
+  background: #070707;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 10px;
+  left: 30px  
+}
+
+
+

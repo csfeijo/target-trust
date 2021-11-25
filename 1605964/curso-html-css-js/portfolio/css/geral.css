@@ -1,0 +1,92 @@
+/* definição para uso de fonte customizada */
+@font-face {
+  font-family: Poppins;
+  src: url(../fonts/Poppins-Regular.ttf) format("truetype");
+}
+
+body {
+  background: #3B3D5D;
+  /* remove o espalça padrão que o browser adiciona */
+  margin: 0;
+  font-family: Poppins;
+  color: white;
+}
+
+header {
+  /* border: 1px solid yellow; */
+  /* height: 110px; */
+  background: #1F2235;
+}
+
+.container {
+  background: #1F2235;
+  /* border: 1px solid white; */
+  /* trabalhando com o um valor de 1280 - 110 de desconto da barra de scroll */
+  width: 1170px; 
+  /* height: 100px; */
+  margin: 0 auto;
+  padding: 30px 0;
+}
+/* =========== MENU =========== */
+.menu {
+  /* float: faz o elemento flutuar para a esquerda ou direita dentro do seu "pai" */
+  float: right;
+  margin-top: 16px;
+}
+.menu a {
+  /* border: 1px solid orange; */
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  text-transform: capitalize;
+  padding: 11px 20px;
+}
+/* :hover: é uma pseudo prop. do seletor - precisa ser com ":" e colado ao seletor desejado */
+.menu a:hover, 
+.menu a.ativo {
+  background: #FF4A57;
+}
+
+/* ====== CONTEUDO DO SITE ====== */
+section {
+  /* border: 1px solid red; */
+  width: 1150px;
+  height: 410px;
+  padding: 10px;
+  margin: 60px auto 0 auto;
+}
+
+aside {
+  /* border: 1px solid orange; */
+}
+
+/* first-child: é quando o elemento é o PRIMEIRO FILHO de algum pai */
+aside:first-child {
+  width: 600px;
+  height: 406px;
+  float: left;
+  /* background: rgba(255,255,100, 0.5); */
+  margin-right: 88px;
+}
+
+/* last-child: ULTIMO filho de algum pai */
+aside:last-child {
+  width: 450px;
+  height: 406px;
+  /* background: purple; */
+  float: right;
+}
+/* quando tivermos filhos alem do primeiro e do ultimo usamos a pseudo-propriedade "nth-child(4) */
+
+
+
+
+
+
+
+
+
+
+
+
+

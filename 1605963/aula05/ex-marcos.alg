@@ -1,0 +1,20 @@
+algoritmo "EX-MARCOS"
+
+var
+IMPAR: INTEIRO
+CONT: INTEIRO
+
+inicio
+CONT <- 1
+
+ENQUANTO ( CONT <= 20) FACA
+   IMPAR <- CONT MOD 2
+   
+   SE (IMPAR > 0) ENTAO
+      ESCREVAL (CONT, " - ESSE NÚMERO É IMPAR")
+   FIMSE
+   
+   CONT <- CONT + 1
+FIMENQUANTO
+
+fimalgoritmo

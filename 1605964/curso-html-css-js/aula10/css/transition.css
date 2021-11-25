@@ -1,0 +1,43 @@
+div {
+  border: 2px solid orange;
+  width: 100px;
+  height: 100px;
+}
+
+#t-1 {
+  transition: background 2s;
+}
+
+#t-1:hover {
+  background: orange;
+}
+
+#t-2:hover {
+  border-radius: 50%;
+  background: #0096D6;
+  width: 80px;
+  height: 80px;
+  /* transition: border-radius 5s, background 3s; */
+  transition: all 3s;
+}
+
+
+#t-3 {
+  transition: transform 2s;
+  background: url(../img/catraca.png);
+  background-size: 100%;
+  border: none;
+}
+
+#t-3:hover {
+  transform: rotate(360deg);
+}
+
+
+
+
+
+
+
+
+

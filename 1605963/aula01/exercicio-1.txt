@@ -1,0 +1,31 @@
+1) Escreva um algoritmo (sequencia de passos) para buscar o seu sobrinho no colegio.
+Requisitos:
+Voce vai ir com o seu carro
+O sobrinho só tem aula de seg a sex pela tarde (tarde toda)
+
+2) Altere o seu algoritmo para que busque o sobrinho somente nos dias de aula
+
+SE hoje é seg OU hoje é terça OU hoje é quarta OU hoje é quinta OU hoje é sexta ENTAO
+  SE o turno é tarde ENTAO
+    Entrar no carro
+    Ligar o carro
+    Dirigir até a escola
+    Localizar o sobrinho
+    Colocar sobrinho no carro
+    Entrar no carro
+    Dirigir ate em casa
+
+
+
+SE hoje não é sabado E hoje não é domingo ENTAO
+  SE o turno é tarde ENTAO
+    Entrar no carro
+    Ligar o carro
+    Dirigir até a escola
+    Localizar o sobrinho
+    Colocar sobrinho no carro
+    Entrar no carro
+    Dirigir ate em casa
+
+
+

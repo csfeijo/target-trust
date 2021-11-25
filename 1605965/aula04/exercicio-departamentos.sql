@@ -1,0 +1,9 @@
+USE EMPRESA;
+
+# Criar a tabela de Departamentos conforme o diagrama
+CREATE TABLE IF NOT EXISTS DEPARTAMENTOS (
+	id_departamento INT UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    sigla VARCHAR(10) NOT NULL,
+    nome VARCHAR(50) NOT NULL
+) ENGINE=INNODB;
+

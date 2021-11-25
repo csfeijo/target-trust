@@ -1,0 +1,23 @@
+algoritmo "OPERADORES-LOGICOS-1"
+
+var
+USUARIO: CARACTERE
+
+inicio
+
+
+ESCREVAL( 25 > 3 )
+
+ESCREVAL( 14 = 140 )
+
+ESCREVAL( 25 <> 10 )
+
+
+USUARIO <- "FEIJO"
+
+ESCREVAL( USUARIO = "ADMIN" )
+
+
+
+
+fimalgoritmo

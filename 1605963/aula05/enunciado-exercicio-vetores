@@ -1,0 +1,26 @@
+Implemente um algortimo que possua um vetor
+de 5 veículos.
+Voce deve pedir para o usuario digitar os 5 veiculos
+via teclado e armazena-los no vetor.
+Voce deve fazer isso usando estrutura de repetição
+para ter um codigo mais enxuto.
+
+Logo a seguir, depois de ler os veiculos, limpe a tela e liste os veículos cadastrados.
+
+===================================================
+Implemente um algortimo que leia 5 notas e as armazene em um vetor.
+Calcule a media destas notas e caso o aluno tenha media acima de 7 informe que ele foi aprovado, caso contrario que foi reprovado.
+===================================================
+Implemente um algortimo que leia 3 nomes e 3 cargos.
+Limpe a tela.
+Logo apos liste os nomes e os cargos no seguinte formato.
+Ex.:
+NOME        CARGO
+Cicero      Instrutor
+João        Secretário
+Paulo       Diretor
+===================================================
+Leia 5 numeros inteiros do teclado e armazene em um vetor.
+Logo apos informe quais foram os numeros impares digitados,
+e caso não haja nenhum informe que "Nenhum impar foi encontrado"
+
