@@ -1,0 +1,49 @@
+html, body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Roboto;
+}
+
+header {
+  background: #F3F3F3;
+  min-height: 60px;
+  display: flex;
+
+}
+
+nav {
+  width: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 60px;
+}
+
+nav .tab {
+  color: #646464;
+  padding: 18px;
+}
+
+nav .tab:hover,
+nav .tab.active {
+  color: #FF9900;
+  border-bottom: 3px solid #FF9900;
+}
+
+a {
+  text-decoration: none;
+}
+
+section {
+  width: 400px;
+  margin-left: 60px;
+  line-height: 24px;
+  display: none;
+}
+
+section.active {
+  display: block;
+}
