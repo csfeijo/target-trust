@@ -1,7 +1,7 @@
-import http from 'http';
+import { createServer } from 'http';
 import { readFile } from 'fs';
 
-http.createServer((req, res) => {
+createServer((req, res) => {
   res.writeHead(200, { 'Content-Type': 'text/html' });
   let file = '';
   switch(req.url) {
