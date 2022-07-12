@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react'
+import { Link } from "react-router-dom";
 import getDepartamentos from '../../services/departamentos';
 
 const Departamentos = () => {
@@ -12,16 +13,13 @@ const Departamentos = () => {
     getDeptos()
   }, [])
 
-
-
   return (
     <>
-      <hr/>
-      <div className='d-flex justify-content-between'>
+      <div className='d-flex justify-content-between mt-4 mb-4'>
         <h3>Departamentos</h3>
-        <button className='btn btn-secondary'>
+        <Link to='/departamentos/new' className='btn btn-secondary'>
           <i className='bi bi-plus'/>Novo
-        </button>
+        </Link>
       </div>
       {deptos && 
         <table className="table table-striped">
@@ -35,7 +33,7 @@ const Departamentos = () => {
           <tbody>
             {deptos.map(d => {
               return (
-                <tr>
+                <tr key={d.id_departamento}>
                   <td>{d.nome}</td>
                   <td>{d.sigla}</td>
                   <td className='text-center'>
