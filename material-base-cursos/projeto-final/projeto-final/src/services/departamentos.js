@@ -13,3 +13,7 @@ export const insertDepartamentos = async (data) => {
   })
   return resp.data
 }
+
+export const removeDepartamento = async (data) => {
+  alert('removido')
+}

@@ -1,10 +1,22 @@
 import React, { useState, useEffect } from 'react'
 import { Link } from "react-router-dom";
-import { getDepartamentos } from '../../services/departamentos';
+import { useNavigate } from 'react-router-dom'
+import { 
+  getDepartamentos, 
+  removeDepartamento
+} from '../../services/departamentos';
+import Modal from '../Modal'
 
 const Departamentos = () => {
 
   const [deptos, setDeptos] = useState()
+  const [deleted, setDeleted] = useState(false)
+
+  const [nome, setNome] = useState()
+  const [sigla, setSigla] = useState()
+  const [idDepartamento, setIdDepartamento] = useState()
+
+  const navigate = useNavigate();  
 
   useEffect(() => {
     async function getDeptos() {
@@ -12,6 +24,15 @@ const Departamentos = () => {
     }
     getDeptos()
   }, [])
+
+  useEffect(() => {
+    if (deleted) {
+      // TODO: ficou faltando uma maneira de fechar a modal ou fazer reload na tela
+      // alert(deleted)
+      
+      // navigate('/departamentos', {replace:true})
+    }
+  }, [deleted])
 
   return (
     <>
@@ -38,13 +59,22 @@ const Departamentos = () => {
                   <td>{d.sigla}</td>
                   <td className='text-center'>
                     <div className='d-flex justify-content-evenly'>
-                      <a href='#' className='btn btn-sm btn-outline-warning'>
+                      <Link to='/departamentos/edit' className='btn btn-sm btn-outline-warning'>
                         <i className='bi bi-pencil-fill'></i> Editar
-                      </a>
+                      </Link>
 
-                      <a href='#' className='btn btn-sm btn-outline-danger'>
+                      <button 
+                        className='btn btn-sm btn-outline-danger'
+                        data-bs-toggle="modal"
+                        data-bs-target="#exampleModal"
+                        onClick={() => {
+                          setIdDepartamento(d.id_departamento)
+                          setNome(d.nome)
+                          setSigla(d.sigla)
+                        }}
+                      >
                         <i className='bi bi-trash'></i> Excluir
-                      </a>
+                      </button>
                     </div>
                   </td>
                 </tr>
@@ -53,6 +83,14 @@ const Departamentos = () => {
           </tbody>
         </table>
       }
+      <Modal 
+        nome={nome} 
+        sigla={sigla}
+        onConfirm={() => {
+          removeDepartamento(idDepartamento)
+          setDeleted('feijo')
+        }}
+      />
     </>
   )
 }
