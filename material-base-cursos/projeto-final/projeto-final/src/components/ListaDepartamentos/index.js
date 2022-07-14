@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { Link } from "react-router-dom";
-import getDepartamentos from '../../services/departamentos';
+import { getDepartamentos } from '../../services/departamentos';
 
 const Departamentos = () => {
 

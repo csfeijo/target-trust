@@ -1,8 +1,15 @@
 import api from '../services/api'
 
-const getDepartamentos = async () => {
+export const getDepartamentos = async () => {
   const resp = await api.get('/departamentos')
   return resp.data
 }
 
-export default getDepartamentos
+export const insertDepartamentos = async (data) => {
+  const { nome, sigla } = data
+  const resp = await api.post('/departamentos', {
+    nome,
+    sigla
+  })
+  return resp.data
+}
