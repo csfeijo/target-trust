@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react'
 import { Link } from "react-router-dom";
-import { useNavigate } from 'react-router-dom'
 import { 
   getDepartamentos, 
   removeDepartamento
@@ -8,29 +7,25 @@ import {
 import Modal from '../Modal'
 
 const Departamentos = () => {
-
   const [deptos, setDeptos] = useState()
   const [deleted, setDeleted] = useState(false)
-
   const [nome, setNome] = useState()
   const [sigla, setSigla] = useState()
   const [idDepartamento, setIdDepartamento] = useState()
 
-  const navigate = useNavigate();  
+  async function getDeptos() {
+    setDeptos(await getDepartamentos())
+  }
 
   useEffect(() => {
-    async function getDeptos() {
-      setDeptos(await getDepartamentos())
-    }
     getDeptos()
   }, [])
 
   useEffect(() => {
     if (deleted) {
-      // TODO: ficou faltando uma maneira de fechar a modal ou fazer reload na tela
-      // alert(deleted)
-      
-      // navigate('/departamentos', {replace:true})
+      document.querySelectorAll('.btn-close')[0].click()
+      setDeleted(false)
+      getDeptos()
     }
   }, [deleted])
 
@@ -59,7 +54,7 @@ const Departamentos = () => {
                   <td>{d.sigla}</td>
                   <td className='text-center'>
                     <div className='d-flex justify-content-evenly'>
-                      <Link to='/departamentos/edit' className='btn btn-sm btn-outline-warning'>
+                      <Link to={`/departamentos/edit/${d.id_departamento}`} className='btn btn-sm btn-outline-warning'>
                         <i className='bi bi-pencil-fill'></i> Editar
                       </Link>
 
@@ -88,7 +83,7 @@ const Departamentos = () => {
         sigla={sigla}
         onConfirm={() => {
           removeDepartamento(idDepartamento)
-          setDeleted('feijo')
+          setDeleted(true)
         }}
       />
     </>

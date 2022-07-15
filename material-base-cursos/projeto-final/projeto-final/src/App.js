@@ -1,4 +1,3 @@
-import ReactDOM from "react-dom/client";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import Menu from './components/Menu'
@@ -20,6 +19,7 @@ function App() {
             <Route path="/" element={<Departamentos />} />
             <Route path="/departamentos" element={<Departamentos />}/>
             <Route path="/departamentos/new" element={<FormDepartamentos />} />
+            <Route path="/departamentos/edit/:idDepartamento" element={<FormDepartamentos />} />
             </Routes>
         </div>
       </BrowserRouter>

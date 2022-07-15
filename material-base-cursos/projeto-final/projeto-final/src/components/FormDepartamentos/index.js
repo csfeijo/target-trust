@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from 'react'
-import { useNavigate } from 'react-router-dom'
-import { insertDepartamentos } from '../../services/departamentos';
+import { useNavigate, useParams } from 'react-router-dom'
+import { editDepartamentos, insertDepartamentos, getDepartamentoPeloId } from '../../services/departamentos';
 
 const salvarDepto = async (nome, sigla, callback) => {
   if (nome && sigla) {
-    const resp = await insertDepartamentos({
+    await insertDepartamentos({
       nome,
       sigla
     })
@@ -12,15 +12,52 @@ const salvarDepto = async (nome, sigla, callback) => {
   }
 }
 
+const editarDepto = async (idDepartamento, nome, sigla, callback) => {
+  if (idDepartamento && nome && sigla) {
+    await editDepartamentos({
+      idDepartamento,
+      nome,
+      sigla
+    })
+    callback()
+  }
+}
+
+const getDepartamento = async (idDepartamento) => {
+  const resp = await getDepartamentoPeloId(idDepartamento)
+  return resp
+}
+
 const FormDepartamentos = () => {
+  const { idDepartamento } = useParams()
   const [nome, setNome] = useState('')
   const [sigla, setSigla] = useState('')
   const [erro, setErro] = useState()
   const [showError, setShowError] = useState('d-none')
   const [saving, setSaving] = useState(false)
   const [saved, setSaved] = useState(false)
+  const [titulo, setTitulo] = useState('Cadastro')
 
   const navigate = useNavigate();  
+
+  const [depto, setDepto] = useState()
+
+  async function getDepto(id) {
+    setDepto(await getDepartamento(id))
+  }
+
+  useEffect(() => {
+    getDepto(idDepartamento)
+  },[idDepartamento])
+
+  useEffect(() => {
+    if (depto) {
+      setNome(depto[0].nome)
+      setSigla(depto[0].sigla)
+      setTitulo('Atualização')
+    }
+  }, [depto])
+  
 
   useEffect(() => {
     if (saved) {
@@ -30,7 +67,7 @@ const FormDepartamentos = () => {
 
   return (
     <>
-      <h3 className='mt-4 mb-4'>Cadastro de Departamento</h3>
+      <h3 className='mt-4 mb-4'>{titulo} de Departamento</h3>
       <div className='row'>
         <div className='col'>
           <div className='form-floating mb-3'>
@@ -76,9 +113,16 @@ const FormDepartamentos = () => {
                   return
                 }
                 setSaving(true)
-                salvarDepto(nome, sigla, () => {
-                  setSaved(true)
-                })
+
+                if (depto) {
+                  editarDepto(idDepartamento, nome, sigla, () => {
+                    setSaved(true)
+                  })
+                } else {
+                  salvarDepto(nome, sigla, () => {
+                    setSaved(true)
+                  })
+                }
               }
           }
           >
