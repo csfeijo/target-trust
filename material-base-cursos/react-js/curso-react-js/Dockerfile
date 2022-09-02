@@ -27,4 +27,6 @@ CMD npm start
 
 # executa o comando no terminal
 # docker build -t reactjs/dockernode .
-# docker run -p 3000:3000 -d tgmarinho/dockernode
+# docker compose up // roda e sobe e fica com hot reload
+
+# docker run -p 3000:3000 -d reactjs/dockernode // roda e sobe mas nao funciona o hot reload
