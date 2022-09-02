@@ -8,16 +8,7 @@ const Home = () => {
 
   return (
     <Container>
-      <h1>Home</h1>
-      <p>{count}</p>
-
-      <button onClick={() => {
-        setCount(count + 1)
-      }}>
-        CLIQUE
-      </button>
-      <hr/>
-      <Contador num={count}/>
+      <h1>Home Page</h1>
     </Container>
   )
 }
