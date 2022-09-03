@@ -3,10 +3,10 @@ import styled from 'styled-components';
 
 const Container = styled.div`
   display: flex;
-  background-color: #e89900;
+  background-color: #eeeeee;
   color: white;
-  width: 150px;
-  height: 100px;
+  width: 200px;
+  height: 150px;
   border-radius: 4px;
   justify-content: center;
   align-items: center;
@@ -19,7 +19,7 @@ const Container = styled.div`
   }
 
   &:hover {
-    background-color: #002244;
+    background-color: #7145e0;
     a {
       color: white;
     }

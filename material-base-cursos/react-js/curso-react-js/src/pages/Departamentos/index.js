@@ -17,11 +17,11 @@ const Departamentos = () => {
       <h1>Departamentos</h1>
 
       <List>
-        {listaDepartamentos.map(depto => {
+        {listaDepartamentos.map((depto, index) => {
           return (
-            <Card>
+            <Card key={index}>
               <Link to={`/departamentos/${depto.id}`}>
-                <p>{depto.sigla}</p>
+                <h3>{depto.sigla}</h3>
                 <p>{depto.nome}</p>
               </Link>
               

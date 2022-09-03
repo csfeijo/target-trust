@@ -4,6 +4,7 @@ import NotFound from './pages/NotFound';
 import Home from './pages/Home';
 import Departamentos from './pages/Departamentos';
 import DepartamentosDetalhes from './pages/DepartamentosDetalhes';
+import Contato from './pages/Contato';
 import { 
   BrowserRouter,
   Routes, 
@@ -22,7 +23,9 @@ function App() {
               <Route index element={<Departamentos/>}/>
               <Route path=':idDepartamento' element={<DepartamentosDetalhes/>}/>
             </Route>
+            <Route path='/contato' element={<Contato/>}/>
           </Route>
+          {/* Fica fora do / */}
           <Route path='*' element={<NotFound/>}/>
         </Routes>
       </BrowserRouter>

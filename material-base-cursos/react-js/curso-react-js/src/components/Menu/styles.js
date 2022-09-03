@@ -24,5 +24,10 @@ export const LinkNav = styled(Link)`
 
   display: flex;
   align-items: center;
+  text-decoration: none;
+  
+  &:hover {
+    text-decoration: underline;
+  }
 `;
 
