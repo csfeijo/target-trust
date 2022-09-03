@@ -1,12 +1,13 @@
 import React from 'react';
 import Container from './styles';
 
-const Home = () => {
-  return (
+const Card = ({ children }) => {
+
+  return(
     <Container>
-      <h1>Home Page</h1>
+      {children}
     </Container>
   )
 }
 
-export default Home;
+export default Card;

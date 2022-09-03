@@ -1,7 +1,11 @@
 import styled from 'styled-components';
 
-const Container = styled.section`
+export const Container = styled.section`
 
 `;
 
-export default Container;
+export const List = styled.section`
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+`;

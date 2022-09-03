@@ -1,10 +1,18 @@
-version: "3" ## especifica a versão do docker-compose file
+## especifica a versão do docker-compose file
+version: "3"
 
-services: ## Define um serviço
-  app: ## nome do serviço
-    build: . ## localização do dockerfile
-    command: npm start ## comando a executar
+## Define um serviço
+services:
+ ## nome do serviço
+  app:
+    ## localização do dockerfile
+    build: . 
+    container_name: react_container
+    ## comando a executar
+    command: npm start
+    ## porta local 3000 deve acessar a porta do container 3000
     ports:
-      - "3000:3000" ## redirecionamento de porta quando chegar alguma requisição na porta 3000 chama o container na porta 3000
+      - "3000:3000"
+    ## monitora o diretorio atual "."" e envia as alterações para "/usr/app" no container
     volumes:
-      - .:/usr/app ## monitoro a pasta atual . e envio as alterações para /usr/app
+      - .:/usr/app
