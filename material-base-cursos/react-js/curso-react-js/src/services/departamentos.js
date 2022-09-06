@@ -5,6 +5,18 @@ export const getDepartamentos = async () => {
   // axios.defaults.headers.get['Access-Control-Allow-Origin'] = '*';
   
   // COLOCAR A BARRA SEMPRE!
-  const resp = await api.get('/departamentos/');
+
+  const headers = {
+    'Authorization': 'Bearer PROCEMPA' 
+  }
+  const resp = await api.get('/departamentos/', { headers });
+  return resp.data;
+}
+
+export const getDepartamento = async ({ idDepartamento }) => {
+  const headers = {
+    'Authorization': 'Bearer PROCEMPA' 
+  }
+  const resp = await api.get(`/departamentos/${idDepartamento}`, { headers });
   return resp.data;
 }
