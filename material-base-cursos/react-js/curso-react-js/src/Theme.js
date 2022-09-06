@@ -3,7 +3,6 @@ export const dark = {
   colors: {
     background: "#002244",
     mainColor: "#eeeeee"
-
   }
 }
 
