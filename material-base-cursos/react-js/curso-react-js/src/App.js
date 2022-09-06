@@ -1,4 +1,6 @@
 import './assets/main.scss';
+import { ThemeProvider } from 'styled-components';
+import { dark, light } from './Theme';
 import Menu from './components/Menu';
 import NotFound from './pages/NotFound';
 import Home from './pages/Home';
@@ -14,21 +16,23 @@ import {
 function App() {
   return (
     <>
-      <BrowserRouter>
-        <Menu/>
-        <Routes>
-          <Route path='/'>
-            <Route index element={<Home/>} />
-            <Route path='/departamentos'>
-              <Route index element={<Departamentos/>}/>
-              <Route path=':idDepartamento' element={<DepartamentosDetalhes/>}/>
+      <ThemeProvider theme={light}>
+        <BrowserRouter>
+          <Menu/>
+          <Routes>
+            <Route path='/'>
+              <Route index element={<Home/>} />
+              <Route path='/departamentos'>
+                <Route index element={<Departamentos/>}/>
+                <Route path=':idDepartamento' element={<DepartamentosDetalhes/>}/>
+              </Route>
+              <Route path='/contato' element={<Contato/>}/>
             </Route>
-            <Route path='/contato' element={<Contato/>}/>
-          </Route>
-          {/* Fica fora do / */}
-          <Route path='*' element={<NotFound/>}/>
-        </Routes>
-      </BrowserRouter>
+            {/* Fica fora do / */}
+            <Route path='*' element={<NotFound/>}/>
+          </Routes>
+        </BrowserRouter>
+      </ThemeProvider>
     </>
   );
 }

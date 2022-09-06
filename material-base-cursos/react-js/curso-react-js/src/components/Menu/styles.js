@@ -4,12 +4,9 @@ import { Link } from 'react-router-dom';
 export const Nav = styled.nav`
   display: flex;
   align-items: stretch;
-
-
-  color: white;
-
   padding: 10px;
-  background: #002244;
+  color: ${({ theme }) => theme.colors.mainColor};
+  background: ${({ theme }) => theme.colors.background};
 
   h1 {
     margin-right: 60px;
@@ -17,9 +14,9 @@ export const Nav = styled.nav`
 `;
 
 export const LinkNav = styled(Link)`
-  color: white;
+  color: ${({ theme }) => theme.colors.mainColor};
   padding: 0 40px;
-  border-right: 1px dashed white;
+  border-right: 1px dashed ${({ theme }) => theme.colors.mainColor};;
   font-size: 20px;
 
   display: flex;
