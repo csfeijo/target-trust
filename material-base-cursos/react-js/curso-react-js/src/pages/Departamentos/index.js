@@ -6,15 +6,18 @@ import { getDepartamentos } from '../../services/departamentos';
 
 const Departamentos = () => {
 
-  const [departamentos, setDepartamentos] = useState();
+  const [departamentos, setDepartamentos] = useState(null);
 
   const loadDepartamentos = async () => {
+    console.log('B');
     setDepartamentos(await getDepartamentos());
   }
 
   useEffect(() => {
-    loadDepartamentos();    
-  }, [])
+    if(!departamentos) {
+      loadDepartamentos();
+    }
+  }, [departamentos])
 
   // const listaDepartamentos = [
   //   { id: 1, nome: 'Recursos Humanos', sigla: 'RH' },

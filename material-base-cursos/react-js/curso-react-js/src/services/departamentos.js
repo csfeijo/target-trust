@@ -1,22 +1,17 @@
 import api from './api';
 
-export const getDepartamentos = async () => {
-  // axios.defaults.headers.get['Content-Type'] = 'application/x-www-form-urlencoded';
-  // axios.defaults.headers.get['Access-Control-Allow-Origin'] = '*';
-  
-  // COLOCAR A BARRA SEMPRE!
+const headers = {
+  'Authorization': 'Bearer PROCEMPA' 
+}
 
-  const headers = {
-    'Authorization': 'Bearer PROCEMPA' 
-  }
+export const getDepartamentos = async () => {
+  // COLOCAR A BARRA SEMPRE!
   const resp = await api.get('/departamentos/', { headers });
   return resp.data;
 }
 
 export const getDepartamento = async ({ idDepartamento }) => {
-  const headers = {
-    'Authorization': 'Bearer PROCEMPA' 
-  }
   const resp = await api.get(`/departamentos/${idDepartamento}`, { headers });
+  console.log(resp)
   return resp.data;
 }

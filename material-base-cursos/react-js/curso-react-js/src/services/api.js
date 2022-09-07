@@ -4,6 +4,9 @@ import axios from 'axios';
 const baseURL = 'http://localhost/api-php';
 //const baseURL = 'https://professorfeijo.com.br/tt/api-php';
 
+// axios.defaults.headers.get['Content-Type'] = 'application/x-www-form-urlencoded';
+// axios.defaults.headers.get['Access-Control-Allow-Origin'] = '*';
+
 const api = axios.create({
   baseURL: baseURL
 });

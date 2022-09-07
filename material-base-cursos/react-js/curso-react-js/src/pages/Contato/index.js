@@ -1,8 +1,7 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { Container, Form } from './styles';
 import Button from '../../components/Button';
 import Mensagem from '../../components/Mensagem';
-import { type } from '@testing-library/user-event/dist/type';
 
 const Contato = () => {
 
