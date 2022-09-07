@@ -9,7 +9,6 @@ const Departamentos = () => {
   const [departamentos, setDepartamentos] = useState(null);
 
   const loadDepartamentos = async () => {
-    console.log('B');
     setDepartamentos(await getDepartamentos());
   }
 

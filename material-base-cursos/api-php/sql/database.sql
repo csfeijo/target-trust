@@ -1,0 +1,17 @@
+DROP SCHEMA IF EXISTS EMPRESA;
+CREATE SCHEMA IF NOT EXISTS EMPRESA;
+USE EMPRESA;
+
+CREATE TABLE IF NOT EXISTS DEPARTAMENTOS (
+  id_departamento INT UNSIGNED NOT NULL AUTO_INCREMENT,
+  sigla VARCHAR(10) NOT NULL,
+  nome VARCHAR(50) NOT NULL,
+  PRIMARY KEY (id_departamento)
+) ENGINE=InnoDB;
+
+# INSERE OS DEPARTAMENTOS
+INSERT INTO DEPARTAMENTOS (sigla, nome) VALUES ('RH', 'Recursos Humanos');
+INSERT INTO DEPARTAMENTOS (sigla, nome) VALUES ('CPD', 'Centro de Processamento de Dados');
+INSERT INTO DEPARTAMENTOS (sigla, nome) VALUES ('Contabil', 'Depto. de Contabilidade');
+INSERT INTO DEPARTAMENTOS (sigla, nome) VALUES ('FINANC', 'Depto. Financeiro');
+INSERT INTO DEPARTAMENTOS (sigla, nome) VALUES ('PES', 'Depto. Pessoal');
