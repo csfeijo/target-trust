@@ -3,33 +3,33 @@ import { Container, Form } from './styles';
 import Button from '../../components/Button';
 import Mensagem from '../../components/Mensagem';
 
-const Contato = () => {
+const FormDepartamento = () => {
 
   const [nome, setNome] = useState('');
-  const [email, setEmail] = useState('');
+  const [sigla, setSigla] = useState('');
   const [erro, setErro] = useState('');
   const [type, setType] = useState('');
 
   const validateForm = () => {
     if (nome === '') {
-      setErro('Preencha o nome');
+      setErro('Preencha o Nome');
       setType('erro');
       return false;
     }
-    if (email === '') {
-      setErro('Preencha o e-mail');
+    if (sigla === '') {
+      setErro('Preencha a Sigla');
       setType('erro');
       return false;
     }
-    setErro('Mensagem enviada!');
+    setErro('Departamento adicionado!');
     setType('sucesso');
     setNome('');
-    setEmail('');
+    setSigla('');
   }
 
   return (
     <Container>
-      <h1>Contato</h1>
+      <h1>Adicionar Departamento</h1>
       <Form>
         <input 
           type='text'
@@ -42,13 +42,13 @@ const Contato = () => {
           }}
         />
         <input 
-          type='email' 
-          id='email'
-          name='email' 
-          placeholder='E-mail...'
-          value={email}
+          type='text' 
+          id='sigla'
+          name='sigla' 
+          placeholder='Sigla...'
+          value={sigla}
           onChange={(e) => {
-            setEmail(e.target.value)
+            setSigla(e.target.value)
           }}
         />
         <Button 
@@ -63,4 +63,4 @@ const Contato = () => {
   )
 }
 
-export default Contato;
+export default FormDepartamento;

@@ -8,7 +8,7 @@ const Menu = () => {
 
       <LinkNav to="/">Home</LinkNav>
       <LinkNav to="/departamentos">Departamentos</LinkNav>
-      <LinkNav to="/contato">Contato</LinkNav>
+      <LinkNav to="/form-departamento">Add Departamento</LinkNav>
       
     </Nav>
   )
