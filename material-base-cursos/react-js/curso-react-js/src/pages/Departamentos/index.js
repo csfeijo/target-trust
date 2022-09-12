@@ -33,9 +33,15 @@ const Departamentos = () => {
         {departamentos && departamentos.map((depto, index) => {
           return (
             <Card key={index}>
-              <Link to={`/departamentos/${depto.id_departamento}`}>
+             {/*} <Link to={`/departamentos/${depto.id_departamento}`}> */}
+             <Link to={{
+              pathname: `/departamentos/${depto.id_departamento}`,
+              search: '?nome=cicero',
+              hash: "#the-hash",
+              state: { fromDashboard: true }
+             }}
+             >
                 <h3>{depto.sigla}</h3>
-                <p>{depto.nome}</p>
               </Link>
               
             </Card>

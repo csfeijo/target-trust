@@ -1,6 +1,6 @@
 ## Comando obrigatório
 ## Baixa a imagem do node com a versão
-FROM node:16.15.1
+FROM node:16-alpine3.15
 
 ## Define o local onde o app vai ficar no disco do container (pode ser qualquer diretorio)
 WORKDIR /usr/app

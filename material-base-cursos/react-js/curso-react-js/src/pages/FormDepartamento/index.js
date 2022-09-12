@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Container, Form } from './styles';
 import Button from '../../components/Button';
 import Mensagem from '../../components/Mensagem';
+import { insertDepartamento } from '../../services/departamentos';
 
 const FormDepartamento = () => {
 
@@ -21,6 +22,12 @@ const FormDepartamento = () => {
       setType('erro');
       return false;
     }
+
+    insertDepartamento({
+      nome,
+      sigla
+    })
+
     setErro('Departamento adicionado!');
     setType('sucesso');
     setNome('');
