@@ -1,14 +1,11 @@
 import React, { useState, useEffect } from 'react';
-import { useParams, useLocation } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 import Container from './styles';
 import { getDepartamento } from '../../services/departamentos';
 
 const DepartamentosDetalhes = () => {
   const { idDepartamento } = useParams();
-
-  const data = useLocation();
-  console.log('>>>>', data)
-  
+ 
   const [departamento, setDepartamento] = useState();
 
   const loadDepartamento = async () => {

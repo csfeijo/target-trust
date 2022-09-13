@@ -25,8 +25,9 @@ function App() {
               <Route path='/departamentos'>
                 <Route index element={<Departamentos/>}/>
                 <Route path=':idDepartamento' element={<DepartamentosDetalhes/>}/>
+                <Route path='new' element={<FormDepartamento/>}/>    
+                <Route path='edit/:idDepartamento' element={<FormDepartamento/>}/>    
               </Route>
-              <Route path='/form-departamento' element={<FormDepartamento/>}/>
             </Route>
             {/* Fica fora do / */}
             <Route path='*' element={<NotFound/>}/>

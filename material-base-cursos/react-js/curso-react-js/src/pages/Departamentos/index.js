@@ -1,13 +1,15 @@
 import React, { useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
-import { Container, List } from './styles';
+import { Link, useNavigate } from 'react-router-dom';
+import { Container, List, Panel } from './styles';
 import Card from '../../components/Card';
+import Button from '../../components/Button';
+import { BiEditAlt, BiTrash } from 'react-icons/bi';
 import { getDepartamentos } from '../../services/departamentos';
 
 const Departamentos = () => {
 
   const [departamentos, setDepartamentos] = useState(null);
-
+  const navigate = useNavigate();
   const loadDepartamentos = async () => {
     setDepartamentos(await getDepartamentos());
   }
@@ -33,17 +35,26 @@ const Departamentos = () => {
         {departamentos && departamentos.map((depto, index) => {
           return (
             <Card key={index}>
-             {/*} <Link to={`/departamentos/${depto.id_departamento}`}> */}
-             <Link to={{
-              pathname: `/departamentos/${depto.id_departamento}`,
-              search: '?nome=cicero',
-              hash: "#the-hash",
-              state: { fromDashboard: true }
-             }}
-             >
+              <Link to={`/departamentos/${depto.id_departamento}`}>
                 <h3>{depto.sigla}</h3>
               </Link>
-              
+
+              <Panel>
+                <Button 
+                  titulo='Editar'
+                  icon={BiEditAlt} 
+                  onClick={() => {
+                    navigate(`/departamentos/edit/${depto.id_departamento}`);
+                  }}
+                />
+                <Button 
+                  titulo='Excluir' 
+                  icon={BiTrash}
+                  onClick={() => {
+                    
+                  }}
+                />
+              </Panel>
             </Card>
           )
         })}

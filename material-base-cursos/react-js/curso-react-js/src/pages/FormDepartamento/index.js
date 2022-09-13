@@ -1,16 +1,40 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Container, Form } from './styles';
+import { useParams } from 'react-router-dom';
 import Button from '../../components/Button';
 import Mensagem from '../../components/Mensagem';
-import { insertDepartamento } from '../../services/departamentos';
+import { insertDepartamento, getDepartamento, updateDepartamento } from '../../services/departamentos';
 
 const FormDepartamento = () => {
-
+  const { idDepartamento } = useParams();
   const [nome, setNome] = useState('');
   const [sigla, setSigla] = useState('');
   const [erro, setErro] = useState('');
   const [type, setType] = useState('');
 
+  const [departamento, setDepartamento] = useState();
+
+  // Caso seja um edit busca dados na API
+  const loadDepartamento = async () => {
+    setDepartamento(await getDepartamento({ idDepartamento }));
+  }
+
+  useEffect(() => {
+    if (!departamento) {
+      loadDepartamento();
+    }
+  }, [departamento])
+
+  useEffect(() => {
+    if (departamento){
+      setNome(departamento[0].nome)
+      setSigla(departamento[0].sigla)
+    }
+  }, [departamento])
+
+
+
+  // Validacao do formulario
   const validateForm = () => {
     if (nome === '') {
       setErro('Preencha o Nome');
@@ -23,10 +47,18 @@ const FormDepartamento = () => {
       return false;
     }
 
-    insertDepartamento({
-      nome,
-      sigla
-    })
+    if (idDepartamento) {
+      updateDepartamento({
+        idDepartamento,
+        nome,
+        sigla
+      })
+    } else {
+      insertDepartamento({
+        nome,
+        sigla
+      })
+    }
 
     setErro('Departamento adicionado!');
     setType('sucesso');
@@ -36,7 +68,7 @@ const FormDepartamento = () => {
 
   return (
     <Container>
-      <h1>Adicionar Departamento</h1>
+      <h1>{idDepartamento ? 'Editar' : 'Adicionar'} Departamento</h1>
       <Form>
         <input 
           type='text'

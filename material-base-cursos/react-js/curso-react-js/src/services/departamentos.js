@@ -1,4 +1,3 @@
-import { toBeInTheDocument } from '@testing-library/jest-dom/dist/matchers';
 import api from './api';
 
 const headers = {
@@ -24,6 +23,22 @@ export const insertDepartamento = async (data) => {
 
   const resp = await api.post('/departamentos/', body, { headers: {
     'Authorization': 'Bearer PROCEMPA'
+  }});
+
+  return resp.data;
+}
+
+export const updateDepartamento = async (data) => {
+  const { nome, sigla, idDepartamento } = data;
+  const body = new FormData();
+  body.append('nome', nome);
+  body.append('sigla', sigla);
+
+console.log('>>> PATCH', nome, sigla, idDepartamento);
+
+  const resp = await api.patch(`/departamentos/${idDepartamento}`, data, { headers: {
+    'Authorization': 'Bearer PROCEMPA',
+    'Content-Type': 'application/json;charset=utf-8'
   }});
 
   return resp.data;
