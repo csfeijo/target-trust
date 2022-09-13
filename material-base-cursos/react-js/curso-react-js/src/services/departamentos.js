@@ -29,17 +29,21 @@ export const insertDepartamento = async (data) => {
 }
 
 export const updateDepartamento = async (data) => {
-  const { nome, sigla, idDepartamento } = data;
-  const body = new FormData();
-  body.append('nome', nome);
-  body.append('sigla', sigla);
-
-console.log('>>> PATCH', nome, sigla, idDepartamento);
+  const { idDepartamento } = data;
 
   const resp = await api.patch(`/departamentos/${idDepartamento}`, data, { headers: {
-    'Authorization': 'Bearer PROCEMPA',
-    'Content-Type': 'application/json;charset=utf-8'
+    'Authorization': 'Bearer PROCEMPA'
   }});
+
+  return resp.data;
+}
+
+export const deleteDepartamento = async (data) => {
+  const { idDepartamento } = data;
+
+  const resp = await api.delete(`/departamentos/${idDepartamento}`, { headers: {
+    'Authorization': 'Bearer PROCEMPA'
+  }}, data);
 
   return resp.data;
 }

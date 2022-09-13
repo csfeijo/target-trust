@@ -4,7 +4,7 @@ import { Container, List, Panel } from './styles';
 import Card from '../../components/Card';
 import Button from '../../components/Button';
 import { BiEditAlt, BiTrash } from 'react-icons/bi';
-import { getDepartamentos } from '../../services/departamentos';
+import { getDepartamentos, deleteDepartamento } from '../../services/departamentos';
 
 const Departamentos = () => {
 
@@ -51,7 +51,9 @@ const Departamentos = () => {
                   titulo='Excluir' 
                   icon={BiTrash}
                   onClick={() => {
-                    
+                    deleteDepartamento({
+                      idDepartamento: depto.id_departamento
+                    })
                   }}
                 />
               </Panel>

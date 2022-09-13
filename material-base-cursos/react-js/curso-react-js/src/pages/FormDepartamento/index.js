@@ -20,7 +20,7 @@ const FormDepartamento = () => {
   }
 
   useEffect(() => {
-    if (!departamento) {
+    if (!departamento && idDepartamento) {
       loadDepartamento();
     }
   }, [departamento])
@@ -53,14 +53,17 @@ const FormDepartamento = () => {
         nome,
         sigla
       })
+      setErro('Departamento atualizado!');
     } else {
       insertDepartamento({
         nome,
         sigla
       })
+      setErro('Departamento adicionado!');
     }
 
-    setErro('Departamento adicionado!');
+
+    
     setType('sucesso');
     setNome('');
     setSigla('');

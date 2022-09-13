@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 // URL da nossa API
-// const baseURL = 'http://localhost/api-php';
+//const baseURL = 'http://localhost/api-php';
 const baseURL = 'https://professorfeijo.com.br/tt/api-php';
 
 // axios.defaults.headers.get['Content-Type'] = 'application/x-www-form-urlencoded';
