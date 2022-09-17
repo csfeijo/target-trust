@@ -41,14 +41,26 @@ const Departamentos = () => {
 
               <Panel>
                 <Button 
-                  titulo='Editar'
+                  uiType='success'
+                  titulo='Sucesso' 
+                  icon={BiTrash}
+                  onClick={() => {
+                    deleteDepartamento({
+                      idDepartamento: depto.id_departamento
+                    })
+                  }}
+                />
+                <Button 
+                  uiType='warning'
+                  titulo='Warning'
                   icon={BiEditAlt} 
                   onClick={() => {
                     navigate(`/departamentos/edit/${depto.id_departamento}`);
                   }}
                 />
                 <Button 
-                  titulo='Excluir' 
+                  uiType='danger'
+                  titulo='Danger' 
                   icon={BiTrash}
                   onClick={() => {
                     deleteDepartamento({

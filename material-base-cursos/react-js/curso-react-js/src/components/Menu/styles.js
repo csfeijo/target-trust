@@ -16,7 +16,7 @@ export const Nav = styled.nav`
 export const LinkNav = styled(Link)`
   color: ${({ theme }) => theme.colors.mainColor};
   padding: 0 40px;
-  border-right: 1px dashed ${({ theme }) => theme.colors.mainColor};;
+  border-right: 1px dashed ${({ theme }) => theme.colors.mainColor};
   font-size: 20px;
 
   display: flex;
