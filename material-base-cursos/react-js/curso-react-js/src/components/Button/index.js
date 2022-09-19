@@ -8,8 +8,8 @@ const Button = ({ onClick, titulo, icon: Icon, uiType }) => {
       type='button'
       onClick={onClick}
     >
-      {/* {Icon && <Icon/> }
-      &nbsp; */}
+      {Icon && <Icon/> }
+      &nbsp;
       {titulo}
     </Container>
   )

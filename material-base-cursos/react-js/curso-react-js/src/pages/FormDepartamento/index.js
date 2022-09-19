@@ -94,6 +94,7 @@ const FormDepartamento = () => {
           }}
         />
         <Button 
+          uiType='success'
           titulo='Enviar'
           onClick={validateForm}
         />

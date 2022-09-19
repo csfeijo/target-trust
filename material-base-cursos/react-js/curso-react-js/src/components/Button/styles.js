@@ -31,8 +31,8 @@ const Container = styled.button`
   cursor: pointer;
 
   &:active {
-    background: ${({ theme }) => theme.colors.mainColor};
-    color: ${({ theme }) => theme.colors.background};
+    background: ${({ theme }) => theme.colors.background};
+    color: ${({ theme }) => theme.colors.mainColor};
   }
   ${props => getUiType(props.uiType)}
 `;

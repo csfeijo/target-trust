@@ -17,14 +17,14 @@ const Container = styled.div`
   margin: 10px;
   
   a {
-    color: #002244;
+    color: ${({ theme }) => theme.colors.mainColor};
     text-decoration: none;
   }
 
   &:hover {
-    background-color: #7145e0;
+    background-color: ${({ theme }) => theme.colors.mainColor};
     a {
-      color: white;
+      color: ${({ theme }) => theme.colors.background};
     }
   }
 
