@@ -10,6 +10,7 @@ const Menu = () => {
       <LinkNav to="/">Home</LinkNav>
       <LinkNav to="/departamentos">Departamentos</LinkNav>
       <LinkNav to="/departamentos/new">Add Departamento</LinkNav>
+      <LinkNav to="/setup">Setup</LinkNav>
     </Nav>
   )
 };

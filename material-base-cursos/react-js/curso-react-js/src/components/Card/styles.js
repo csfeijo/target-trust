@@ -3,8 +3,7 @@ import styled from 'styled-components';
 
 const Container = styled.div`
   display: flex;
-  background-color: #eeeeee;
-  color: white;
+  background-color: ${({ theme }) => theme.colors.background};
   width: 300px;
   height: 150px;
   border-radius: 4px;

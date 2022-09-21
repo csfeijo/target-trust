@@ -18,22 +18,27 @@ const getUiType = (uiType) => {
       `)
     default:
       return (css`
-        background: #e1e1e1;
+        background: ${({ theme }) => theme.colors.background};
       `)
   }
 }
-
 
 const Container = styled.button`
   padding: 10px;
   color: ${({ theme }) => theme.colors.mainColor};
   border-radius: 4px;
   cursor: pointer;
+  border: none;
 
   &:active {
     background: ${({ theme }) => theme.colors.background};
     color: ${({ theme }) => theme.colors.mainColor};
   }
+
+  &:disabled {
+    box-shadow: inset 0 0 3px 3px ${({ theme }) => theme.colors.active};
+  }
+
   ${props => getUiType(props.uiType)}
 `;
 

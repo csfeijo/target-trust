@@ -1,12 +1,15 @@
 import './assets/main.scss';
+import { useSelector } from 'react-redux';
+import { selectSetup } from './store/setupSlice';
 import { ThemeProvider } from 'styled-components';
-import { dark, light } from './Theme';
+import * as Themes from './Theme';
 import Menu from './components/Menu';
 import NotFound from './pages/NotFound';
 import Home from './pages/Home';
 import Departamentos from './pages/Departamentos';
 import DepartamentosDetalhes from './pages/DepartamentosDetalhes';
 import FormDepartamento from './pages/FormDepartamento';
+import Setup from './pages/Setup';
 import { 
   BrowserRouter,
   Routes, 
@@ -14,9 +17,13 @@ import {
 } from 'react-router-dom';
 
 function App() {
+
+  //const { theme } = useSelector(state => state.setup);
+  const { theme } = useSelector(selectSetup);
+  const activeTheme = Themes[theme];
+
   return (
-    <>
-      <ThemeProvider theme={light}>
+      <ThemeProvider theme={activeTheme}>
         <BrowserRouter>
           <Menu/>
           <Routes>
@@ -29,12 +36,12 @@ function App() {
                 <Route path='edit/:idDepartamento' element={<FormDepartamento/>}/>    
               </Route>
             </Route>
+            <Route path='/setup' element={<Setup/>} />
             {/* Fica fora do / */}
             <Route path='*' element={<NotFound/>}/>
           </Routes>
         </BrowserRouter>
       </ThemeProvider>
-    </>
   );
 }
 
