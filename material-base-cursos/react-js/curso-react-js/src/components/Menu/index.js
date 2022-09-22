@@ -1,7 +1,11 @@
 import React from 'react';
 import { Nav, LinkNav } from './styles';
+import { useSelector } from 'react-redux';
+import { selectCounter } from '../../store/counter/counterSlice';
 
 const Menu = () => {
+
+  const counter = useSelector(selectCounter);
 
   return (
     <Nav>
@@ -11,6 +15,7 @@ const Menu = () => {
       <LinkNav to="/departamentos">Departamentos</LinkNav>
       <LinkNav to="/departamentos/new">Add Departamento</LinkNav>
       <LinkNav to="/setup">Setup</LinkNav>
+      {/* <span>{counter}</span> */}
     </Nav>
   )
 };
