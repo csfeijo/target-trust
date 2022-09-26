@@ -55,10 +55,14 @@ const FormDepartamento = () => {
       })
       setErro('Departamento atualizado!');
     } else {
-      insertDepartamento({
-        nome,
-        sigla
-      })
+      (async () => {
+        const resp = await insertDepartamento({
+          nome,
+          sigla
+        })
+        console.log('=== ',resp)
+      })()
+
       setErro('Departamento adicionado!');
     }
 

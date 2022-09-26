@@ -1,0 +1,12 @@
+[
+  {
+    "id_departamento": "8",
+    "sigla": "MOMO",
+    "nome": "MOMO DEPTO"
+  },
+  {
+    "id_departamento": "2",
+    "sigla": "CPD 2",
+    "nome": "Centro de Processamento de Dados"
+  }
+]

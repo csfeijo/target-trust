@@ -1,7 +1,7 @@
 import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import Button from '../../components/Button';
-import { changeTheme } from '../../store/setupSlice';
+import { changeTheme } from '../../store/setup/setupSlice';
 import PanelContainer from './styles';
 
 const Setup = () => {

@@ -1,6 +1,6 @@
 import './assets/main.scss';
 import { useSelector } from 'react-redux';
-import { selectSetup } from './store/setupSlice';
+import { selectSetup } from './store/setup/setupSlice';
 import { ThemeProvider } from 'styled-components';
 import * as Themes from './Theme';
 import Menu from './components/Menu';
