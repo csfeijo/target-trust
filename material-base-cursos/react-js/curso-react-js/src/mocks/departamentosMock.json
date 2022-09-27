@@ -1,12 +1,12 @@
 [
   {
     "id_departamento": "8",
-    "sigla": "MOMO",
-    "nome": "MOMO DEPTO"
+    "sigla": "Fake D1",
+    "nome": "Fake DEPTO 1"
   },
   {
-    "id_departamento": "2",
-    "sigla": "CPD 2",
-    "nome": "Centro de Processamento de Dados"
+    "id_departamento": "9",
+    "sigla": "Fake D2",
+    "nome": "Fake DEPTO 2"
   }
 ]

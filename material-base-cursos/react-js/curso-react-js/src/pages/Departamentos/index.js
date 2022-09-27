@@ -4,6 +4,7 @@ import { Container, List, Panel } from './styles';
 import Card from '../../components/Card';
 import Button from '../../components/Button';
 import { BiEditAlt, BiTrash } from 'react-icons/bi';
+import Loader from '../../components/Loader';
 import { getDepartamentos, deleteDepartamento } from '../../services/departamentos';
 
 const Departamentos = () => {
@@ -11,7 +12,12 @@ const Departamentos = () => {
   const [departamentos, setDepartamentos] = useState(null);
   const navigate = useNavigate();
   const loadDepartamentos = async () => {
-    setDepartamentos(await getDepartamentos());
+    try {
+      const resp = await getDepartamentos();
+      setDepartamentos(resp.data);
+    } catch(e){
+      console.log(e);
+    }
   }
 
   useEffect(() => {
@@ -31,6 +37,9 @@ const Departamentos = () => {
       <h1>Departamentos</h1>
 
       <List>
+        {!departamentos &&
+          <Loader />
+        }
         {/* TEM QUE TER O TESTE PARA EVITAR O STATE VAZIO */}
         {departamentos && departamentos.map((depto, index) => {
           return (
