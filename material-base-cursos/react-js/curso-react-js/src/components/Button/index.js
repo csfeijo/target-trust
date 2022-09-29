@@ -1,7 +1,7 @@
 import React from 'react';
 import Container from './styles';
 
-const Button = ({ onClick, titulo, icon: Icon, uiType, disabled }) => {
+const Button = ({ onClick, children, uiType, disabled }) => {
   return (
     <Container
       disabled={disabled}
@@ -9,13 +9,7 @@ const Button = ({ onClick, titulo, icon: Icon, uiType, disabled }) => {
       type='button'
       onClick={onClick}
     >
-      {Icon && 
-        <>
-          <Icon/>
-          &nbsp;
-        </>
-      }
-      {titulo}
+      {children}
     </Container>
   )
 }

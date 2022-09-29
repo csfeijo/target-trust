@@ -29,6 +29,9 @@ const Container = styled.button`
   border-radius: 4px;
   cursor: pointer;
   border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
   &:active {
     background: ${({ theme }) => theme.colors.background};
@@ -40,6 +43,11 @@ const Container = styled.button`
   }
 
   ${props => getUiType(props.uiType)}
+
+  img {
+    width: 16px;
+    margin-right: 5px;
+  }
 `;
 
 export default Container;

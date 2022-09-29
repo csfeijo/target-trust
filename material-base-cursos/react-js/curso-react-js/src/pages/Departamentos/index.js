@@ -9,7 +9,7 @@ import { getDepartamentos, deleteDepartamento } from '../../services/departament
 
 const Departamentos = () => {
 
-  const [departamentos, setDepartamentos] = useState(null);
+  const [departamentos, setDepartamentos] = useState([]);
   const navigate = useNavigate();
   const loadDepartamentos = async () => {
     try {
@@ -21,7 +21,7 @@ const Departamentos = () => {
   }
 
   useEffect(() => {
-    if(!departamentos) {
+    if(departamentos.length === 0) {
       loadDepartamentos();
     }
   }, [departamentos])
@@ -37,8 +37,8 @@ const Departamentos = () => {
       <h1>Departamentos</h1>
 
       <List>
-        {!departamentos &&
-          <Loader />
+        {departamentos.length === 0 &&
+          <Loader/>
         }
         {/* TEM QUE TER O TESTE PARA EVITAR O STATE VAZIO */}
         {departamentos && departamentos.map((depto, index) => {
@@ -51,22 +51,26 @@ const Departamentos = () => {
               <Panel>
                 <Button 
                   uiType='warning'
-                  titulo='Edit'
-                  icon={BiEditAlt} 
                   onClick={() => {
                     navigate(`/departamentos/edit/${depto.id_departamento}`);
                   }}
-                />
+                >
+                  <BiEditAlt/>
+                  &nbsp;
+                  Editar
+                </Button>
                 <Button 
                   uiType='danger'
-                  titulo='Excluir' 
-                  icon={BiTrash}
                   onClick={() => {
                     deleteDepartamento({
                       idDepartamento: depto.id_departamento
                     })
                   }}
-                />
+                >
+                  <BiTrash/>
+                  &nbsp;
+                  Excluir
+                </Button>
               </Panel>
             </Card>
           )

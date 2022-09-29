@@ -25,8 +25,14 @@ export const getDepartamentos = async () => {
 }
 
 export const getDepartamento = async ({ idDepartamento }) => {
-  const resp = await api.get(`/departamentos/${idDepartamento}`, { headers });
-  return resp.data;
+  
+  let error = {};
+  const resp = await api
+                      .get(`/departamentos/${idDepartamento}`, { headers })
+                      .catch(e => {
+                        error = e.response;
+                      });
+  return (resp && resp.data) || error;
 }
 
 export const insertDepartamento = async (data) => {
@@ -38,20 +44,24 @@ export const insertDepartamento = async (data) => {
   let error = {};
   const resp = await api
                       .post('/departamentos/', body, { headers })
-                      .catch((e) => {
+                      .catch(e => {
                         error = e.response;
-                        console.log(error);
                       });
-//console.log(resp);
+
   return (resp && resp.data) || error;
 }
 
 export const updateDepartamento = async (data) => {
   const { idDepartamento } = data;
 
-  const resp = await api.patch(`/departamentos/${idDepartamento}`, data, { headers });
+  let error = {};
+  const resp = await api
+                .patch(`/departamentos/${idDepartamento}`, data, { headers })
+                .catch(e => {
+                  error = e.response;
+                });
 
-  return resp.data;
+  return (resp && resp.data) || error;
 }
 
 export const deleteDepartamento = async (data) => {

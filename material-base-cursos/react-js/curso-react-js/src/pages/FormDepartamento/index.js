@@ -3,7 +3,12 @@ import { Container, Form } from './styles';
 import { useParams } from 'react-router-dom';
 import Button from '../../components/Button';
 import Mensagem from '../../components/Mensagem';
-import { insertDepartamento, getDepartamento, updateDepartamento } from '../../services/departamentos';
+import Loader from '../../components/Loader';
+import { 
+  insertDepartamento, 
+  getDepartamento, 
+  updateDepartamento 
+} from '../../services/departamentos';
 
 const FormDepartamento = () => {
   const { idDepartamento } = useParams();
@@ -11,6 +16,7 @@ const FormDepartamento = () => {
   const [sigla, setSigla] = useState('');
   const [erro, setErro] = useState('');
   const [type, setType] = useState('');
+  const [loading, setLoading] = useState(false);
 
   const [departamento, setDepartamento] = useState();
 
@@ -21,18 +27,18 @@ const FormDepartamento = () => {
 
   useEffect(() => {
     if (!departamento && idDepartamento) {
+      setLoading(true);
       loadDepartamento();
     }
-  }, [departamento])
+  }, [departamento, idDepartamento])
 
   useEffect(() => {
     if (departamento){
+      setLoading(false);
       setNome(departamento[0].nome)
       setSigla(departamento[0].sigla)
     }
-  }, [departamento])
-
-
+  }, [departamento]);
 
   // Validacao do formulario
   const validateForm = () => {
@@ -48,29 +54,47 @@ const FormDepartamento = () => {
     }
 
     if (idDepartamento) {
-      updateDepartamento({
-        idDepartamento,
-        nome,
-        sigla
-      })
-      setErro('Departamento atualizado!');
+      setLoading(true);
+      (async () => {
+        const resp = await updateDepartamento({
+          idDepartamento,
+          nome,
+          sigla
+        })
+        if (resp.status && resp.status === 500) {
+          setErro('Erro no Servidor!');
+          setType('erro');
+        } else {
+          setErro('Departamento atualizado!');
+          setType('sucesso');
+          setNome('');
+          setSigla('');
+        }
+        setLoading(false);
+      })()
+        // setErro('Departamento atualizado!');
     } else {
+      
+      setLoading(true);
+
       (async () => {
         const resp = await insertDepartamento({
           nome,
           sigla
         })
-        console.log('=== ',resp)
+        
+        if (resp.status && resp.status === 500) {
+          setErro('Erro no Servidor!');
+          setType('erro');
+        } else {
+          setErro('Departamento adicionado!');
+          setType('sucesso');
+          setNome('');
+          setSigla('');
+        }
+        setLoading(false);
       })()
-
-      setErro('Departamento adicionado!');
     }
-
-
-    
-    setType('sucesso');
-    setNome('');
-    setSigla('');
   }
 
   return (
@@ -99,9 +123,21 @@ const FormDepartamento = () => {
         />
         <Button 
           uiType='success'
-          titulo='Enviar'
           onClick={validateForm}
-        />
+        >
+          {loading &&
+            <>
+              <Loader/> Carregando
+            </>
+          }
+
+          {!loading && 
+            <>
+              Salvar
+            </>
+          }
+          
+        </Button>
         <Mensagem type={type}>
           {erro}
         </Mensagem>
