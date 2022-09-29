@@ -4,8 +4,9 @@ import configureMock from './configureMock';
 
 // URL da nossa API
 //const baseURL = 'http://localhost/api-php';
-const mockRequests = true;
+const mockRequests = false;
 const baseURL = 'https://professorfeijo.com.br/tt/api-php';
+//
 
 
 const api = axios.create({

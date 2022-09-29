@@ -18,10 +18,13 @@ const headers = {
 
 // Estrutura para usar o try/catch na APP
 export const getDepartamentos = async () => {
+  let error = {};
   const resp = await api
-                      .get('/departamentos/', { headers });
-
-  return resp;
+                      .get('/departamentos/', { headers })
+                      .catch(e => {
+                        error = e.response;
+                      });    
+  return resp || error;
 }
 
 export const getDepartamento = async ({ idDepartamento }) => {

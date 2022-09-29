@@ -15,9 +15,12 @@ import {
   Routes, 
   Route 
 } from 'react-router-dom';
+// import { makeServer } from './mock-api/server';
 
 function App() {
-
+  
+  // makeServer();
+  
   //const { theme } = useSelector(state => state.setup);
   const { theme } = useSelector(selectSetup);
   const activeTheme = Themes[theme];

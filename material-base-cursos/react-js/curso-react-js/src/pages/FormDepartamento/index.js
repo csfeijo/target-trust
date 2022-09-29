@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useCallback, useEffect, useState } from 'react';
 import { Container, Form } from './styles';
 import { useParams } from 'react-router-dom';
 import Button from '../../components/Button';
@@ -21,16 +21,21 @@ const FormDepartamento = () => {
   const [departamento, setDepartamento] = useState();
 
   // Caso seja um edit busca dados na API
-  const loadDepartamento = async () => {
+  const loadDepartamento = useCallback( async () => {
     setDepartamento(await getDepartamento({ idDepartamento }));
-  }
+  },[idDepartamento]) 
+
+
+  // const loadDepartamentoOld = async () => {
+  //   setDepartamento(await getDepartamento({ idDepartamento }));
+  // }
 
   useEffect(() => {
     if (!departamento && idDepartamento) {
       setLoading(true);
       loadDepartamento();
     }
-  }, [departamento, idDepartamento])
+  }, [departamento, idDepartamento, loadDepartamento])
 
   useEffect(() => {
     if (departamento){
