@@ -1,8 +1,10 @@
-import api from './api';
+import api from './api'
 
 const headers = {
-  'Authorization': 'Bearer PROCEMPA' 
+  'Authorization': 'Bearer PROCEMPA'
 }
+const a = 'l'
+
 
 // Formato usando o catch do Axios
 // export const getDepartamentos = async () => {
@@ -18,59 +20,55 @@ const headers = {
 
 // Estrutura para usar o try/catch na APP
 export const getDepartamentos = async () => {
-  let error = {};
-  const resp = await api
-                      .get('/departamentos/', { headers })
-                      .catch(e => {
-                        error = e.response;
-                      });    
-  return resp || error;
+  let error = {}
+  const resp = await api.get('/departamentos/', { headers }).catch(e => { error = e.response })    
+  return resp || error
 }
 
 export const getDepartamento = async ({ idDepartamento }) => {
   
-  let error = {};
+  let error = {}
   const resp = await api
-                      .get(`/departamentos/${idDepartamento}`, { headers })
-                      .catch(e => {
-                        error = e.response;
-                      });
-  return (resp && resp.data) || error;
+    .get(`/departamentos/${idDepartamento}`, { headers })
+    .catch(e => {
+      error = e.response
+    })
+  return (resp && resp.data) || error
 }
 
 export const insertDepartamento = async (data) => {
-  const { nome, sigla } = data;
-  const body = new FormData();
-  body.append('nome', nome);
-  body.append('sigla', sigla);
+  const { nome, sigla } = data
+  const body = new FormData()
+  body.append('nome', nome)
+  body.append('sigla', sigla)
 
-  let error = {};
+  let error = {}
   const resp = await api
-                      .post('/departamentos/', body, { headers })
-                      .catch(e => {
-                        error = e.response;
-                      });
+    .post('/departamentos/', body, { headers })
+    .catch(e => {
+      error = e.response
+    })
 
-  return (resp && resp.data) || error;
+  return (resp && resp.data) || error
 }
 
 export const updateDepartamento = async (data) => {
-  const { idDepartamento } = data;
+  const { idDepartamento } = data
 
-  let error = {};
+  let error = {}
   const resp = await api
-                .patch(`/departamentos/${idDepartamento}`, data, { headers })
-                .catch(e => {
-                  error = e.response;
-                });
+    .patch(`/departamentos/${idDepartamento}`, data, { headers })
+    .catch(e => {
+      error = e.response
+    })
 
-  return (resp && resp.data) || error;
+  return (resp && resp.data) || error
 }
 
 export const deleteDepartamento = async (data) => {
-  const { idDepartamento } = data;
+  const { idDepartamento } = data
 
-  const resp = await api.delete(`/departamentos/${idDepartamento}`, { headers }, data);
+  const resp = await api.delete(`/departamentos/${idDepartamento}`, { headers }, data)
 
-  return resp.data;
+  return resp.data
 }
