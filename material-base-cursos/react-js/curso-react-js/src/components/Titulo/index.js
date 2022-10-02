@@ -1,5 +1,5 @@
-import React from 'react';
-import { Texto, TextoMenor } from './styles';
+import React from 'react'
+import { Texto, TextoMenor } from './styles'
 
 
 const Titulo = ({ nome }) => (
@@ -11,6 +11,6 @@ const Titulo = ({ nome }) => (
       Bem Vindo ao curso de <span>{nome}</span>!
     </TextoMenor>
   </>
-);
+)
 
-export default Titulo;
+export default Titulo

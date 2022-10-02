@@ -1,11 +1,11 @@
-import React from 'react';
-import { Nav, LinkNav } from './styles';
-import { useSelector } from 'react-redux';
-import { selectCounter } from '../../store/counter/counterSlice';
+import React from 'react'
+import { LinkNav, Nav } from './styles'
+import { useSelector } from 'react-redux'
+import { selectCounter } from '../../store/counter/counterSlice'
 
 const Menu = () => {
 
-  const counter = useSelector(selectCounter);
+  const counter = useSelector(selectCounter)
 
   return (
     <Nav>
@@ -18,6 +18,6 @@ const Menu = () => {
       {/* <span>{counter}</span> */}
     </Nav>
   )
-};
+}
 
-export default Menu;
+export default Menu

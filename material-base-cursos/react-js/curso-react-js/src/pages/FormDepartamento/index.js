@@ -1,28 +1,28 @@
-import React, { useCallback, useEffect, useState } from 'react';
-import { Container, Form } from './styles';
-import { useParams } from 'react-router-dom';
-import Button from '../../components/Button';
-import Mensagem from '../../components/Mensagem';
-import Loader from '../../components/Loader';
+import React, { useCallback, useEffect, useState } from 'react'
+import { Container, Form } from './styles'
+import { useParams } from 'react-router-dom'
+import Button from '../../components/Button'
+import Mensagem from '../../components/Mensagem'
+import Loader from '../../components/Loader'
 import { 
-  insertDepartamento, 
   getDepartamento, 
+  insertDepartamento, 
   updateDepartamento 
-} from '../../services/departamentos';
+} from '../../services/departamentos'
 
 const FormDepartamento = () => {
-  const { idDepartamento } = useParams();
-  const [nome, setNome] = useState('');
-  const [sigla, setSigla] = useState('');
-  const [erro, setErro] = useState('');
-  const [type, setType] = useState('');
-  const [loading, setLoading] = useState(false);
+  const { idDepartamento } = useParams()
+  const [nome, setNome] = useState('')
+  const [sigla, setSigla] = useState('')
+  const [erro, setErro] = useState('')
+  const [type, setType] = useState('')
+  const [loading, setLoading] = useState(false)
 
-  const [departamento, setDepartamento] = useState();
+  const [departamento, setDepartamento] = useState()
 
   // Caso seja um edit busca dados na API
   const loadDepartamento = useCallback( async () => {
-    setDepartamento(await getDepartamento({ idDepartamento }));
+    setDepartamento(await getDepartamento({ idDepartamento }))
   },[idDepartamento]) 
 
 
@@ -32,30 +32,30 @@ const FormDepartamento = () => {
 
   useEffect(() => {
     if (!departamento && idDepartamento) {
-      setLoading(true);
-      loadDepartamento();
+      setLoading(true)
+      loadDepartamento()
     }
   }, [departamento, idDepartamento, loadDepartamento])
 
   useEffect(() => {
     if (departamento){
-      setLoading(false);
+      setLoading(false)
       setNome(departamento[0].nome)
       setSigla(departamento[0].sigla)
     }
-  }, [departamento]);
+  }, [departamento])
 
   // Validacao do formulario
   const validateForm = () => {
     if (nome === '') {
-      setErro('Preencha o Nome');
-      setType('erro');
-      return false;
+      setErro('Preencha o Nome')
+      setType('erro')
+      return false
     }
     if (sigla === '') {
-      setErro('Preencha a Sigla');
-      setType('erro');
-      return false;
+      setErro('Preencha a Sigla')
+      setType('erro')
+      return false
     }
 
     if (idDepartamento) {
@@ -67,17 +67,17 @@ const FormDepartamento = () => {
           sigla
         })
         if (resp.status && resp.status === 500) {
-          setErro('Erro no Servidor!');
-          setType('erro');
+          setErro('Erro no Servidor!')
+          setType('erro')
         } else {
-          setErro('Departamento atualizado!');
-          setType('sucesso');
-          setNome('');
-          setSigla('');
+          setErro('Departamento atualizado!')
+          setType('sucesso')
+          setNome('')
+          setSigla('')
         }
-        setLoading(false);
+        setLoading(false)
       })()
-        // setErro('Departamento atualizado!');
+      // setErro('Departamento atualizado!');
     } else {
       
       setLoading(true);
@@ -89,15 +89,15 @@ const FormDepartamento = () => {
         })
         
         if (resp.status && resp.status === 500) {
-          setErro('Erro no Servidor!');
-          setType('erro');
+          setErro('Erro no Servidor!')
+          setType('erro')
         } else {
-          setErro('Departamento adicionado!');
-          setType('sucesso');
-          setNome('');
-          setSigla('');
+          setErro('Departamento adicionado!')
+          setType('sucesso')
+          setNome('')
+          setSigla('')
         }
-        setLoading(false);
+        setLoading(false)
       })()
     }
   }
@@ -151,4 +151,4 @@ const FormDepartamento = () => {
   )
 }
 
-export default FormDepartamento;
+export default FormDepartamento

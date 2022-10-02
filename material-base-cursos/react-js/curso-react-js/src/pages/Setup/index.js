@@ -1,13 +1,13 @@
-import React from 'react';
-import { useDispatch, useSelector } from 'react-redux';
-import Button from '../../components/Button';
-import { changeTheme } from '../../store/setup/setupSlice';
-import PanelContainer from './styles';
+import React from 'react'
+import { useDispatch, useSelector } from 'react-redux'
+import Button from '../../components/Button'
+import { changeTheme } from '../../store/setup/setupSlice'
+import PanelContainer from './styles'
 
 const Setup = () => {
 
-  const dispatch = useDispatch();
-  const { theme } = useSelector(state => state.setup);
+  const dispatch = useDispatch()
+  const { theme } = useSelector(state => state.setup)
 
   return (
     <section>
@@ -31,6 +31,6 @@ const Setup = () => {
       </PanelContainer>
     </section>
   )
-};
+}
 
-export default Setup;
+export default Setup

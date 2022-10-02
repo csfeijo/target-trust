@@ -1,5 +1,5 @@
-import React from 'react';
-import Container from './styles';
+import React from 'react'
+import Container from './styles'
 
 const Button = ({ onClick, children, uiType, disabled }) => {
   return (
@@ -14,4 +14,4 @@ const Button = ({ onClick, children, uiType, disabled }) => {
   )
 }
 
-export default Button;
+export default Button

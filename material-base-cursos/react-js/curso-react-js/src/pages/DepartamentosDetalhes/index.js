@@ -1,22 +1,22 @@
-import React, { useState, useEffect } from 'react';
-import { useParams } from 'react-router-dom';
-import Container from './styles';
-import { getDepartamento } from '../../services/departamentos';
+import React, { useEffect, useState } from 'react'
+import { useParams } from 'react-router-dom'
+import Container from './styles'
+import { getDepartamento } from '../../services/departamentos'
 
 const DepartamentosDetalhes = () => {
-  const { idDepartamento } = useParams();
+  const { idDepartamento } = useParams()
  
-  const [departamento, setDepartamento] = useState();
+  const [departamento, setDepartamento] = useState()
 
   const loadDepartamento = async () => {
-    setDepartamento(await getDepartamento( { idDepartamento }));
+    setDepartamento(await getDepartamento( { idDepartamento }))
   }
 
   useEffect(() => {
     if (!departamento) {
-      loadDepartamento();
+      loadDepartamento()
     }
-  }, [departamento]);
+  }, [departamento])
 
   return (
     <Container>
@@ -31,4 +31,4 @@ const DepartamentosDetalhes = () => {
   )
 }
 
-export default DepartamentosDetalhes;
+export default DepartamentosDetalhes

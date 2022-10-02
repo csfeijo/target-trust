@@ -1,8 +1,8 @@
-import styled from 'styled-components';
+import styled from 'styled-components'
 
 export const Container = styled.section`
 
-`;
+`
 
 export const Form = styled.form`
   display: flex;
@@ -16,5 +16,5 @@ export const Form = styled.form`
     border: 1px solid #002244;
     border-radius: 4px;
   }
-`;
+`
 

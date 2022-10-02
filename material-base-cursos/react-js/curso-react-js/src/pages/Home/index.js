@@ -1,13 +1,13 @@
-import React from 'react';
-import Container from './styles';
-import Button from '../../components/Button';
-import { useDispatch, useSelector } from 'react-redux';
-import { incrementCounter, selectCounter, updateCounter } from '../../store/counter/counterSlice';
+import React from 'react'
+import Container from './styles'
+import Button from '../../components/Button'
+import { useDispatch, useSelector } from 'react-redux'
+import { incrementCounter, selectCounter, updateCounter } from '../../store/counter/counterSlice'
 
 const Home = () => {
 
-  const counter = useSelector(selectCounter);
-  const dispatch = useDispatch();
+  const counter = useSelector(selectCounter)
+  const dispatch = useDispatch()
   
   return (
     <Container>
@@ -29,4 +29,4 @@ const Home = () => {
   )
 }
 
-export default Home;
+export default Home

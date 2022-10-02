@@ -3,25 +3,13 @@ import api from './api'
 const headers = {
   'Authorization': 'Bearer PROCEMPA'
 }
-const a = 'l'
-
-
-// Formato usando o catch do Axios
-// export const getDepartamentos = async () => {
-
-//   let error = {};
-//   const resp = await api
-//                       .get('/departamentos/', { headers })
-//                       .catch((e) => {
-//                         error = e.response;
-//                       });
-//   return (resp && resp.data) || error;
-// }
 
 // Estrutura para usar o try/catch na APP
 export const getDepartamentos = async () => {
   let error = {}
-  const resp = await api.get('/departamentos/', { headers }).catch(e => { error = e.response })    
+  const resp = await api
+    .get('/departamentos/', { headers })
+    .catch(e => { error = e.response })    
   return resp || error
 }
 
@@ -68,7 +56,12 @@ export const updateDepartamento = async (data) => {
 export const deleteDepartamento = async (data) => {
   const { idDepartamento } = data
 
-  const resp = await api.delete(`/departamentos/${idDepartamento}`, { headers }, data)
+  let error = {}
+  const resp = await api
+    .delete(`/departamentos/${idDepartamento}`, { headers }, data)
+    .catch(e => {
+      error = e.response
+    })
 
-  return resp.data
+  return (resp && resp.data) || error
 }

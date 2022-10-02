@@ -1,4 +1,4 @@
-import { createSlice } from '@reduxjs/toolkit';
+import { createSlice } from '@reduxjs/toolkit'
 
 export const slice = createSlice({
   name: 'counter',
@@ -15,9 +15,9 @@ export const slice = createSlice({
   }
 })
 
-export const { incrementCounter, updateCounter } = slice.actions;
+export const { incrementCounter, updateCounter } = slice.actions
 
 // Atalho para o acesso direto ao contador
-export const selectCounter = state => state.counter.value;
+export const selectCounter = state => state.counter.value
 
-export default slice.reducer;
+export default slice.reducer

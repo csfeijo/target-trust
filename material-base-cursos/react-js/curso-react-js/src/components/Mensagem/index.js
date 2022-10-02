@@ -1,5 +1,5 @@
-import React from 'react';
-import Container from './styles';
+import React from 'react'
+import Container from './styles'
 
 const Mensagem = ({ children, type }) => {
   return (
@@ -9,4 +9,4 @@ const Mensagem = ({ children, type }) => {
   )
 }
 
-export default Mensagem;
+export default Mensagem

@@ -1,5 +1,5 @@
-import React from 'react';
-import Container from './styles';
+import React from 'react'
+import Container from './styles'
 
 const Card = ({ children }) => {
 
@@ -10,4 +10,4 @@ const Card = ({ children }) => {
   )
 }
 
-export default Card;
+export default Card

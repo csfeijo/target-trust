@@ -1,13 +1,15 @@
-import React from 'react';
-import mySvg from '../../assets/img/loader.svg';
-import LoaderImage from './style';
+import React from 'react'
+import mySvg from '../../assets/img/loader.svg'
+import { Container, LoaderImage } from './style'
 
 
-const Loader = () => {
+const Loader = ({ fullScreen = false }) => {
 
   return (
-    <LoaderImage src={mySvg} />
+    <Container fullScreen={fullScreen}>
+      <LoaderImage src={mySvg} />
+    </Container>
   )
-};
+}
 
-export default Loader;
+export default Loader
