@@ -11,7 +11,6 @@ import {
 } from '../../services/departamentos'
 
 const Departamentos = () => {
-
   const [departamentos, setDepartamentos] = useState([])
   const [loading, setLoading] = useState(false)
   const [message, setMessage] = useState('')

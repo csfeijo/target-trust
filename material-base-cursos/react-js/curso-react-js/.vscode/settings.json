@@ -6,8 +6,9 @@
   "eslint.validate": [
     "javascript"
   ],
-  "editor.fontFamily": "Fira Code",
-  "editor.fontLigatures": true,
+  "editor.fontFamily": "Consolas",
+  //"editor.fontFamily": "Fira Code",
+  //"editor.fontLigatures": true,
   "terminal.integrated.profiles.osx": {
     "zsh-default": {
       "path": "/bin/zsh",

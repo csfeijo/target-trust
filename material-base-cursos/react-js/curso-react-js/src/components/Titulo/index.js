@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import { Texto, TextoMenor } from './styles'
 
 
@@ -12,5 +13,9 @@ const Titulo = ({ nome }) => (
     </TextoMenor>
   </>
 )
+
+Titulo.propTypes = {
+  nome: PropTypes.string.isRequired
+}
 
 export default Titulo

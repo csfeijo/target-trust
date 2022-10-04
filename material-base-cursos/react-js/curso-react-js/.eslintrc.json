@@ -19,7 +19,7 @@
     "@typescript-eslint"
   ],
   "rules": {
-    "react/prop-types": 0,
+    "react/prop-types": 1,
     "max-len": [
       "warn",
       {
@@ -70,7 +70,7 @@
     "react/jsx-filename-extension": [
       1,
       {
-        "extensions": [".js", ".jsx", ".json"]
+        "extensions": [".js", ".jsx"]
       }
     ]
   }
