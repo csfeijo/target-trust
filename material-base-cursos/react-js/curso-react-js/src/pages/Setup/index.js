@@ -16,18 +16,20 @@ const Setup = () => {
       <PanelContainer>
         <Button
           disabled={theme === 'dark'}
-          titulo='Dark'
           onClick={() => {
             dispatch(changeTheme('dark'))
           }}
-        />
+        >
+          Dark
+        </Button>
         <Button
           disabled={theme === 'light'}
-          titulo='Light'
           onClick={() => {
             dispatch(changeTheme('light'))
           }}
-        />
+        >
+          Light
+        </Button>
       </PanelContainer>
     </section>
   )

@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Container from './styles'
 
-const Card = ({ children }) => {
+const Row = ({ children }) => {
 
   return(
     <Container>
@@ -11,8 +11,8 @@ const Card = ({ children }) => {
   )
 }
 
-Card.propTypes = {
+Row.propTypes = {
   children: PropTypes.node.isRequired
 }
 
-export default Card
+export default Row

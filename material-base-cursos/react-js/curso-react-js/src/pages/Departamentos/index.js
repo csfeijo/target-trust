@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 import { Container, List, Panel } from './styles'
-import Card from '../../components/Card'
+import Row from '../../components/Row'
 import Button from '../../components/Button'
 import { BiEditAlt, BiTrash } from 'react-icons/bi'
 import Loader from '../../components/Loader'
@@ -53,7 +53,7 @@ const Departamentos = () => {
         {/* TEM QUE TER O TESTE PARA EVITAR O STATE VAZIO */}
         {departamentos && departamentos.map((depto, index) => {
           return (
-            <Card key={index}>
+            <Row key={index}>
               <Link to={`/departamentos/${depto.id_departamento}`}>
                 <h3>{depto.sigla}</h3>
               </Link>
@@ -101,7 +101,7 @@ const Departamentos = () => {
                   Excluir
                 </Button>
               </Panel>
-            </Card>
+            </Row>
           )
         })}
       </List>

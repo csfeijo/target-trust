@@ -14,5 +14,6 @@ export const List = styled.section`
 export const Panel = styled.div`
   display: flex;
   justify-content: space-around;
-  width: 100%;
+  width: 200px;
+  
 `
