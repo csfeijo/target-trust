@@ -3,18 +3,14 @@ import styled from 'styled-components'
 
 const Container = styled.div`
   display: flex;
-  background-color: ${({ theme }) => theme.colors.background};
-  width: 100%;
+  border: 2px solid ${({ theme }) => theme.colors.background};
+  width: 80%;
   border-radius: 4px;
-  /* justify-content: center; */
-  align-items: center;
   flex-direction: row;
-
-  flex-shrink: 0;
   margin: 10px;
   
   a {
-    color: ${({ theme }) => theme.colors.mainColor};
+    color: #002244;
     text-decoration: none;
     flex-grow: 1;
     margin-left: 30px;

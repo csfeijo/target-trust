@@ -39,7 +39,7 @@ const Container = styled.button`
   }
 
   &:disabled {
-    box-shadow: inset 0 0 3px 3px ${({ theme }) => theme.colors.active};
+    box-shadow: inset 0px -5px 0 0px ${({ theme }) => theme.colors.active};
   }
 
   ${props => getUiType(props.uiType)}

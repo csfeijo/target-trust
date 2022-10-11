@@ -14,6 +14,7 @@ export const List = styled.section`
 export const Panel = styled.div`
   display: flex;
   justify-content: space-around;
+  align-items: center;
   width: 200px;
-  
+  border-left: 1px solid ${({ theme }) => theme.colors.background};
 `

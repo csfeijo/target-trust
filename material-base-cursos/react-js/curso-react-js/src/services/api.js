@@ -4,7 +4,7 @@ import configureMock from './configureMock'
 
 // URL da nossa API
 //const baseURL = 'http://localhost/api-php';
-const mockRequests = false
+const mockRequests = true
 const baseURL = 'https://professorfeijo.com.br/tt/api-php'
 //
 

@@ -1,7 +1,13 @@
 import styled from 'styled-components'
 
-const Container = styled.section`
+export const Container = styled.section`
 
 `
 
-export default Container
+export const Panel = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  width: 300px;
+`
